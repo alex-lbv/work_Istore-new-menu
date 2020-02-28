@@ -1,0 +1,102 @@
+.fileuploader {
+  &__title {
+    position: relative;
+    padding-left: 20px;
+    color: $orange;
+
+    svg {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      fill: $orange;
+    }
+  }
+
+  &-theme-thumbnails {
+    background: none;
+  }
+
+  &-theme-thumbnails .fileuploader-download,
+  &-theme-thumbnails .fileuploader-items-list .fileuploader-item {
+    margin: 0;
+  }
+
+  &-theme-thumbnails .fileuploader-download-inner {
+    background: none;
+    border: none;
+    display: flex;
+
+    p {
+      padding: 0 15px;
+    }
+  }
+
+  &-item-inner {
+    display: flex;
+  }
+
+  &-items-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-thumbnails-input {
+    order: -1;
+
+    &:only-child {
+      cursor: pointer;
+    }
+  }
+
+  .file-type-image {
+    border: none;
+    border-radius: 4px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      height: 64px;
+    }
+  }
+
+  &-download {
+    display: none;
+
+    position: relative;
+    padding-left: 20px;
+    color: $orange;
+
+    svg {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      fill: $orange;
+    }
+
+    .fileuploader-download:only-child & {
+      display: block;
+    }
+  }
+
+  &-thumbnails-input:only-child .fileuploader-download--more {
+    display: none;
+  }
+
+  &-download--more {
+    display: block;
+  }
+
+  &-action-remove {
+    display: block;
+    margin-right: 5px;
+    margin-top: 2px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background: url('../img/pic/ico/close.svg') no-repeat;
+
+    i {
+      display: none;
+    }
+  }
+}

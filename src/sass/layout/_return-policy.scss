@@ -1,0 +1,64 @@
+.return-policy {
+	.frame {
+		position: relative;
+
+		@include screen(xl) {
+			padding: 20px 20px 40px;
+		}
+
+		@include screen(l) {
+			padding: 15px 30px 40px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			background: url('../img/pic/bg/return-policy.svg') no-repeat;
+
+			@include screen(xl) {
+				top: 60px;
+				right: 10px;
+				width: 210px;
+				height: 200px;
+				opacity: .2;
+				background-size: cover;
+			}
+
+			@include screen(l) {
+				top: 80px;
+				right: 90px;
+				width: 340px;
+				height: 330px;
+			}
+		}
+	}
+
+	&__wrapper {
+		@include screen(xl) {
+			padding: 0;
+		}
+
+		@include screen(l) {
+			padding-top: 20px;
+		}
+	}
+
+	&__text {
+		&-large {
+			margin-bottom: 30px;
+			font: normal 24px/32px FuturaPT;
+		}
+
+		&-bold {
+			font: 500 22px/32px FuturaPT;
+		}
+
+		&-subtitle {
+			font: 500 24px/32px FuturaPT;
+		}
+	}
+
+	.dotted-list {
+		margin-bottom: 30px;
+	}
+}

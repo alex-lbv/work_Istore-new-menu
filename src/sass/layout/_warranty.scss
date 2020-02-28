@@ -1,0 +1,65 @@
+.warranty {
+  &__wrapper {
+    @include screen(xl) {
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding-top: 20px;
+    }
+  }
+
+  .frame {
+    @include screen(xl) {
+      padding: 20px 20px 40px;
+    }
+
+    @include screen(l) {
+      padding: 15px 30px 40px;
+    }
+
+    &::after {
+      @include screen(l) {
+        content: "";
+        position: absolute;
+        background: url('../img/pic/bg/warranty.jpg') no-repeat;
+        top: 20px;
+        right: 15px;
+        width: 528px;
+        height: 528px;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__subtitle {
+    @include screen(l) {
+      font: normal 18px/24px FuturaPT;
+    }
+
+    @include screen(l) {
+      font: normal 24px/32px FuturaPT;
+    }
+  }
+
+  &__text {
+    &--pink {
+      font: normal 24px/32px FuturaPT;
+      color: $main-color;
+    }
+
+    &--bg-pink {
+      font: normal 16px/22px FuturaPT;
+      border-radius: 15px;
+      background: $main-color-opacity-1;
+
+      @include screen(xl) {
+        padding: 15px;
+      }
+
+      @include screen(l) {
+        padding: 13px 40px 16px 20px;
+      }
+    }
+  }
+}

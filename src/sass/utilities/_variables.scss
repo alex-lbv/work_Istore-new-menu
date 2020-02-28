@@ -1,0 +1,139 @@
+/* Breakpoints */
+$breakpoint-sm: 640;
+$breakpoint-md: 960;
+$breakpoint-lg: 1250;
+
+/* Colors */
+$white: rgba(255, 255, 255, 1);
+$white-opacity-2: rgba(255, 255, 255, .2);
+$white-opacity-7: rgba(255, 255, 255, .7);
+$white-opacity-9: rgba(255, 255, 255, .9);
+
+$black: rgba(0, 0, 0, 1);
+$black-opacity-05: rgba(0, 0, 0, .05);
+$black-opacity-08: rgba(0, 0, 0, .08);
+$black-opacity-45: rgba(0, 0, 0, .45);
+$black-opacity-1: rgba(0, 0, 0, .1);
+$black-opacity-2: rgba(0, 0, 0, .2);
+
+$black-opacity-12: rgba(0, 0, 0, .12);
+$black-opacity-15: rgba(0, 0, 0, .15);
+$black-opacity-2: rgba(0, 0, 0, .2);
+$black-opacity-7: rgba(0, 0, 0, .7);
+$black-opacity-8: rgba(0, 0, 0, .8);
+
+$main-black-color: rgba(48, 55, 61, 1);
+$main-black-color-opacity-4: rgba(48, 55, 61, .4);
+$main-black-color-opacity-5: rgba(48, 55, 61, .5);
+$main-black-color-opacity-6: rgba(48, 55, 61, .6);
+$main-black-color-opacity-7:rgba(48, 55, 61, .7);
+$main-black-color-opacity-8:rgba(48, 55, 61, .8);
+$main-black-color-opacity-9:rgba(48, 55, 61, .9);
+
+$second-black-color: rgba(51, 51, 51, 1);
+$second-black-color-opacity-3: rgba(51, 51, 51, .3);
+$second-black-color-opacity-4: rgba(51, 51, 51, .4);
+$second-black-color-opacity-45: rgba(51, 51, 51, .45);
+$second-black-color-opacity-5: rgba(51, 51, 51, .5);
+$second-black-color-opacity-8: rgba(51, 51, 51, .8);
+
+$third-black-color: rgba(43, 45, 48, 1);
+$third-black-color-opacity-3: rgba(43, 45, 48, .3);
+$third-black-color-opacity-7: rgba(43, 45, 48, .7);
+$third-black-color-opacity-8: rgba(43, 45, 48, .8);
+$third-black-color-opacity-9: rgba(43, 45, 48, .9);
+
+$gray-light: rgba(248, 248, 248, 1);
+$gray-light-2: rgba(243, 242, 244, 1);
+$gray-light-3:rgba(250, 250, 250, 1);
+$gray-light-4:rgba(244, 244, 244, 1);
+$gray-light-5:rgba(242, 242, 242, 1);
+
+$gray:rgba(222, 222, 222, 1);
+$gray-2: rgba(231, 231, 231, 1);
+$gray-3: rgba(234, 234, 234, 1);
+$gray-3-opacity-5: rgba(234, 234, 234, .5);
+$gray-3-opacity-8: rgba(234, 234, 234, .8);
+$gray-4: rgba(233, 235, 239, 1);
+$gray-4-opacity-5: rgba(233, 235, 239, .5);
+$gray-5: rgba(216, 220, 226, 1);
+$gray-6-opacity-8: rgba(66, 92, 116, .8);
+$gray-7: rgba(233, 233, 233, 1);
+$gray-7-opacity-7: rgba(233, 233, 233, 0.7);
+$gray-8-opacity-9: rgba(121, 123, 126, .9);
+$gray-9: rgba(227, 227, 227, 1);
+$gray-10-opacity-5: rgba(216, 216, 216, .5);
+$gray-11: rgba(140, 140, 141, 1);
+$gray-12: rgba(236, 236, 236, 1);
+$gray-12-opacity-7: rgba(236, 236, 236, .7);
+$gray-13: rgba(204, 204, 204, 1);
+$gray-14: rgba(194, 194, 194, 1);
+$gray-15: rgba(239, 239, 240, 1);
+$gray-15-opacity-6: rgba(239, 239, 240, .6);
+$gray-16: rgba(229, 229, 229, 1);
+$gray-17: rgba(230, 230, 230, 1);
+$gray-17-opacity-3: rgba(230, 230, 230, .3);
+$gray-18: rgba(121, 124, 128, 1);
+$gray-19: rgba(192, 192, 192, 1);
+$gray-20: rgba(241, 232, 232, 1);
+$gray-21: rgba(107, 107, 107, 1);
+$gray-22: rgba(221, 221, 221, 1);
+$gray-23-opacity-5: rgba(154, 147, 140, 0.5);
+$gray-24: rgba(190, 190, 194, 1);
+$gray-25: rgba(187, 187, 187, 1);
+$gray-26: rgba(184, 180, 180, 1);
+$gray-27: rgba(145, 141, 141, 1);
+$gray-28: rgba(209, 209, 209, 1);
+$gray-29: rgba(122, 122, 122, 1);
+$gray-30: rgba(149, 149, 149, 1);
+$gray-31: rgba(224, 224, 224, 1);
+
+$main-color: rgba(255, 84, 140, 1);
+$main-color-opacity-9: rgba(255, 84, 140, .9);
+$main-color-opacity-4: rgba(255, 84, 140, .4);
+$main-color-opacity-2: rgba(255, 84, 140, .2);
+$main-color-opacity-1: rgba(255, 84, 140, .1);
+$main-color-2: rgba(255, 84, 141, 1);
+$main-dark-color: rgba(248, 53, 94, 1);
+$main-dark-color-opacity-4: rgba(248, 53, 94, .4);
+$main-dark-color-2: rgba(214, 52, 105, 1);
+
+
+$second-color: rgba(99, 68, 182, 1);
+$second-dark-color: rgba(103, 60, 221, 1);
+$second-color-opacity-4: rgba(107, 72, 169, .4);
+$second-color-opacity-7: rgba(107, 72, 169, .7);
+
+$third-color: rgba(44, 9, 82, 1);
+$thirs-color-2: rgba(28, 4, 58, 1);
+$yellow: rgba(255, 205, 0, 1);
+$green: rgba(39, 204, 0, 1);
+$green-opacity-2: rgba(39, 204, 0, .2);
+$green-opacity-35: rgba(39, 204, 0, .35);
+$green-2: rgba(94, 241, 59, 1);
+$green-3: rgba(20, 215, 93, 1);
+$green-4: rgba(67, 254, 22, 1);
+$green-4-opacity-7: rgba(67, 254, 22, .7);
+$green-5: rgba(75, 217, 100, 1);
+$orange: rgba(255, 121, 20, 1);
+$orange-2: rgba(255, 150, 0, 1);
+$blue: rgba(0, 149, 255, 1);
+
+$gradient-pink: linear-gradient(250.77deg, rgba(237, 101, 108, 1) 0%, rgba(223, 92, 145, 1) 99.52%);
+$gradient-pink-2: linear-gradient(360deg, rgba(241, 49, 103, 1) 0%, rgba(247, 149, 201, 1) 99.86%);
+$gradient-blue: linear-gradient(360deg, rgba(0, 149, 255, 1) 0%, rgba(106, 225, 248, 1) 99.86%);
+$graident-blue-2: linear-gradient(360deg, rgba(32, 106, 255, 1) 0%, rgba(0, 255, 249, 1) 100%);
+$gradient-green: linear-gradient(180deg, rgba(160, 245, 154, 1) 0%, rgba(42, 190, 122, 1) 100%);
+$gradient-green-2: linear-gradient(180deg, rgba(45, 237, 150, 1) 0%, rgba(20, 215, 93, 1) 100%);
+$gradient-turquoise: linear-gradient(180deg, rgba(118, 241, 211, 1) 0%, rgba(65, 224, 168, 1) 100%);
+$gradient-yellow: linear-gradient(360deg, rgba(255, 180, 38, 1) 0.22%, rgba(255, 222, 92, 1) 100%);
+$gradient-orange: linear-gradient(180deg, rgba(255, 143, 45, 1) 0%, rgba(255, 86, 20, 1) 100%);
+$gradient-red: linear-gradient(180deg, rgba(255, 153, 153, 1) 0%, rgba(255, 96, 96, 1) 100%);
+$gradient-violet: linear-gradient(180deg, rgba(235, 197, 255, 1) 0%, rgba(188, 74, 216, 1) 98.04%);
+$gradient-vioelt-2: linear-gradient(180deg, rgba(250, 156, 222, 1) 0%, rgba(242, 99, 186, 1) 100%);
+$gradient-vioelt-3: linear-gradient(180deg, rgba(197, 74, 240, 1) 0%, rgba(147, 36, 220, 1) 100%);
+$gradient-black: linear-gradient(180deg, rgba(98, 98, 98, 1) 0%, rgba(51, 51, 51, 1) 100%);
+$gradient-white: linear-gradient(180deg, rgba(249, 249, 249, 1) 0%, rgba(240, 240, 240, 1) 100%);
+$gradient-white-2: linear-gradient(360deg, rgb(248, 248, 248) 0%, rgba(255, 255, 255, 0.0001) 100%);
+$gradient-gray: linear-gradient(180deg, rgba(189, 189, 189, 1) 0%, rgba(136, 136, 136, 1) 100%);
+$gradient-pearl: linear-gradient(180deg, rgba(239, 239, 239, 1) 0%, rgba(199, 212, 240, 1) 32.17%, rgba(255, 209, 201, 1) 59.58%, rgba(242, 252, 205, 1) 80.73%, rgba(198, 232, 246, 1) 100%);

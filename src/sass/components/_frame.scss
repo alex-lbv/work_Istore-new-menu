@@ -1,0 +1,13 @@
+.frame {
+  box-shadow: 0px 2px 30px $black-opacity-1;
+  background-color: $white;
+  overflow: hidden;
+
+  @include screen(xl) {
+    border-radius: 0;
+  }
+
+  @include screen(l) {
+    border-radius: 20px;
+  }
+}

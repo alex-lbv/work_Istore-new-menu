@@ -1,0 +1,247 @@
+.main-banner {
+  position: relative;
+
+  @include screen(xl) {
+    padding: 15px 0 0 0;
+    background: $gray-light;
+  }
+
+  @include screen(l) {
+    margin-top: 15px;
+  }
+
+  &__container {
+    overflow: hidden;
+
+    @include screen(xl) {
+      padding-bottom: 30px;
+    }
+
+    @include screen(l) {
+      box-shadow: 0px 2px 24px $black-opacity-05;
+      border-radius: 20px;
+    }
+  }
+
+  .swiper-slide {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    @include screen(xl) {
+      padding: 25px 15px 0;
+      width: 90% !important;
+      height: 450px;
+      box-shadow: 0px 2px 24px $black-opacity-05;
+      border-radius: 20px;
+    }
+
+    @include screen(l) {
+      padding-top: 70px;
+      height: 565px;
+    }
+
+    p {
+      position: relative;
+      z-index: 1;
+      color: $white;
+
+      &:nth-of-type(1) {
+        @include screen(xl) {
+          margin-bottom: 15px;
+          font: 500 26px/34px FuturaPT;
+        }
+
+        @include screen(l) {
+          font: 500 42px/54px FuturaPT;
+        }
+      }
+
+      &:nth-of-type(2) {
+        @include screen(xl) {
+          font: 500 16px/24px FuturaPT;
+        }
+
+        @include screen(l) {
+          font: normal 30px/54px FuturaPT;
+        }
+      }
+    }
+
+    &.slide-1 {
+      background-color: $black;
+
+      img {
+        @include screen(xl) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 100%;
+          max-width: 400px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 600px;
+        }
+      }
+    }
+
+    &.slide-2 {
+      background-color: $black;
+
+      img {
+        @include screen(xl) {
+          position: absolute;
+          bottom: -20px;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 100%;
+          max-width: 300px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 400px;
+        }
+      }
+    }
+
+    &.slide-3 {
+      background-color: $gray-light-3;
+
+      img {
+        @include screen(xl) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 100%;
+          max-width: 300px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 400px;
+        }
+      }
+
+      p {
+        color: $main-black-color;
+      }
+    }
+
+    &.slide-4 {
+      background-color: $gray-light-3;
+
+      img {
+        @include screen(xl) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 100%;
+          max-width: 350px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 20px;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 800px;
+        }
+      }
+
+      p {
+        color: $main-black-color;
+      }
+    }
+
+    &.slide-5 {
+      background-color: $gray-light-3;
+
+      img {
+        @include screen(xl) {
+          position: absolute;
+          bottom: -25px;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 100%;
+          max-width: 350px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          width: 1200px;
+        }
+      }
+
+      p {
+        color: $main-black-color;
+      }
+    }
+
+    .btn {
+      position: relative;
+      z-index: 1;
+      margin: 15px auto;
+      padding: 10px 15px;
+      max-width: 150px;
+      text-transform: uppercase;
+      font: 600 15px/22px FuturaPT;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    margin: auto !important;
+    width: 14px;
+    height: 24px;
+    cursor: pointer;
+    transition: opacity .3s;
+
+    &.swiper-button-disabled {
+      opacity: .3;
+      pointer-events: none;
+    }
+
+    &--next {
+      right: -10px;
+      background: url("../img/pic/ico/arrow.svg") no-repeat;
+    }
+
+    &--prev {
+      left: -10px;
+      transform: rotate(180deg);
+      background: url("../img/pic/ico/arrow.svg") no-repeat;
+    }
+  }
+}

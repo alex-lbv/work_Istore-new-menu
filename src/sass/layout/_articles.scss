@@ -1,0 +1,132 @@
+.articles {
+  &__header {
+    border-bottom: 1px solid $gray-10-opacity-5;
+
+    @include screen(xl) {
+      padding: 20px;
+    }
+
+    @include screen(l) {
+      padding: 20px 20px 25px 30px;
+    }
+  }
+
+  &__content {
+    @include screen(xl) {
+      padding: 20px;
+    }
+
+    @include screen(l) {
+      padding: 20px 20px 40px;
+    }
+  }
+
+  &__wrapper {
+    @include screen(xl) {
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding-top: 20px;
+    }
+  }
+
+  &__list {
+    li {
+      padding-bottom: 20px;
+
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
+
+      &:not(:first-of-type) {
+        padding-top: 20px;
+      }
+
+      &:not(:last-of-type) {
+        border-bottom: 1px solid $gray-3;
+      }
+    }
+
+    img {
+      border-radius: 8px;
+      transition: transform .3s;
+
+      @include screen(xl) {
+        width: 100%;
+        height: auto;
+      }
+
+      @include screen(l) {
+        max-width: 365px;
+        max-height: 240px;
+      }
+    }
+
+    span {
+      margin-bottom: 15px;
+      font: normal 14px/22px Roboto;
+      color: $main-black-color-opacity-5;
+    }
+
+    p {
+      font: normal 15px/24px Roboto;
+      color: $main-black-color;
+    }
+
+    a {
+      margin-bottom: 10px;
+      font: 500 22px/26px FuturaPT;
+      color: $main-black-color;
+    }
+  }
+
+  &__sort {
+    padding: 5px;
+    max-width: max-content;
+    border: 1px solid $gray-7;
+    border-radius: 10px;
+    background: $white;
+
+    @include screen(xl) {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    a {
+      display: block;
+      padding: 12px 15px;
+      width: 100%;
+      font: 500 12px/16px Roboto;
+      color: $second-black-color;
+      background-color: $white;
+      border-radius: 20px;
+      transition: background-color .3s, color .1s;
+      text-align: center;
+
+      &:hover {
+        color: $white;
+        background-color: $third-color;
+      }
+    }
+
+    li {
+      @include screen(xl) {
+        width: calc(100% / 3);
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 5px;
+      }
+
+      &.active {
+        a {
+          color: $white;
+          background-color: $third-color;
+        }
+      }
+    }
+  }
+}

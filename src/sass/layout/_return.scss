@@ -1,0 +1,251 @@
+.return {
+  color: $main-black-color;
+
+  &__wrapper {
+    @include screen(xl) {
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding-top: 20px;
+    }
+  }
+
+  &__top {
+    background: $gray-light;
+
+    @include screen(xl) {
+      padding: 20px 0 0;
+    }
+
+    @include screen(l) {
+      padding: 15px 0 0;
+    }
+  }
+
+  .breadcrumbs {
+    @include screen(xl) {
+      padding: 0 15px;
+    }
+
+    @include screen(l) {
+      padding: 0 30px;
+    }
+  }
+
+  &__tabs {
+    justify-content: center;
+    margin: 0;
+    border-bottom: 1px solid $gray-10-opacity-5;
+
+    li {
+      &:not(:last-of-type) {
+        @include screen(l) {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    &.uk-subnav-pill>.uk-active>a {
+      background-color: transparent !important;
+      color: $main-color;
+
+      &::after {
+        width: 100%;
+        background: $main-color;
+      }
+    }
+
+    &.uk-subnav-pill>*> :first-child {
+      position: relative;
+      padding: 5px 10px 15px;
+      background: transparent;
+      color: $second-black-color;
+      font: 500 20px/24px FuturaPT;
+      text-transform: inherit;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 6px;
+        width: 40%;
+        background: transparent;
+        border-radius: 100px 100px 0px 0px;
+        transition: width .3s;
+      }
+    }
+  }
+
+  &__content {
+    background-color: $white;
+
+    @include screen(xl) {
+      padding: 20px 20px 40px;
+    }
+
+    @include screen(l) {
+      padding: 30px 40px 50px;
+    }
+  }
+
+  &__inner-frame {
+    background: $gray-light;
+    border: 1px solid $gray-3;
+    border-radius: 20px;
+
+    @include screen(xl) {
+      padding: 20px;
+    }
+
+    @include screen(l) {
+      padding: 40px 40px 30px;
+    }
+
+    span {
+      display: inline-block;
+    }
+
+    a {
+      display: inline-block;
+      width: max-content;
+      border-bottom: 1px solid transparent;
+      font: 600 16px/22px FuturaPT;
+      color: $main-color;
+      transition: border .3s;
+
+      &:hover {
+        border-color: $main-color;
+      }
+    }
+
+    br {
+      @include screen(xs) {
+        display: none;
+      }
+    }
+  }
+
+  &__inner-bottom {
+    @include screen(l) {
+      margin: 0 0 0 140px;
+    }
+  }
+
+  &__subtitle {
+    font: 600 24px/24px FuturaPT;
+    color: $main-black-color;
+  }
+
+  &__text {
+    color: $main-black-color;
+
+    &-gray {
+      font: normal 16px/26px Roboto;
+      color: $main-black-color-opacity-7;
+    }
+
+    &-green {
+      font: 600 24px/24px FuturaPT;
+      color: $green;
+    }
+
+    &-pink {
+      font: normal 20px/26px FuturaPT;
+      color: $main-color;
+    }
+
+    &-border {
+      border-top: 1px solid $gray-10-opacity-5;
+      font: normal 16px/26px Roboto;
+    }
+  }
+
+  &__feature {
+    div {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: $white;
+      border: 4px solid $white;
+      box-shadow: 0px 2px 7px $black-opacity-1;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 75px;
+        height: 32px;
+        z-index: 1;
+        mix-blend-mode: darken;
+      }
+    }
+  }
+
+  .feature {
+    li:not(:last-of-type) {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: $gray-3;
+
+        @include screen(xl) {
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width: 100%;
+          height: 1px;
+        }
+
+        @include screen(l) {
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 1px;
+          height: 270px;
+        }
+      }
+    }
+  }
+
+  &__sort {
+    label {
+      text-transform: uppercase;
+      font: 700 12px/15px FuturaPT;
+      color: $main-black-color-opacity-4;
+
+      @media (max-width: 346px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__date {
+    font: normal 16px/26px Roboto;
+    color: $main-black-color;
+  }
+}

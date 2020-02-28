@@ -1,0 +1,63 @@
+.article {
+  &__wrapper {
+    @include screen(l) {
+      padding-top: 20px;
+    }
+
+    @include screen(xl) {
+      padding: 0;
+    }
+  }
+
+  &__header {
+    border-bottom: 1px solid $gray-10-opacity-5;
+
+    @include screen(xl) {
+      padding: 20px;
+    }
+
+    @include screen(l) {
+      padding: 20px 20px 25px 30px;
+    }
+  }
+
+  &__content {
+    @include screen(xl) {
+      padding: 20px;
+    }
+
+    @include screen(l) {
+      padding: 20px 20px 40px;
+    }
+
+    img {
+      margin-bottom: 30px;
+      width: 100%;
+      height: auto;
+
+      @include screen(xl) {
+        max-width: 500px;
+      }
+    }
+  }
+
+  &__date {
+    font: normal 14px/22px Roboto;
+    color: $main-black-color-opacity-5;
+
+    @include screen(l) {
+      align-self: flex-end;
+      text-align: end;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font: normal 16px/26px Roboto;
+
+    &-large {
+      margin-bottom: 30px;
+      font: normal 24px/32px FuturaPT;
+    }
+  }
+}

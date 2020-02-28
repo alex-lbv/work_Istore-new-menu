@@ -1,0 +1,2529 @@
+.land {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @include screen(xl) {
+    padding: 20px 10px 15px;
+  }
+
+  @include screen(l) {
+    padding: 70px 40px 40px;
+  }
+
+  &__image {
+    &-top {
+      width: 100%;
+      max-width: 1114px;
+      max-height: 320px;
+
+      @include screen(xl) {
+        margin-bottom: 16px;
+      }
+
+      @include screen(l) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-middle {
+      @include screen(xl) {
+        margin: 40px 0 30px;
+        width: 250px;
+        height: 233px;
+      }
+
+      @include screen(m) {
+        margin: 40px 0;
+        width: 350px;
+        height: 333px;
+      }
+
+      @include screen(l) {
+        margin: 60px 0 52px;
+        width: 100%;
+        height: 552px;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+    background-color: #202020;
+
+    @include screen(xl) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &:first-of-type {
+      margin-bottom: 10px;
+    }
+
+    &--retina {
+      @include screen(xl) {
+        padding: 23px 20px 30px;
+      }
+
+      @include screen(l) {
+        padding: 50px 100px 60px 50px;
+      }
+
+      img {
+        align-items: flex-start;
+
+        @include screen(xl) {
+          max-width: 240px;
+          max-height: 323px;
+        }
+
+        @include screen(m) {
+          max-width: 350px;
+          max-height: 340px;
+        }
+
+        @include screen(l) {
+          max-width: 350px;
+          max-height: 340px;
+        }
+      }
+
+      .land__grad {
+        @include screen(xl) {
+          margin-bottom: 47px;
+          padding: 0 5px;
+        }
+      }
+    }
+
+    &--side {
+      @include screen(xl) {
+        padding: 30px 20px 0;
+      }
+
+      @include screen(l) {
+        padding: 41px 55px 0 97px;
+      }
+
+      img {
+        @include screen(xl) {
+          max-width: 240px;
+          max-height: 199px;
+        }
+
+        @include screen(xl) {
+          order: 1;
+        }
+
+        @include screen(m) {
+          max-width: 330px;
+          max-height: 355px;
+        }
+
+        @include screen(l) {
+          max-width: 330px;
+          max-height: 355px;
+        }
+      }
+
+      .land__grad {
+        @include screen(xl) {
+          margin-bottom: 27px;
+          padding: 0 5px;
+        }
+      }
+    }
+
+    &--face-id {
+      @include screen(xl) {
+        padding: 30px 20px 0;
+      }
+
+      @include screen(l) {
+        padding: 50px 127px 0 50px;
+      }
+
+      img {
+        @include screen(xl) {
+          width: 220px;
+          height: 235px;
+        }
+
+        @include screen(xl) {
+          order: 1;
+        }
+
+        @include screen(m) {
+          max-width: 283px;
+          height: 389px;
+        }
+
+        @include screen(l) {
+          max-width: 283px;
+          height: 389px;
+        }
+      }
+
+      .land__grad {
+        @include screen(xl) {
+          margin-bottom: 20px;
+          padding: 0 5px;
+        }
+      }
+    }
+
+    &--camera {
+      @include screen(xl) {
+        padding: 25px 20px 0;
+      }
+
+      @include screen(l) {
+        padding: 50px 98px 0 50px;
+      }
+
+      img {
+        @include screen(xl) {
+          width: 240px;
+          height: 290px;
+        }
+
+        @include screen(xl) {
+          order: 1;
+        }
+
+        @include screen(m) {
+          max-width: 305px;
+          max-height: 370px;
+        }
+
+        @include screen(l) {
+          max-width: 305px;
+          max-height: 370px;
+        }
+      }
+
+      .land__grad {
+        @include screen(xl) {
+          margin-bottom: 20px;
+          padding: 0 5px;
+        }
+      }
+    }
+
+    &--bottom {
+      align-items: center;
+      background-color: #000000;
+
+      @include screen(xl) {
+        margin: 40px 0 20px;
+      }
+
+      @include screen(l) {
+        justify-content: flex-start;
+        margin: 60px 0;
+        padding: 0 50px;
+      }
+
+      .land__container-content {
+        text-align: left;
+
+        @include screen(xl) {
+          margin-bottom: 30px;
+          padding-left: 7px;
+        }
+
+        @include screen(l) {
+          padding-top: 5px;
+          margin-left: 121px;
+          max-width: 370px;
+        }
+
+        &--reverse {
+          @include screen(l) {
+            padding: 0;
+            margin: 0 147px 0 0;
+            max-width: none;
+          }
+        }
+
+        .land__title {
+          @include screen(l) {
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 0.55px;
+          }
+        }
+      }
+
+      img {
+        @include screen(xl) {
+          order: 1;
+          width: 280px;
+          height: 375px;
+        }
+
+        @include screen(m) {
+          order: 1;
+        }
+
+        @include screen(m) {
+          max-width: 400px;
+          max-height: 540px;
+        }
+
+        @include screen(l) {
+          max-width: 400px;
+          max-height: 540px;
+        }
+      }
+    }
+
+    &--reverse {
+      @include screen(l) {
+        margin-top: -15px;
+      }
+    }
+  }
+
+  &__grad {
+    display: -webkit-box;
+    background-clip: text;
+
+    &--gold {
+      max-width: 460px;
+      background-image: url("../img/pic/descriptions/bg-font-gold.jpg");
+      background-position: right;
+    }
+
+    &--violet {
+      max-width: 485px;
+      background-image: url("../img/pic/descriptions/bg-font-violet.jpg");
+      background-position: right;
+    }
+  }
+
+  &__title {
+    &--top {
+      @include screen(xl) {
+        margin-bottom: 25px;
+        font: normal 20px / normal FuturaPT, sans-serif;
+      }
+
+      @include screen(l) {
+        margin-bottom: 30px;
+        font: normal 33px / normal FuturaPT, sans-serif;
+      }
+    }
+
+    &--sm {
+      margin-bottom: 20px;
+      font: 500 24px / normal FuturaPT, sans-serif;
+    }
+
+    &--md {
+      align-self: flex-start;
+      text-align: left;
+
+      @include screen(xl) {
+        margin-bottom: 20px;
+        padding-left: 25px;
+        font: bold 18px / normal FuturaPT, sans-serif;
+      }
+
+      @include screen(l) {
+        margin-bottom: 30px;
+        padding-left: 50px;
+        font: bold 32px / normal FuturaPT, sans-serif;
+      }
+    }
+
+    &--lg {
+      @include screen(xl) {
+        margin-bottom: 20px;
+        font: bold 28px / 1.29 FuturaPT, sans-serif;
+      }
+
+      @include screen(l) {
+        margin-bottom: 25px;
+        font: bold 56px / normal FuturaPT, sans-serif;
+      }
+    }
+  }
+
+  &__text {
+    &--sm {
+      @include screen(xl) {
+        font: normal 14px/1.63 Roboto, sans-serif;
+      }
+
+      @include screen(l) {
+        font: normal 16px/1.5 Roboto, sans-serif;
+      }
+    }
+
+    &--md {
+      @include screen(xl) {
+        margin-bottom: 30px;
+        padding: 0 5px;
+        letter-spacing: 0.12px;
+        font: 300 14px/1.6 Roboto, sans-serif;
+      }
+
+      @include screen(l) {
+        max-width: 710px;
+        margin: 0 auto 60px;
+        font: 300 18px/1.78 Roboto, sans-serif;
+        letter-spacing: 0.2px;
+      }
+    }
+
+    &--lg {
+      @include screen(xl) {
+        font: normal 16px/1.63 Roboto, sans-serif;
+      }
+
+      @include screen(l) {
+        font: normal 24px/1.6 Roboto, sans-serif;
+      }
+    }
+  }
+
+  &__color {
+    &-gold {
+      color: #fee5db;
+    }
+
+    &-gradient {
+      color: transparent;
+      text-align: left;
+    }
+  }
+
+  &__features {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+    @include screen(xl) {
+      align-items: center;
+      flex-direction: column;
+      margin: 40px 0;
+      padding: 0 20px 0 25px;
+    }
+
+    @include screen(l) {
+      margin: 80px 0;
+      padding: 0 50px;
+    }
+
+    .land__text {
+      max-width: 280px;
+    }
+  }
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+
+    @include screen(xl) {
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @include screen(l) {
+      width: 29.3%;
+    }
+
+    &-image {
+      margin-bottom: 25px;
+      fill: #ffffff;
+
+      &--steel {
+        width: 64px;
+        height: 64px;
+      }
+
+      &--charging {
+        width: 69px;
+        height: 64px;
+      }
+
+      &--coating {
+        width: 86px;
+        height: 64px;
+      }
+    }
+  }
+
+  &__video {
+    border-radius: 2px;
+
+    @include screen(xl) {
+      width: 100%;
+      height: auto;
+    }
+
+    @include screen(l) {
+      width: 1090px;
+      height: 440px;
+    }
+
+    &-wrap {
+      position: relative;
+      cursor: pointer;
+
+      @include screen(xl) {
+        padding: 0 5px;
+        margin-top: 20px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        background: url("../img/pic/ico/video-play.svg") no-repeat;
+
+        @include screen(xl) {
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 30%;
+          height: 30%;
+          transform: translateX(35%);
+          background-size: contain;
+        }
+
+        @include screen(l) {
+          top: 170px;
+          left: 520px;
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+
+  /* iphone xs */
+  &--black {
+    color: #ffffff;
+    background: #000000;
+
+    .land__container {
+      &--bottom {
+        align-items: center;
+        background-color: #000000;
+
+        @include screen(xl) {
+          margin: 40px 0 20px;
+        }
+
+        @include screen(l) {
+          justify-content: flex-start;
+          margin: 60px 0;
+          padding: 0 50px;
+        }
+
+        .land__container-content {
+          .land__title {
+            @include screen(l) {
+              margin-bottom: 15px;
+              font-weight: 600;
+              letter-spacing: 0.55px;
+            }
+          }
+
+          .land__text {
+            @include screen(l) {
+              max-width: 342px;
+            }
+          }
+        }
+      }
+
+      &--side {
+        .land__text {
+          @include screen(l) {
+            padding-bottom: 40px;
+          }
+        }
+
+        img {
+          @include screen(l) {
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+
+  /* iphone xr */
+  &--white {
+    color: #2b2d30;
+    background: #ffffff;
+
+    @include screen(l) {
+      padding-top: 0;
+    }
+
+    .land__title,
+    .land__text {
+      color: #2b2d30;
+    }
+
+    .land__title {
+      &--top {
+        @include screen(l) {
+          margin-bottom: 20px;
+          font: normal 55px / normal FuturaPT, sans-serif;
+        }
+      }
+    }
+
+    .land__container {
+      background: #f2f3f5;
+
+      &--bottom {
+        background: #ffffff;
+      }
+
+      &--retina {
+        @include screen(xl) {
+          padding: 23px 20px 0px;
+        }
+
+        @include screen(l) {
+          padding: 0 129px 0 50px;
+        }
+
+        img {
+          align-items: flex-start;
+
+          @include screen(xl) {
+            max-width: 240px;
+            max-height: 323px;
+          }
+
+          @include screen(m) {
+            max-width: 270px;
+            max-height: 440px;
+          }
+
+          @include screen(l) {
+            max-width: 270px;
+            max-height: 440px;
+          }
+        }
+
+        .land__grad {
+          @include screen(xl) {
+            margin-bottom: 0;
+            padding: 0 5px;
+          }
+
+          @include screen(l) {
+            padding-top: 50px;
+          }
+        }
+      }
+
+      &--side {
+        @include screen(xl) {
+          padding: 30px 20px 0;
+        }
+
+        @include screen(l) {
+          padding: 0 55px 0 91px;
+        }
+
+        img {
+          @include screen(xl) {
+            max-width: 240px;
+            max-height: 275px;
+          }
+
+          @include screen(xl) {
+            order: 1;
+          }
+
+          @include screen(m) {
+            max-width: 260px;
+            max-height: 412px;
+          }
+
+          @include screen(l) {
+            max-width: 260px;
+            max-height: 412px;
+          }
+        }
+
+        .land__grad {
+          @include screen(xl) {
+            margin-bottom: 27px;
+            padding: 0 5px;
+          }
+
+          @include screen(l) {
+            padding-top: 25px;
+          }
+        }
+      }
+
+      &--camera {
+        @include screen(xl) {
+          padding: 25px 20px 0;
+        }
+
+        @include screen(l) {
+          padding: 50px 70px 0 50px;
+        }
+
+        img {
+          @include screen(xl) {
+            width: 240px;
+            height: 290px;
+          }
+
+          @include screen(xl) {
+            order: 1;
+          }
+
+          @include screen(m) {
+            align-self: flex-end;
+            max-width: 350px;
+            max-height: 420px;
+          }
+
+          @include screen(l) {
+            align-self: flex-end;
+            max-width: 350px;
+            max-height: 420px;
+          }
+        }
+
+        .land__grad {
+          @include screen(xl) {
+            margin-bottom: 20px;
+            padding: 0 5px;
+          }
+
+          @include screen(l) {
+            padding-bottom: 40px;
+          }
+        }
+      }
+
+      &--face-id {
+        img {
+          @include screen(xl) {
+            width: 100%;
+            height: auto;
+            margin-bottom: -6px;
+            max-width: 350px;
+          }
+
+          @include screen(l) {
+            margin-bottom: -6px;
+          }
+        }
+      }
+    }
+
+    .land__features {
+      @include screen(l) {
+        margin-bottom: 130px;
+      }
+    }
+
+    .land__feature-image {
+      fill: #2b2d30;
+    }
+
+    .land__image {
+      &-top {
+        align-self: center;
+
+        @include screen(l) {
+          margin: 0;
+          max-width: 700px;
+          max-height: 395px;
+        }
+      }
+
+      &-middle {
+        @include screen(l) {
+          box-shadow: 40px 0px 0 #000000, -40px 0px 0 #000000;
+        }
+      }
+    }
+  }
+
+  /* iphone X */
+  &--x {
+    align-items: center;
+    background-color: #fafafa;
+    color: #2B2D30;
+
+    @include screen(xl) {
+      padding: 31px 0 0;
+    }
+
+    @include screen(l) {
+      padding: 60px 0 0;
+    }
+
+    .land__container {
+      text-align: left;
+
+      &--characteristic {
+        margin: 0;
+        background-color: #ffffff;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+
+        @include screen(xl) {
+          padding: 31px 28px 0;
+        }
+
+        @include screen(m) {
+          width: 100%;
+        }
+
+        @include screen(l) {
+          padding: 39px 90px 0 90px;
+        }
+
+        .land__image {
+          @include screen(xl) {
+            margin-top: 30px;
+            max-width: 450px;
+          }
+
+          @include screen(l) {
+            align-self: flex-end;
+            max-width: 660px;
+            max-height: 387px;
+          }
+        }
+
+        .land__container-content {
+          @include screen(l) {
+            padding: 19px 0 35px;
+            margin-right: 140px;
+          }
+        }
+
+        .land__title {
+          @include screen(xl) {
+            padding-left: 0;
+          }
+        }
+      }
+
+      &--features {
+        margin: 0;
+        background-color: #ffffff;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+        overflow: hidden;
+
+        @include screen(xl) {
+          flex-direction: column-reverse;
+          padding-bottom: 34px;
+        }
+
+        @include screen(l) {
+          padding: 60px 70px 95px 0;
+        }
+
+        .land__title {
+          &--md {
+            @include screen(xl) {
+              padding-left: 0;
+            }
+          }
+        }
+
+        .land__image {
+          @include screen(xl) {
+            max-width: 500px;
+          }
+
+          @include screen(l) {
+            margin: 10px 0 0 -25px;
+            max-width: 540px;
+            max-height: 386px;
+          }
+        }
+
+        .land__container-content {
+          @include screen(xl) {
+            padding: 28px 26px 0 28px;
+          }
+        }
+
+        .list {
+          @include screen(xl) {
+            margin-bottom: 19px;
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          @include screen(l) {
+            line-height: 1.57;
+          }
+
+          &--green {
+            .list__item {
+              @include screen(xl) {
+                margin-bottom: 15px;
+              }
+            }
+          }
+        }
+      }
+
+      &--bottom {
+        align-items: flex-start;
+        overflow: hidden;
+        margin: 0;
+        color: #ffffff;
+        background-color: #000000;
+
+        @include screen(l) {
+          padding: 0 0 0 90px;
+        }
+
+        .land__container-content {
+          margin: 0;
+          max-width: none;
+
+          @include screen(xl) {
+            padding: 30px 0 0;
+            margin-bottom: 24px;
+          }
+
+          @include screen(l) {
+            padding-top: 57px;
+          }
+        }
+
+        .land__title {
+          &--md {
+            @include screen(xl) {
+              margin-bottom: 20px;
+              padding-left: 28px;
+              max-width: none;
+            }
+
+            @include screen(l) {
+              width: 360px;
+            }
+          }
+        }
+
+        .land__text {
+          &--sm {
+            @include screen(xl) {
+              padding: 0 25px 0 30px;
+              font: normal 16px / 24px Roboto, sans-serif;
+            }
+
+            @include screen(l) {
+              padding-right: 55px;
+              line-height: 1.5;
+            }
+          }
+        }
+
+        .land__image {
+          @include screen(xl) {
+            margin-left: 30px;
+            max-width: 400px;
+            align-self: flex-end;
+          }
+
+          @include screen(l) {
+            margin: 56px -31px 0 0;
+            max-width: 650px;
+            height: 496px;
+          }
+        }
+      }
+
+      .list {
+        font: normal 15px/23px Roboto, sans-serif;
+
+        &__item {
+          padding-left: 18px;
+        }
+
+        &__item:before {
+          top: 7px;
+        }
+      }
+    }
+
+    .land__features {
+      @include screen(xl) {
+        align-items: flex-start;
+        padding: 0 20px 0 21px;
+      }
+
+      @include screen(l) {
+        margin: 76px 0 79px 0;
+        padding: 0 50px 0 91px;
+      }
+
+      .land__text {
+        padding: 0 15px;
+        max-width: none;
+
+        @include screen(xl) {
+          line-height: 24px;
+          font-weight: 500;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .land__feature {
+      @include screen(l) {
+        width: 25%;
+      }
+
+      svg {
+        fill: #000000;
+      }
+    }
+
+    .land__image {
+      width: 100%;
+      height: 100%;
+
+      &-top {
+        @include screen(xl) {
+          margin-bottom: 32px;
+        }
+
+        @include screen(l) {
+          margin-bottom: 41px;
+          max-width: 970px;
+          max-height: 232px;
+        }
+      }
+
+      &-big {
+        @include screen(xl) {
+          max-width: 500px;
+        }
+
+        @include screen(l) {
+          max-width: 880px;
+          max-height: 362px;
+        }
+      }
+    }
+
+    .land__title {
+      &--md {
+        @include screen(l) {
+          padding: 0;
+        }
+      }
+
+      &--l {
+        @include screen(xl) {
+          padding: 0 15px;
+        }
+      }
+
+      &--top {
+        @include screen(xl) {
+          font-size: 24px;
+          margin-bottom: 23px;
+        }
+
+        @include screen(l) {
+          margin-bottom: 26px;
+          font-size: 46px;
+        }
+      }
+    }
+
+    .land__text {
+      &--md {
+        @include screen(l) {
+          margin-bottom: 60px;
+          min-width: 880px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  /* iphone 8 */
+  &--8 {
+    align-items: center;
+    background-color: #fafafa;
+    overflow: hidden;
+
+    @include screen(xl) {
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding: 0;
+    }
+
+    .land__image {
+      @include screen(xl) {
+        width: 100%;
+        height: auto;
+      }
+
+      &-top {
+        @include screen(xl) {
+          width: 300px;
+          height: 300px;
+          box-shadow: 300px 0 0 0 rgb(252, 238, 227),
+            -300px 0 0 0 rgb(252, 238, 227);
+        }
+
+        @include screen(m) {
+          width: 850px;
+          box-shadow: 300px 0 0 0 rgb(252, 238, 227),
+            -300px 0 0 0 rgb(252, 238, 227);
+        }
+
+        @include screen(l) {
+          margin-bottom: 60px;
+          max-width: 1250px;
+          max-height: 580px;
+        }
+      }
+    }
+
+    .land__title {
+      &--md {
+        @include screen(l) {
+          padding: 0;
+        }
+      }
+
+      &--l {
+        @include screen(xl) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .land__text {
+      &--md {
+        @include screen(xl) {
+          padding: 0 15px;
+        }
+
+        @include screen(l) {
+          margin-bottom: 60px;
+          min-width: 900px;
+          font-weight: 300;
+          letter-spacing: 0;
+        }
+      }
+    }
+
+    .land__container {
+      text-align: left;
+
+      &--characteristic {
+        margin: 0;
+        background-color: #ffffff;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+
+        @include screen(xl) {
+          width: 100%;
+          padding-bottom: 50px;
+        }
+
+        @include screen(l) {
+          padding: 44px 190px 57px 90px;
+        }
+
+        .land__image {
+          @include screen(xl) {
+            max-width: 300px;
+            margin-top: 30px;
+          }
+
+          @include screen(l) {
+            max-width: 262px;
+            max-height: 312px;
+          }
+        }
+
+        .land__container-content {
+          @include screen(xl) {
+            padding: 29px 23px 0 26px;
+          }
+
+          @include screen(l) {
+            padding: 0 150px 0 0;
+          }
+        }
+
+        .land__title {
+          @include screen(xl) {
+            padding-left: 4px;
+          }
+        }
+
+        .list {
+          @include screen(xl) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          &__item {
+            @include screen(xl) {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+
+      &--4k {
+        margin: 0;
+        background-color: #ffffff;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+
+        @include screen(xl) {
+          flex-direction: column-reverse;
+          padding: 30px 29px 30px 30px;
+        }
+
+        @include screen(l) {
+          padding: 57px 113px 58px 85px;
+        }
+
+        .land__image {
+          @include screen(xl) {
+            max-width: 450px;
+          }
+
+          @include screen(l) {
+            margin-right: 60px;
+            max-width: 395px;
+            max-height: 321px;
+          }
+        }
+
+        .land__container-content {
+          padding: 0;
+
+          @include screen(xl) {
+            margin-bottom: 25px;
+          }
+        }
+
+        .land__title {
+          @include screen(xl) {
+            padding-left: 0;
+          }
+        }
+
+        .land__text {
+          @include screen(xl) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      &--bottom {
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
+        color: #2b2d30;
+        background-color: #fceee3;
+        border-top: 1px solid #e4e4e4;
+
+        @include screen(xl) {
+          padding: 30px 25px 0 31px;
+        }
+
+        @include screen(l) {
+          padding: 0 47px 0 90px;
+        }
+
+        .land__container-content {
+          margin: 0;
+          max-width: none;
+
+          @include screen(xl) {
+            padding: 0;
+          }
+        }
+
+        .land__title {
+          &--md {
+            @include screen(xl) {
+              padding-left: 0;
+              max-width: none;
+            }
+
+            @include screen(l) {
+              width: 360px;
+            }
+          }
+        }
+
+        .land__text {
+          &--sm {
+            @include screen(xl) {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+
+        .land__image {
+          @include screen(l) {
+            max-width: 585px;
+            height: 413px;
+          }
+        }
+      }
+    }
+
+    .land__features {
+      @include screen(xl) {
+        align-items: flex-start;
+        padding: 0 20px 0 31px;
+      }
+
+      @include screen(l) {
+        padding: 0 90px 0 96px;
+      }
+
+      .land__text {
+        max-width: none;
+
+        @include screen(xl) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .land__feature {
+      @include screen(l) {
+        width: 30%;
+      }
+
+      svg {
+        fill: #000000;
+      }
+    }
+
+    .list__item:before {
+      top: 7px;
+      width: 5px;
+      height: 5px;
+    }
+  }
+
+  /* iphone 7plus */
+  &--7plus {
+    overflow: hidden;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+
+    @include screen(xl) {
+      padding: 40px 0 0;
+    }
+
+    @include screen(l) {
+      padding: 80px 0 0;
+    }
+
+    .land__image {
+      width: 100%;
+      height: auto;
+
+      &--top {
+        @include screen(xl) {
+          max-width: 450px;
+        }
+
+        @include screen(l) {
+          margin-bottom: -50px;
+          max-width: 1198px;
+          max-height: 561px;
+        }
+      }
+
+      &--design {
+        @include screen(xl) {
+          margin: 20px auto 0;
+          max-width: 450px;
+        }
+
+        @include screen(l) {
+          margin: 37px auto 0;
+          max-width: 792px;
+          max-height: 515px;
+        }
+      }
+
+      &--home {
+        @include screen(xl) {
+          margin: -40px 0 0;
+          max-width: 450px;
+        }
+
+        @include screen(l) {
+          margin: -120px auto 60px;
+          max-width: 1170px;
+          max-height: 636px;
+        }
+      }
+
+      &--watertightness {
+        @include screen(m) {
+          max-width: 400px;
+        }
+
+        @include screen(l) {
+          max-width: 527px;
+        }
+      }
+
+      &--camera {
+        @include screen(xl) {
+          margin: 40px 0;
+        }
+
+        @include screen(l) {
+          margin: 7px 0 40px;
+          max-width: 1198px;
+          max-height: 1035px;
+        }
+      }
+
+      &--zoom {
+        @include screen(xl) {
+          margin: 30px 0 20px;
+          max-width: 450px;
+        }
+
+        @include screen(l) {
+          margin: -15px 0 -20px;
+          max-width: 1198px;
+          max-height: 545px;
+        }
+      }
+
+      &--horizontal {
+        @include screen(xl) {
+          margin: 20px 0;
+          max-width: 600px;
+        }
+
+        @include screen(l) {
+          margin: 23px 0 58px;
+          max-width: 1198px;
+          max-height: 487px;
+        }
+      }
+
+      &--cpu {
+        @include screen(xl) {
+          margin: 5px 0 20px;
+          max-width: 450px;
+        }
+
+        @include screen(l) {
+          margin: 8px 0 37px 20px;
+          max-width: 1135px;
+          max-height: 650px;
+        }
+      }
+
+      &--bright {
+        @include screen(xl) {
+          margin: 20px 0;
+          max-width: 450px;
+        }
+
+        @include screen(l) {
+          margin: 15px 0 -10px 0;
+          max-width: 1198px;
+          max-height: 645px;
+        }
+      }
+
+      &--bottom {
+        @include screen(xl) {
+          margin: 20px 0 0;
+          max-width: 450px;
+        }
+
+        @include screen(l) {
+          max-width: 1198px;
+          max-height: 545px;
+        }
+      }
+    }
+
+    .land__title {
+      &--top {
+        @include screen(xl) {
+          margin-bottom: 20px;
+          font: 500 28px/36px FuturaPT, sans-serif;
+        }
+
+        @include screen(l) {
+          font: 500 48px/66px FuturaPT, sans-serif;
+        }
+      }
+
+      &--md {
+        position: relative;
+        z-index: 2;
+        align-self: center;
+        padding: 0;
+        text-align: center;
+
+        @include screen(l) {
+          font-weight: 500;
+        }
+      }
+    }
+
+    .land__text {
+      &--md {
+        position: relative;
+        margin: 0 auto;
+        letter-spacing: 0;
+        font-weight: 300;
+
+        @include screen(xl) {
+          padding: 0 15px;
+        }
+
+        @include screen(m) {
+          max-width: 860px;
+        }
+
+        @include screen(l) {
+          max-width: 860px;
+        }
+      }
+
+      &--top {
+        @include screen(m) {
+          max-width: 740px;
+        }
+
+        @include screen(l) {
+          max-width: 740px;
+        }
+      }
+    }
+
+    .land__container {
+      background: rgb(31, 31, 31);
+      border-radius: 2px;
+
+      @include screen(xl) {
+        margin-bottom: 40px;
+      }
+
+      @include screen(m) {
+        flex-direction: row;
+      }
+
+      @include screen(l) {
+        margin: 0 41px 75px 41px;
+        padding: 0 55px 0 0;
+      }
+
+      &-content {
+        text-align: left;
+
+        @include screen(xl) {
+          padding: 30px;
+        }
+
+        @include screen(l) {
+          padding: 60px 0 60px 23px;
+        }
+      }
+
+      .land__title {
+        &--md {
+          text-align: left;
+
+          @include screen(xl) {
+            font: 500 18px/28px FuturaPT, sans-serif;
+          }
+
+          @include screen(l) {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .land__text {
+        @include screen(xl) {
+          font: 300 14px/22px Roboto, sans-serif;
+        }
+
+        @include screen(l) {
+          font: 300 24px/38px Roboto, sans-serif;
+        }
+      }
+    }
+  }
+
+  /* iphone 6s */
+  &--six-s {
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    color: #2b2d30;
+    background: #ffffff;
+
+    @include screen(xl) {
+      padding-bottom: 0;
+    }
+
+    @include screen(l) {
+      padding: 0;
+    }
+
+    .land__title {
+      &--top {
+        @include screen(xl) {
+          font: 500 28px/36px FuturaPT, sans-serif;
+        }
+
+        @include screen(l) {
+          font: 500 56px/76px FuturaPT, sans-serif;
+        }
+      }
+
+      &--md {
+        padding: 0;
+        align-self: center;
+
+        @include screen(xl) {
+          font: 500 18px/28px FuturaPT, sans-serif;
+        }
+
+        @include screen(l) {
+          font-weight: 500;
+        }
+      }
+
+      &--left {
+        align-self: flex-start;
+
+        @include screen(l) {
+          position: relative;
+          margin: 59px 0 30px 0;
+          padding-left: 91px;
+        }
+      }
+
+      &--right {
+        text-align: left;
+
+        @include screen(xl) {
+          align-self: flex-start;
+        }
+
+        @include screen(l) {
+          position: relative;
+          align-self: flex-end;
+          padding-right: 70px;
+        }
+      }
+    }
+
+    .land__text {
+      &--md {
+        @include screen(xl) {
+          font: 300 14px/22px Roboto, sans-serif;
+        }
+
+        @include screen(l) {
+          max-width: 880px;
+          font-weight: 300;
+        }
+      }
+
+      &--left {
+        position: relative;
+        align-self: flex-start;
+        text-align: left;
+
+        @include screen(l) {
+          margin: 0;
+          padding-left: 90px;
+          max-width: 830px;
+          line-height: 28px;
+          letter-spacing: 0;
+        }
+      }
+
+      &--right {
+        position: relative;
+        text-align: left;
+        align-self: flex-end;
+
+        @include screen(l) {
+          align-self: flex-end;
+          margin: 0 68px 0 0;
+          max-width: 514px;
+        }
+      }
+    }
+
+    .land__container {
+      display: block;
+      margin: 0;
+      width: 100%;
+      background: #fafafa;
+
+      @include screen(l) {
+        padding: 114px 0 21px 0;
+      }
+
+      &-gray {
+        @include screen(xl) {
+          padding: 30px 0 10px;
+          background: #fafafa;
+          box-shadow: 100px 0 0 0 #fafafa, -100px 0 0 0 #fafafa;
+        }
+
+        @include screen(l) {
+          display: flex;
+          flex-direction: column;
+          padding-top: 41px;
+          box-shadow: 30px 0 0 #FAFAFA, -30px 0 0 #FAFAFA;
+        }
+      }
+
+      &-bottom {
+        @include screen(xl) {
+          box-shadow: 100px 0 0 0 #fafafa, -100px 0 0 0 #fafafa;
+        }
+      }
+
+      &-content {
+        position: relative;
+
+        @include screen(l) {
+          align-self: flex-start;
+          padding-left: 91px;
+        }
+      }
+
+      .land__text {
+        &--md {
+          @include screen(xl) {
+            text-align: left;
+
+            br {
+              display: none;
+            }
+          }
+
+          @include screen(l) {
+            margin: 0;
+            max-width: none;
+            text-align: left;
+            letter-spacing: 0;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    .land__image {
+      width: 100%;
+      height: auto;
+
+      &--top {
+        @include screen(l) {
+          margin: 0 63px -57px 0;
+          max-width: 709px;
+          max-height: 700px;
+        }
+      }
+
+      &--touch {
+        @include screen(xl) {
+          margin: 20px 0 30px;
+        }
+
+        @include screen(l) {
+          margin: 12px 0 60px;
+          max-width: 1200px;
+          max-height: 574px;
+        }
+      }
+
+      &--camera {
+        @include screen(xl) {
+          margin: -30px 0 20px;
+          max-width: 700px;
+        }
+
+        @include screen(l) {
+          margin: -309px 0 100px;
+          max-width: 1197px;
+          max-height: 734px;
+        }
+      }
+
+      &--cpu {
+        @include screen(xl) {
+          margin-top: -35px;
+          max-width: 500px;
+        }
+
+        @include screen(l) {
+          margin: -400px 0 0;
+          max-width: 1169px;
+          max-height: 626px;
+          box-shadow: 0 20px 0 #fafafa;
+        }
+      }
+
+      &--bottom {
+        @include screen(xl) {
+          max-width: 500px;
+        }
+
+        @include screen(l) {
+          margin: -194px 55px 0 0;
+          max-width: 1196px;
+          max-height: 577px;
+        }
+      }
+    }
+  }
+
+  /* iphone 7 */
+  &--7 {
+    overflow: hidden;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+
+    @include screen(xl) {
+      padding: 40px 0 0;
+    }
+
+    @include screen(l) {
+      padding: 80px 0 0;
+    }
+
+    .land__image {
+      width: 100%;
+      height: auto;
+
+      &--top {
+        @include screen(xl) {
+          margin-bottom: 30px;
+        }
+
+        @include screen(m) {
+          margin-bottom: 30px;
+          max-width: 500px;
+          transform: translateX(44%);
+        }
+
+        @include screen(l) {
+          align-self: flex-end;
+          margin: 0 0 60px 185px;
+          max-width: 1035px;
+          max-height: 448px;
+        }
+      }
+
+      &--design {
+        @include screen(xl) {
+          margin: -15px 0 5px;
+          max-width: 450px;
+        }
+
+        @include screen(l) {
+          align-self: center;
+          margin: -60px 0 -110px 0;
+          max-width: 780px;
+          max-height: 652px;
+        }
+      }
+
+      &--home {
+        @include screen(xl) {
+          padding: 0 30px;
+          margin: 20px 0 80px;
+          max-width: 450px;
+        }
+
+        @include screen(l) {
+          align-self: center;
+          margin-bottom: 67px;
+          max-width: 456px;
+          max-height: 322px;
+        }
+      }
+
+      &--camera {
+        @include screen(xl) {
+          margin: 30px 0;
+        }
+
+        @include screen(m) {
+          margin: -250px 0 0;
+          max-width: 750px;
+        }
+
+        @include screen(l) {
+          margin: -388px 0 20px;
+        }
+      }
+
+      &--cpu {
+        @include screen(xl) {
+          margin: 6px 0 30px;
+          max-width: 500px;
+        }
+
+        @include screen(m) {
+          margin: 6px 0 30px;
+          max-width: 750px;
+        }
+
+        @include screen(l) {
+          margin: 48px 0 91px 20px;
+          max-width: 1135px;
+          max-height: 650px;
+        }
+      }
+
+      &--bright {
+        @include screen(xl) {
+          margin: 20px 0 30px;
+        }
+
+        @include screen(m) {
+          max-width: 750px;
+          margin: -100px 0 30px;
+        }
+
+        @include screen(l) {
+          margin: -323px 0 30px;
+          max-width: 1198px;
+          max-height: 960px;
+        }
+      }
+
+      &--bottom {
+        @include screen(xl) {
+          margin-top: 20px;
+        }
+
+        @include screen(m) {
+          max-width: 750px;
+          margin-top: 20px;
+        }
+
+        @include screen(l) {
+          margin-top: 5px;
+          max-width: 1198px;
+          max-height: 545px;
+        }
+      }
+    }
+
+    .land__title {
+      &--top {
+        @include screen(xl) {
+          margin-bottom: 20px;
+          font: 500 28px/36px FuturaPT, sans-serif;
+        }
+
+        @include screen(l) {
+          font: 500 48px/66px FuturaPT, sans-serif;
+        }
+      }
+
+      &--md {
+        position: relative;
+        z-index: 2;
+        align-self: center;
+        padding: 0;
+        text-align: center;
+
+        @include screen(l) {
+          font-weight: 500;
+        }
+      }
+    }
+
+    .land__text {
+      &--md {
+        position: relative;
+        margin: 0 auto;
+        letter-spacing: 0;
+        font-weight: 300;
+
+        @include screen(xl) {
+          padding: 0 15px;
+        }
+
+        @include screen(m) {
+          max-width: 860px;
+        }
+
+        @include screen(l) {
+          max-width: 860px;
+        }
+      }
+
+      &--top {
+        @include screen(m) {
+          max-width: 740px;
+        }
+
+        @include screen(l) {
+          max-width: 740px;
+        }
+      }
+    }
+
+    .land__container {
+      @include screen(xl) {
+        padding-top: 70%;
+        margin-bottom: 60px;
+        background: url("../img/pic/descriptions/land-7-4-mobile.jpg") top center/ contain no-repeat;
+      }
+
+      @include screen(m) {
+        padding-top: 35%;
+        margin-bottom: 60px;
+        background: url("../img/pic/descriptions/land-7-4-mobile.jpg") top right/ 50% no-repeat;
+      }
+
+      @include screen(l) {
+        padding: 53px 0 53px 125px;
+        margin-bottom: 70px;
+        background: url("../img/pic/descriptions/land-7-4.jpg") 100% 82%/ 100% no-repeat;
+      }
+
+      &-content {
+        text-align: left;
+
+        @include screen(xl) {
+          padding: 0 8%;
+        }
+
+        @include screen(l) {
+          max-width: 485px;
+        }
+      }
+
+      .land__title {
+        &--md {
+          text-align: left;
+
+          @include screen(xl) {
+            font: 500 18px/28px FuturaPT, sans-serif;
+          }
+
+          @include screen(l) {
+            font-weight: 600;
+          }
+        }
+      }
+
+      .land__text {
+        @include screen(xl) {
+          font: 300 14px/22px Roboto, sans-serif;
+        }
+
+        @include screen(l) {
+          font: 300 24px/38px Roboto, sans-serif;
+        }
+      }
+    }
+  }
+
+  /* iphone 8plus */
+  &--8plus {
+    align-items: center;
+    background-color: #fafafa;
+    overflow: hidden;
+
+    @include screen(xl) {
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding: 0;
+    }
+
+    .land__image {
+      @include screen(xl) {
+        width: 100%;
+        height: auto;
+      }
+
+      &-top {
+        @include screen(xl) {
+          width: 300px;
+          height: 300px;
+          box-shadow: 300px 0 0 0 rgb(252, 238, 227),
+            -300px 0 0 0 rgb(252, 238, 227);
+        }
+
+        @include screen(m) {
+          width: 850px;
+          box-shadow: 300px 0 0 0 rgb(252, 238, 227),
+            -300px 0 0 0 rgb(252, 238, 227);
+        }
+
+        @include screen(l) {
+          margin-bottom: 60px;
+          max-width: 1250px;
+          max-height: 580px;
+        }
+      }
+    }
+
+    .land__title {
+      &--md {
+        @include screen(l) {
+          padding: 0;
+        }
+      }
+
+      &--l {
+        @include screen(xl) {
+          margin-bottom: 20px;
+          max-width: 200px;
+        }
+      }
+    }
+
+    .land__text {
+      &--md {
+        @include screen(xl) {
+          padding: 0 15px;
+        }
+
+        @include screen(l) {
+          margin-bottom: 60px;
+          min-width: 900px;
+          font-weight: 300;
+          letter-spacing: 0;
+        }
+      }
+    }
+
+    .land__container {
+      text-align: left;
+
+      &--characteristic {
+        width: 100%;
+        margin: 0;
+        background-color: #ffffff;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+
+        @include screen(l) {
+          padding: 10px 100px 0px 90px;
+        }
+
+        .land__image {
+          @include screen(xl) {
+            max-width: 300px;
+          }
+
+          @include screen(l) {
+            max-width: 337px;
+            max-height: 404px;
+          }
+        }
+
+        .land__container-content {
+          @include screen(xl) {
+            padding: 29px 23px 0 26px;
+          }
+
+          @include screen(l) {
+            padding: 50px 150px 0 0;
+          }
+        }
+
+        .land__title {
+          @include screen(xl) {
+            padding-left: 4px;
+          }
+        }
+
+        .list {
+          @include screen(xl) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          &__item {
+            @include screen(xl) {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+
+      &--4k {
+        margin: 0;
+        background-color: #ffffff;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
+
+        @include screen(xl) {
+          flex-direction: column-reverse;
+          padding: 30px 29px 30px 30px;
+        }
+
+        @include screen(l) {
+          padding: 57px 113px 58px 85px;
+        }
+
+        .land__image {
+          @include screen(l) {
+            margin-right: 60px;
+            max-width: 299px;
+            max-height: 330px;
+          }
+        }
+
+        .land__container-content {
+          padding: 0;
+
+          @include screen(xl) {
+            margin-bottom: 25px;
+          }
+
+          @include screen(l) {
+            padding-left: 100px;
+          }
+        }
+
+        .land__title {
+          @include screen(xl) {
+            padding-left: 0;
+          }
+        }
+
+        .land__text {
+          @include screen(xl) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      &--bottom {
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
+        color: #2b2d30;
+        background-color: #fceee3;
+        border-top: 1px solid #e4e4e4;
+
+        @include screen(xl) {
+          padding: 30px 25px 0 31px;
+        }
+
+        @include screen(l) {
+          padding: 0 47px 0 90px;
+        }
+
+        .land__container-content {
+          margin: 0;
+          max-width: none;
+
+          @include screen(xl) {
+            padding: 0;
+          }
+        }
+
+        .land__title {
+          &--md {
+            @include screen(xl) {
+              padding-left: 0;
+              max-width: none;
+            }
+
+            @include screen(l) {
+              width: 360px;
+            }
+          }
+        }
+
+        .land__text {
+          &--sm {
+            @include screen(xl) {
+              font-size: 16px;
+              line-height: 24px;
+            }
+
+            @include screen(l) {
+              padding-right: 65px;
+            }
+          }
+        }
+
+        .land__image {
+          @include screen(l) {
+            max-width: 473px;
+            height: 413px;
+          }
+        }
+      }
+    }
+
+    .land__features {
+      @include screen(xl) {
+        align-items: flex-start;
+        padding: 0 20px 0 31px;
+      }
+
+      @include screen(l) {
+        padding: 0 90px 0 96px;
+      }
+
+      .land__text {
+        max-width: none;
+
+        @include screen(xl) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .land__feature {
+      @include screen(l) {
+        width: 30%;
+      }
+
+      svg {
+        fill: #000000;
+      }
+    }
+
+    .list__item:before {
+      top: 7px;
+      width: 5px;
+      height: 5px;
+    }
+  }
+
+
+  /* list */
+  .list__item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 4px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #000;
+    }
+
+    &--small {
+      font-size: 12px;
+      margin: 0 0 0 14px;
+    }
+
+    .list--compact & {
+      padding-left: 9px;
+
+      @include screen(xl) {
+        margin-bottom: 10px;
+        line-height: 1.6;
+      }
+
+      @include screen(l) {
+        margin-bottom: 3px;
+        line-height: 1.5;
+      }
+
+      &:before {
+        top: 8px;
+        left: 2px;
+        width: 3px;
+        height: 3px;
+      }
+    }
+  }
+
+  .list--ul {
+    .list__item {
+      position: relative;
+      margin-bottom: 5px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 15px;
+        height: 15px;
+        background: url("../img/pic/ico/check.svg") no-repeat;
+      }
+    }
+  }
+
+  .list--ol {
+    list-style-type: none;
+    counter-reset: num;
+
+    .list__item {
+      margin-bottom: 5px;
+
+      &::before {
+        content: counter(num) ". ";
+        top: 0;
+        left: 0;
+        counter-increment: num;
+        font: bold 14px/24px Roboto, sans-serif;
+        color: #15d743;
+        background: transparent;
+      }
+    }
+  }
+
+  .list__title {
+    margin-bottom: 15px;
+    font: 500 16px/17px FuturaPT, sans-serif;
+    color: #333333;
+  }
+
+  .list__wrap {
+    margin-top: 10px;
+  }
+
+  .list--light {
+    .list__item {
+      margin-bottom: 15px;
+
+      &:before {
+        background-color: #e6e8e7;
+      }
+    }
+  }
+
+  .list--columned {
+    @include screen(xl) {
+      column-count: 2;
+    }
+
+    @include screen(l) {
+      column-count: 2;
+    }
+  }
+
+  .list--green {
+    .list__item {
+      padding-left: 20px;
+
+      @include screen(xl) {
+        margin-bottom: 18px;
+      }
+
+      @include screen(l) {
+        margin-bottom: 18px;
+      }
+
+      &:before {
+        top: 30%;
+        left: 0;
+        width: 7px;
+        height: 7px;
+        background-color: #4bd964;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .list--simple {
+    li {
+      @include screen(xl) {
+        margin-bottom: 17px;
+      }
+
+      @include screen(l) {
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+  .list--numered {
+    margin-bottom: 35px;
+
+    li {
+      @include screen(xl) {
+        margin-bottom: 24px;
+        line-height: normal;
+      }
+
+      @include screen(l) {
+        margin-bottom: 18px;
+        line-height: normal;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .list--bordered {
+    margin: 0 0 5px;
+
+    li {
+      color: #30373d;
+      padding: 2px 15px;
+      border-left: 2px solid #b9baba;
+    }
+  }
+}

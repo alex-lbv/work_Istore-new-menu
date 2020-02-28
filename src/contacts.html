@@ -1,0 +1,194 @@
+//= components/head.html
+
+<body class="contacts">
+  //= components/header.html
+  <div class="contacts__wrapper uk-container bg-full-width--gradient">
+    <div class="frame" uk-filter="target: .contacts-filter">
+      <ul class="breadcrumbs uk-subnav uk-subnav-divider">
+        <li><a href="#">Главная</a></li>
+        <li class="uk-active"><a href="#">Контакты</a></li>
+      </ul>
+
+      <div class="contacts__header uk-flex uk-flex-between uk-flex-wrap">
+        <h1 class="title title--medium">Контакты и адреса пунктов выдачи</h1>
+        <div class="uk-flex uk-flex-middle uk-flex-wrap">
+          <label class="uk-margin-right">Ваш город</label>
+          <select>
+            <option value="filter: .map-spb" data-display="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="filter: .map-moscow">Москва</option>
+          </select>
+        </div>
+      </div>
+
+      <ul class="contacts-filter">
+        <li class="map-spb">
+          <div class="contacts__switcher">
+            <ul class="uk-subnav" uk-switcher>
+              <li>
+                <a href="#">Списком</a>
+              </li>
+              <li>
+                <a href="#">На карте</a>
+              </li>
+            </ul>
+
+            <ul class="uk-switcher">
+              <li>
+                <ul class="contacts__list">
+                  <li class="contacts__item active">
+                    <div class="contacts__info uk-flex uk-flex-column"
+                      onclick="$('#c1').select().focus(); document.execCommand('copy');$('#v1').show().hide(2200);">
+                      <span id="v1" class="contacts__info-text-copy">Скопировано</span>
+                      <span class="contacts__info-title">Савеловская</span>
+                      <input id="c1" class="contacts__info-address" value="Сущевский Вал 5 с 6" readonly>
+                      <span class="contacts__info-phone">0987654321</span>
+                      <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <div class="contacts__info uk-flex uk-flex-column"
+                      onclick="$('#c2').select().focus(); document.execCommand('copy');$('#v2').show().hide(2200);">
+                      <span id="v2" class="contacts__info-text-copy">Скопировано</span>
+                      <span class="contacts__info-title">Ломоновский проспект</span>
+                      <input id="c2" class="contacts__info-address" value="ул. Мосфильмовская 31" readonly>
+                      <span class="contacts__info-phone">0987654321</span>
+                      <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <div class="contacts__info uk-flex uk-flex-column"
+                      onclick="$('#c3').select().focus(); document.execCommand('copy');$('#v3').show().hide(2200);">
+                      <span id="v3" class="contacts__info-text-copy">Скопировано</span>
+                      <span class="contacts__info-title">Ломоновский проспект</span>
+                      <input id="c3" class="contacts__info-address" value="ул. Озерная 38" readonly>
+                      <span class="contacts__info-phone">0987654321</span>
+                      <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <div class="contacts__info uk-flex uk-flex-column"
+                      onclick="$('#c4').select().focus(); document.execCommand('copy');$('#v4').show().hide(2200);">
+                      <span id="v4" class="contacts__info-text-copy">Скопировано</span>
+                      <span class="contacts__info-title">Ломоновский проспект</span>
+                      <input id="c4" class="contacts__info-address" value="ул. Зеленодельская 121/35," readonly>
+                      <span class="contacts__info-phone">0987654321</span>
+                      <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <div class="contacts__info uk-flex uk-flex-column"
+                      onclick="$('#c5').select().focus(); document.execCommand('copy');$('#v5').show().hide(2200);">
+                      <span id="v5" class="contacts__info-text-copy">Скопировано</span>
+                      <span class="contacts__info-title">Ломоновский проспект</span>
+                      <input id="c5" class="contacts__info-address" value="Ломоновский проспект 1" readonly>
+                      <span class="contacts__info-phone">0987654321</span>
+                      <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <div class="contacts__info uk-flex uk-flex-column"
+                      onclick="$('#c6').select().focus(); document.execCommand('copy');$('#v6').show().hide(2200);">
+                      <span id="v6" class="contacts__info-text-copy">Скопировано</span>
+                      <span class="contacts__info-title">Ломоновский проспект</span>
+                      <input id="c6" class="contacts__info-address" value="Ломоновский проспект 2" readonly>
+                      <span class="contacts__info-phone">0987654321</span>
+                      <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <div class="contacts__info uk-flex uk-flex-column"
+                      onclick="$('#c7').select().focus(); document.execCommand('copy');$('#v7').show().hide(2200);">
+                      <span id="v7" class="contacts__info-text-copy">Скопировано</span>
+                      <span class="contacts__info-title">Ломоновский проспект</span>
+                      <input id="c7" class="contacts__info-address" value="Ломоновский проспект 3" readonly>
+                      <span class="contacts__info-phone">0987654321</span>
+                      <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <div class="contacts__info uk-flex uk-flex-column"
+                      onclick="$('#c8').select().focus(); document.execCommand('copy');$('#v8').show().hide(2200);">
+                      <span id="v8" class="contacts__info-text-copy">Скопировано</span>
+                      <span class="contacts__info-title">Ломоновский проспект</span>
+                      <input id="c8" class="contacts__info-address" value="Ломоновский проспект 4" readonly>
+                      <span class="contacts__info-phone">0987654321</span>
+                      <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <iframe class="contacts__map"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53787.65773638526!2d30.337858222679674!3d59.93387135736224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562672617310!5m2!1sru!2sru"
+                  width="750" height="470" style="border:0" allowfullscreen></iframe>
+                <div class="contacts__info contacts__info--on-map uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Кузьминки</span>
+                  <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                  <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="map-moscow">
+          <div class="contacts__switcher">
+            <ul class="uk-subnav" uk-switcher>
+              <li>
+                <a href="#">Списком</a>
+              </li>
+              <li>
+                <a href="#">На карте</a>
+              </li>
+            </ul>
+
+            <ul class="uk-switcher">
+              <li>
+                <ul class="contacts__list">
+                  <li class="contacts__item active">
+                    <div class="contacts__info uk-flex uk-flex-column"
+                      onclick="$('#c1').select().focus(); document.execCommand('copy');$('#v1').show().hide(2200);">
+                      <span id="v1" class="contacts__info-text-copy">Скопировано</span>
+                      <span class="contacts__info-title">Савеловская</span>
+                      <input id="c1" class="contacts__info-address" value="Сущевский Вал 5 с 6" readonly>
+                      <span class="contacts__info-phone">0987654321</span>
+                      <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <div class="contacts__info uk-flex uk-flex-column"
+                      onclick="$('#c2').select().focus(); document.execCommand('copy');$('#v2').show().hide(2200);">
+                      <span id="v2" class="contacts__info-text-copy">Скопировано</span>
+                      <span class="contacts__info-title">Ломоновский проспект</span>
+                      <input id="c2" class="contacts__info-address" value="ул. Мосфильмовская 31" readonly>
+                      <span class="contacts__info-phone">0987654321</span>
+                      <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <iframe class="contacts__map"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53787.65773638526!2d30.337858222679674!3d59.93387135736224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562672617310!5m2!1sru!2sru"
+                  width="750" height="470" style="border:0" allowfullscreen></iframe>
+                <div class="contacts__info contacts__info--on-map uk-flex uk-flex-column">
+                  <span class="contacts__info-title">Кузьминки</span>
+                  <span class="contacts__info-address">ул. Зеленодельская 121/35,</span>
+                  <span class="contacts__info-phone">0987654321</span>
+                  <span class="contacts__info-time">Время работы: <br>Сб-Вс 10:00-18:00, Пн-Пт 10:00-20:00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  //= components/subscribe.html
+  //= components/footer.html
+</body>
+//= components/bottom.html

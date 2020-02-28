@@ -1,0 +1,56 @@
+.accordion {
+  background: $white;
+  box-shadow: 0px 2px 7px $black-opacity-05;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .uk-accordion-title {
+    padding: 15px 20px 15px 25px;
+    font: 600 16px/28px FuturaPT;
+    text-transform: uppercase;
+    background-color: $white;
+
+    &::before {
+      width: 25px;
+      height: 25px;
+      background: url("../img/pic/ico/arrow-bottom-ico.svg") no-repeat, $gray-7;
+      background-size: 10px 7px;
+      background-position: center;
+      border-radius: 50%;
+      transition: transform .3s;
+    }
+  }
+
+  li {
+    &:not(:last-of-type) {
+      .uk-accordion-title {
+        border-bottom: 1px solid $gray-7;
+      }
+
+      .uk-accordion-content {
+        border-bottom: 1px solid $gray-7;
+      }
+    }
+
+    &:last-of-type.uk-open .uk-accordion-title {
+      border-bottom: 1px solid $gray-7;
+    }
+  }
+
+  .uk-accordion-title:hover,
+  .uk-accordion-title:focus {
+    color: $main-black-color;
+  }
+
+  li.uk-open {
+    &>.uk-accordion-title::before {
+      transform: rotate(-180deg);
+    }
+  }
+
+  .uk-accordion-content {
+    margin: 0;
+    padding: 20px 20px 20px 25px;
+    background-color: $gray-light;
+  }
+}

@@ -1,0 +1,421 @@
+.account {
+  &__wrapper {
+    @include screen(xl) {
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding-top: 20px;
+    }
+  }
+
+  .frame {
+    .title {
+      @include screen(l) {
+        padding: 30px 30px 0 30px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &__list {
+    border-bottom: 1px solid $gray-10-opacity-5;
+
+    @include screen(xl) {
+      overflow: scroll;
+      padding: 0 15px;
+    }
+
+    @include screen(l) {
+      padding: 0 30px;
+    }
+
+    a:not(.account__logout) {
+      display: inline-block;
+      padding: 0 15px 10px;
+      font: 500 16px/24px FuturaPT;
+      color: $second-black-color;
+    }
+
+    a {
+      white-space: nowrap;
+    }
+
+    li.active a {
+      position: relative;
+      color: $main-color;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 6px;
+        background-color: $main-color;
+        border-radius: 100px 100px 0px 0px;
+      }
+    }
+
+    li {
+      &:not(:last-of-type) {
+        @include screen(l) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+  &__logout {
+    position: relative;
+    padding: 0 30px 0 0;
+    display: inline-block;
+    font: 500 16px/24px FuturaPT;
+    color: $main-color;
+
+    svg {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  .account__date {
+    font: normal 14px/24px Roboto;
+    color: $main-black-color;
+
+    @include screen(xl) {
+      align-self: flex-start;
+    }
+
+    @include screen (l) {
+      text-align: right;
+    }
+  }
+
+  .account__order-status {
+    text-align: right;
+    font: normal 14px/24px Roboto;
+
+    &--process {
+      color: $orange-2;
+    }
+
+    &--transit {
+      color: $blue;
+    }
+
+    &--done {
+      color: $green;
+    }
+  }
+
+  .account__order-number {
+    font: 700 18px/24px Roboto;
+    color: $main-color;
+  }
+
+  .account__info-list {
+    li {
+      &:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .account__container-link {
+    border-bottom: 1px solid transparent;
+    font: 500 16px/22px FuturaPT;
+    color: $main-color;
+
+    @include screen(l) {
+      display: inline-block;
+      width: max-content;
+      transition: border .3s;
+    }
+
+    &:hover {
+      @include screen(l) {
+        border-color: $main-color;
+      }
+    }
+  }
+
+  .account__container-title {
+    display: inline-block;
+    font: 500 24px/28px FuturaPT;
+    color: $main-black-color;
+  }
+
+  /* main */
+  &--main {
+    .account {
+      &__content {
+        @include screen(xl) {
+          padding: 20px;
+        }
+
+        @include screen(l) {
+          padding: 30px;
+        }
+      }
+
+      &__container {
+        border-radius: 15px;
+        font: normal 14px/24px FuturaPT;
+
+        @include screen(xl) {
+          padding: 20px;
+        }
+
+        @include screen(l) {
+          padding: 20px 30px;
+        }
+
+        .account__container-link {
+          @include screen(l) {
+            width: auto;
+            margin: 0 35px 0 0;
+          }
+        }
+
+        &--cart {
+          min-height: 220px;
+          color: $white-opacity-7;
+          background: $third-color;
+
+          .account__container-link {
+            @include screen(xl) {
+              margin-top: 30px;
+            }
+          }
+
+          .account__container-left {
+            @include screen(xl) {
+              padding-bottom: 10px;
+              margin-bottom: 10px;
+              border-bottom: 1px solid $white-opacity-2;
+            }
+
+            @include screen(l) {
+              margin-right: 30px;
+              border-right: 1px solid $white-opacity-2;
+            }
+          }
+
+          .account__container-right {
+            font: normal 18px/24px Roboto;
+            color: $white;
+
+            li {
+              &:not(:last-of-type) {
+                margin-bottom: 15px;
+              }
+            }
+          }
+
+          .account__container-title {
+            margin-bottom: 5px;
+            color: $white;
+          }
+        }
+
+        &--order {
+          color: $main-black-color-opacity-7;
+          background: $gray-light;
+          border: 1px solid $gray-3;
+
+          .account__container-link {
+            @include screen(xl) {
+              padding-top: 20px;
+              margin-top: 15px;
+              border-top: 1px solid $black-opacity-1;
+            }
+          }
+
+          .account__container-left {
+            @include screen(xl) {
+              padding-bottom: 10px;
+              margin-bottom: 10px;
+              border-bottom: 1px solid $black-opacity-1;
+            }
+
+            @include screen(l) {
+              margin-right: 30px;
+              border-right: 1px solid $black-opacity-1;
+            }
+          }
+
+          .account__container-right {
+            &>li:not(:first-of-type) {
+              border-top: 1px solid $black-opacity-1;
+
+              @include screen(xl) {
+                margin-top: 15px;
+                padding-top: 15px;
+              }
+
+              @include screen(l) {
+                margin-top: 20px;
+                padding-top: 20px;
+              }
+            }
+          }
+
+          .account__container-title {
+            margin-bottom: 5px;
+            color: $main-black-color;
+          }
+        }
+      }
+    }
+  }
+
+  /* cashback */
+  &--cashback {
+    .account {
+      &__content {
+        @include screen(xl) {
+          padding: 20px;
+        }
+
+        @include screen(l) {
+          padding: 30px;
+        }
+      }
+
+      &__cashback {
+        &-header {
+          padding: 20px 25px;
+          color: $white;
+          background: $third-color;
+          border-radius: 15px;
+
+          span {
+            &:first-of-type {
+              font: normal 18px/24px Roboto;
+
+              @include screen(xl) {
+                margin-bottom: 15px;
+              }
+            }
+
+            &:last-of-type {
+              font: 700 24px/24px Roboto;
+            }
+          }
+        }
+
+        &-list {
+          li {
+            padding: 20px 0;
+
+            &:not(:first-of-type) {
+              border-top: 1px solid $black-opacity-1;
+            }
+          }
+        }
+
+        &-subtitle {
+          font: 700 18px/24px Roboto;
+          color: $main-black-color;
+        }
+      }
+    }
+  }
+
+  /* orders */
+  &--orders {
+    .account {
+      &__content {
+        @include screen(xl) {
+          padding: 20px;
+        }
+
+        @include screen(l) {
+          padding: 30px;
+        }
+      }
+
+      &__info-list {
+        color: rgba(48, 55, 61, .7);
+      }
+
+      &__container-link {
+        padding: 0;
+        white-space: nowrap;
+        font: normal 14px/24px Roboto;
+
+        @include screen(l) {
+          margin-right: 30px;
+        }
+      }
+
+      &__date {
+        white-space: nowrap;
+      }
+
+      &__order-list {
+        &>li {
+          margin-bottom: 20px;
+
+          &:not(:first-of-type) {
+            padding-top: 20px;
+            border-top: 1px solid $black-opacity-1;
+          }
+        }
+      }
+    }
+  }
+
+  /* reviews */
+  &--reviews {
+    .account {
+      &__container {
+        @include screen(xl) {
+          padding: 20px;
+        }
+
+        @include screen(l) {
+          padding: 30px;
+        }
+
+        &:first-of-type {
+          .btn {
+            margin-top: 20px;
+            padding: 15px;
+            font: 600 16px/19px FuturaPT;
+            text-transform: uppercase;
+          }
+        }
+
+        &:not(:first-of-type) {
+          border-top: 1px solid $black-opacity-1;
+        }
+
+        &-link {
+          font: normal 14px/22px Roboto;
+        }
+      }
+    }
+  }
+
+  /* cart */
+  &--cart {
+    .account {
+      &__content {
+        @include screen(xl) {
+          padding: 20px;
+        }
+
+        @include screen(l) {
+          padding: 30px;
+        }
+      }
+    }
+  }
+}

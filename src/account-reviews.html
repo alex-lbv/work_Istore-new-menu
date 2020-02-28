@@ -1,0 +1,115 @@
+//= components/head.html
+
+<body class="account account--reviews">
+  //= components/header.html
+  <div class="account__wrapper uk-container bg-full-width--gradient">
+    <div class="frame uk-flex uk-flex-column-reverse@s">
+
+      <div class="uk-width-expand@l">
+        <h1 class="title title--medium uk-margin-bottom@s uk-visible@l">Здравствуйте, Василий!</h1>
+        <ul class="account__list uk-flex">
+          <li>
+            <a href="account-main.html">Главная</a>
+          </li>
+          <!-- <li>
+            <a href="account-cart.html">Мои товары</a>
+          </li> -->
+          <li>
+            <a href="account-orders.html">Мои заказы</a>
+          </li>
+          <li>
+            <a href="account-cashback.html">Кешбэк</a>
+          </li>
+          <li class="active">
+            <a href=""><span class="uk-visible@l">Отзывы и обратная связь</span><span class="uk-hidden@l">Задать
+                вопрос</span></a>
+          </li>
+          <!--  <li class="uk-visible@l">
+            <a class="account__logout" href="#">Выйти
+              <svg width="20" height="20" fill="#FF548C">
+                <use xlink:href="img/symbol/sprite.svg#log-out" />
+              </svg>
+            </a>
+          </li> -->
+        </ul>
+
+        <div class="account__content">
+          <div class="account__container">
+            <span class="account__container-title uk-margin-bottom">Задать вопрос</span>
+            <div class="uk-flex uk-flex-column@s">
+              <!-- <div class="uk-flex uk-flex-column uk-width-1-3@l uk-margin-right@l uk-margin-bottom@s">
+                <div class="field field--account uk-margin-bottom">
+                  <label for="" class="field__title">Тема вопроса</label>
+                  <input type="text">
+                </div>
+                <div class="field field--account">
+                  <label for="" class="field__title">Емейл для ответа</label>
+                  <input type="email">
+                </div>
+              </div> -->
+              <div class="field field--account uk-width-expand@l">
+                <label for="" class="field__title">Опишите свой вопрос</label>
+                <textarea rows="150"></textarea>
+              </div>
+            </div>
+            <button class="btn">Отправить сообщение</button>
+          </div>
+
+          <div class="account__container">
+            <span class="account__container-title uk-margin-bottom">Ваши вопросы</span>
+            <ul class="uk-flex uk-flex-column uk-margin-bottom">
+              <li class="review uk-flex uk-flex-column uk-margin-bottom">
+                <img class="uk-margin-right" src="img/pic/ico/avatar-ico.svg" width="60" height="60" alt="">
+                <span class="review__name">Женя</span>
+                <p class="review__text uk-margin-bottom@s">Покупал телефон подружке на день рождения, так что как он
+                  себя ведёт особо не
+                  знаю, но судя по всему всё красиво. Заказ оформили за считаные минуты, и доставка не заставила ждать,
+                  телефон привезли за 4 часа. При проверке телефон выглядел отлично, и IMEI сошёлся. Ну вроде не
+                  жалуется, так что телефон нормальный.</p>
+                <div class="uk-flex uk-flex-between">
+                  <span class="review__date">20 сентября 2019</span>
+                  <div class="uk-flex uk-visible@l">
+                    <a class="account__container-link uk-margin-right" href="#">Удалить</a>
+                    <a class="account__container-link" href="#">Изменить</a>
+                  </div>
+                </div>
+                <div class="uk-flex uk-flex-row-reverse uk-flex-last uk-hidden@l">
+                  <a class="account__container-link" href="#">Удалить</a>
+                  <a class="account__container-link uk-margin-right" href="#">Изменить</a>
+                </div>
+              </li>
+
+              <li class="review uk-flex uk-flex-column">
+                <img class="uk-margin-right" src="img/pic/ico/avatar-ico.svg" width="60" height="60" alt="">
+                <span class="review__name">Женя</span>
+                <p class="review__text uk-margin-bottom@s">Покупал телефон подружке на день рождения, так что как он
+                  себя ведёт особо не
+                  знаю, но судя по всему всё красиво. Заказ оформили за считаные минуты, и доставка не заставила ждать,
+                  телефон привезли за 4 часа. При проверке телефон выглядел отлично, и IMEI сошёлся. Ну вроде не
+                  жалуется, так что телефон нормальный.</p>
+                <div class="uk-flex uk-flex-between">
+                  <span class="review__date">20 сентября 2019</span>
+                  <div class="uk-flex uk-visible@l">
+                    <a class="account__container-link uk-margin-right" href="#">Удалить</a>
+                    <a class="account__container-link" href="#">Изменить</a>
+                  </div>
+                </div>
+                <div class="uk-flex uk-flex-row-reverse uk-flex-last uk-hidden@l">
+                  <a class="account__container-link" href="#">Удалить</a>
+                  <a class="account__container-link uk-margin-right" href="#">Изменить</a>
+                </div>
+              </li>
+            </ul>
+            //= components/pagination.html
+          </div>
+        </div>
+      </div>
+
+      //= components/account-profile.html
+    </div>
+  </div>
+
+  //= components/subscribe.html
+  //= components/footer.html
+</body>
+//= components/bottom.html

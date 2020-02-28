@@ -1,0 +1,62 @@
+.subscribe {
+  box-shadow: 0px 2px 24px $black-opacity-05;
+  border-radius: 20px;
+  background: $white;
+
+  @include screen(xl) {
+    padding: 30px 15px 0;
+  }
+
+  @include screen(l) {
+    padding: 50px 40px 0 80px;
+  }
+
+  .field {
+    max-width: 320px;
+  }
+
+  .btn {
+    max-width: 320px;
+    padding: 13px 15px 14px;
+    font: 600 18px/21px FuturaPT;
+
+    @include screen(xl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    display: block;
+    color: $main-black-color;
+
+    @include screen(xl) {
+      margin-bottom: 10px;
+      font: 500 33px/36px FuturaPT;
+    }
+
+    @include screen(l) {
+      margin-bottom: 15px;
+      font: 500 38px/45px FuturaPT;
+    }
+  }
+
+  p {
+    margin-bottom: 30px;
+    font: normal 16px/26px Roboto;
+    color: $main-black-color-opacity-9;
+
+    br {
+      @include screen(xl) {
+        display: none;
+      }
+    }
+  }
+
+  img {
+    @include screen(xl) {
+      width: 100%;
+      max-width: 450px;
+      height: 100%;
+    }
+  }
+}

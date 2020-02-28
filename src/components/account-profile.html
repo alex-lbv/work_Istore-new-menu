@@ -1,0 +1,88 @@
+<div class="profile__wrap uk-width-1-3@l">
+  <div class="uk-flex uk-flex-between uk-flex-middle uk-visible@l">
+    <span class="profile__title">Профиль</span>
+    <button class="profile__edit" type="button" data-uk-toggle="target: #popupEddit">Изменить
+      профиль</button>
+  </div>
+  <ul class="profile" uk-accordion>
+    <li class="uk-open">
+      <a class="uk-accordion-title" href="#">
+        <div class="uk-flex uk-flex-middle uk-width-expand@s">
+          <img class="profile__logo uk-margin-right" src="img/temp/profile-logo.jpg" width="80" height="80" alt="">
+          <div class="uk-flex uk-flex-column">
+            <span class="profile__name">Василий Иванов</span>
+            <span class="profile__region">Санкт-Петербург</span>
+          </div>
+        </div>
+      </a>
+      <div class="uk-accordion-content">
+
+        <div class="profile__balance uk-flex uk-flex-between uk-flex-middle">
+          <div class="uk-flex uk-flex-column">
+            <label class="profile__subtitle">Баланс</label>
+            <span>5065 баллов</span>
+          </div>
+          <button type="button" data-uk-toggle="target: #popupPay">Вывести в &#8381; на карту</button>
+        </div>
+
+        <ul class="profile__data">
+          <li class="profile__field uk-flex uk-flex-between uk-flex-middle">
+            <span class="profile__subtitle">Телефон:</span>
+            <span>+7 098 7654321</span>
+          </li>
+          <li class="profile__field uk-flex uk-flex-between uk-flex-middle">
+            <span class="profile__subtitle">Email:</span>
+            <span>vasiliy-ivanov@mail.com</span>
+          </li>
+          <li class="profile__field uk-flex uk-flex-between uk-flex-middle">
+            <span class="profile__subtitle">Адрес:</span>
+            <span>ул. Пушкина 12б кв 261</span>
+          </li>
+          <li class="profile__field uk-flex uk-flex-between uk-flex-middle">
+            <span class="profile__subtitle">Индекс:</span>
+            <span>908800</span>
+          </li>
+        </ul>
+
+        <div class="profile__offers">
+          <span class="profile__subtitle">Получать новости и спец. предложения</span>
+          <ul class="filter__checkbox">
+            <li>
+              <input class="uk-hidden" type="checkbox" id="f1" name="f1" checked="">
+              <label for="f1">На Email</label>
+            </li>
+            <li>
+              <input class="uk-hidden" type="checkbox" id="f2" name="f2" checked="">
+              <label for="f2">В месседжеры</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="profile__referral">
+          <span class="profile__subtitle">Реферальная ссылка</span>
+
+          <div class="profile__referral-link uk-flex uk-flex-between uk-flex-middle"
+            onclick="$('.profile__referral-text').select().focus(); document.execCommand('copy'); $('.profile__referral-copy').text('Ссылка скопирована')">
+            <input class="profile__referral-text" type="text" value="https://ist.r/QWERTY" readonly>
+            <span class="profile__referral-copy">Скопировать</span>
+          </div>
+
+          <p>Когда приглашенный сделает первую покупку по вашей ссылке, вы поулчите 100 балов на счет</p>
+        </div>
+
+        <button class="profile__edit uk-hidden@l" type="button" data-uk-toggle="target: #popupEddit">Изменить
+          профиль</button>
+
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="profile__header-mobile uk-hidden@l uk-flex uk-flex-between">
+  <h1 class="title title--medium">Здравствуйте, <br>Василий!</h1>
+  <a class="account__logout" href="#">
+    <svg width="20" height="20" fill="#FF548C">
+      <use xlink:href="img/symbol/sprite.svg#log-out" />
+    </svg>
+  </a>
+</div>

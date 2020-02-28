@@ -1,0 +1,120 @@
+.field {
+  &__title {
+    display: block;
+    margin-bottom: 10px;
+    font: 600 16px/19px FuturaPT;
+    text-transform: uppercase;
+    color: $main-black-color;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font: normal 15px/18px Roboto;
+    color: $main-black-color;
+    background: $gray-light-2;
+  }
+
+  &--account {
+    &__title {
+      font: 600 12px/20px FuturaPT;
+      color: $gray-6-opacity-8;
+    }
+
+    input {
+      padding: 15px;
+      background: $white;
+      border: 1px solid $gray-7;
+      box-shadow: 0px 4px 12px $black-opacity-08;
+      -webkit-box-shadow: 0px 4px 12px $black-opacity-08;
+      border-radius: 8px;
+    }
+
+    textarea {
+      padding: 15px;
+      width: 100%;
+      max-height: 150px;
+      background: $white;
+      font: normal 15px/18px Roboto;
+      color: $main-black-color;
+      border: 1px solid $gray-7;
+      box-shadow: 0px 4px 12px $black-opacity-08;
+      -webkit-box-shadow: 0px 4px 12px $black-opacity-08;
+      border-radius: 8px;
+      resize: none;
+    }
+
+    .field__title {
+      font: 500 14px/19px FuturaPT;
+      color: $main-black-color-opacity-6;
+    }
+  }
+
+  &--checkout {
+    @include screen(l) {
+      border: 1px solid $gray-7;
+      box-shadow: 0px 4px 12px $black-opacity-08;
+      -webkit-box-shadow: 0px 4px 12px $black-opacity-08;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    input {
+      padding: 15px;
+      width: 100%;
+      border: none;
+
+      @include screen(xl) {
+        margin-bottom: 15px;
+        background: $white;
+        border: 1px solid $gray-7;
+        box-shadow: 0px 4px 12px $black-opacity-08;
+        -webkit-box-shadow: 0px 4px 12px $black-opacity-08;
+        border-radius: 6px;
+      }
+    }
+
+    &>div {
+      @include screen(l) {
+        padding: 10px;
+        background: $white;
+      }
+
+      .btn {
+        font: 600 14px/16px FuturaPT;
+        color: $white;
+
+        @include screen(xl) {
+          padding: 10px 15px 12px;
+        }
+
+        @include screen(l) {
+          padding: 5px 15px 7px;
+          width: 125px;
+        }
+      }
+    }
+  }
+
+  &__message {
+    display: none;
+    color: $main-color;
+  }
+
+  &__error {
+    .field__message {
+      display: block;
+    }
+
+    .field__title {
+      color: $main-color;
+    }
+
+    input,
+    textarea {
+      border: 1px solid $main-color !important;
+    }
+  }
+}

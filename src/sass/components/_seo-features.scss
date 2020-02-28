@@ -1,0 +1,47 @@
+.seo-features {
+  text-align: center;
+  border-top: 1px solid $gray-12;
+  border-bottom: 1px solid $gray-12;
+
+  @include screen(xl) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include screen(l) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .feature {
+    li {
+      &:not(:last-of-type) {
+        position: relative;
+
+        &::after {
+          @include screen(l) {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 35px;
+            bottom: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 12px $black-opacity-12;
+            background: url('../img/pic/ico/arrow-gray.svg') no-repeat, $white;
+            background-size: 10px 16px;
+            background-position: center center;
+          }
+        }
+      }
+    }
+
+    p {
+      &:first-of-type {
+        font: normal 16px/26px Roboto;
+      }
+    }
+  }
+}

@@ -1,0 +1,252 @@
+.profile {
+  @include screen(xl) {
+    background: $white;
+    box-shadow: 0px 2px 12px $black-opacity-1;
+    border-radius: 20px;
+    padding: 15px 15px 20px;
+  }
+
+  @include screen(l) {
+    margin-top: 30px;
+  }
+
+  &__header-mobile {
+    @include screen(xl) {
+      position: relative;
+      padding: 0 20px;
+      margin: 20px 0;
+    }
+
+    a {
+      @include screen(xl) {
+        position: absolute;
+        top: 7px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+  }
+
+  /* title */
+  .uk-accordion-title:hover,
+  .uk-accordion-title:focus {
+    color: $third-black-color;
+  }
+
+  li.uk-open {
+    &>.uk-accordion-title::before {
+      transform: rotate(-180deg);
+    }
+  }
+
+  .uk-accordion-title {
+    @include screen(xl) {
+      position: relative;
+    }
+
+    @include screen(l) {
+      pointer-events: none;
+    }
+
+    &::before {
+      @include screen(xl) {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 25px;
+        height: 25px;
+        background: url("../img/pic/ico/arrow-bottom-ico.svg") no-repeat, $gray-7;
+        background-size: 10px 7px;
+        background-position: center;
+        border-radius: 50%;
+        transition: transform .3s;
+      }
+
+      @include screen(l) {
+        display: none;
+      }
+    }
+  }
+
+  &__wrap {
+    @include screen(xl) {
+      padding: 0 20px;
+      margin-bottom: 40px;
+    }
+
+    @include screen(l) {
+      padding: 20px 30px 25px;
+      border-left: 1px solid $black-opacity-1;
+    }
+  }
+
+  &__title {
+    font: 500 24px/28px FuturaPT;
+  }
+
+  &__edit {
+    margin: 0;
+    border-bottom: 1px solid transparent;
+    font: normal 14px/22px Roboto;
+    color: $main-color;
+    transition: border .3s;
+
+    &:hover {
+      border-color: $main-color;
+    }
+  }
+
+  &__name {
+    @include screen(xl) {
+      font: 500 24px/28px FuturaPT;
+    }
+
+    @include screen(l) {
+      font: 500 28px/33px FuturaPT;
+    }
+  }
+
+  &__region {
+    color: $main-black-color-opacity-7;
+
+    @include screen(xl) {
+      font: normal 14px/22px Roboto;
+    }
+
+    @include screen(l) {
+      font: normal 16px/22px Roboto;
+    }
+  }
+
+  &__logo {
+    border-radius: 50%;
+    overflow: hidden;
+
+    @include screen(xl) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include screen(l) {
+      width: 80px;
+      height: 80px;
+
+    }
+  }
+
+  &__balance {
+    padding: 15px 0;
+    border-top: 1px solid $gray-3;
+
+    span {
+      font: 600 18px/20px FuturaPT;
+      color: $main-color;
+    }
+
+    button {
+      width: 100%;
+      max-width: 215px;
+      padding: 5px 15px;
+      border: 1px solid transparent;
+      text-align: center;
+      white-space: nowrap;
+      font: 500 16px/22px FuturaPT;
+      color: $main-color;
+      border-radius: 8px;
+      background-color: $white;
+      transition: box-shadow .3s, color .1s, background-color .3s, border .3s;
+      border: 1px solid $main-color;
+
+      &:hover {
+        color: $white;
+        background-color: $main-color;
+        box-shadow: 0px 3px 10px $main-color-opacity-4;
+        border-color: transparent;
+      }
+    }
+  }
+
+  &__data {
+    padding: 20px 0;
+    border-top: 1px solid $gray-3;
+
+    li {
+      &:not(:last-of-type) {
+        margin-bottom: 10px;
+      }
+    }
+
+    span:not(.profile__subtitle) {
+      font: normal 16px/22px Roboto;
+    }
+  }
+
+  &__subtitle {
+    display: inline-block;
+    text-transform: uppercase;
+    font: 600 12px/22px FuturaPT;
+    color: $main-black-color-opacity-8;
+  }
+
+  &__offers {
+    padding: 20px 0;
+    border-top: 1px solid $gray-3;
+
+    .profile__subtitle {
+      margin-bottom: 15px;
+    }
+
+    li {
+      &:not(:last-of-type) {
+        margin-bottom: 10px;
+      }
+    }
+
+    label {
+      font: normal 14px/16px Roboto;
+    }
+  }
+
+  &__referral {
+    padding: 20px 0;
+    border-top: 1px solid $gray-3;
+
+    .profile__subtitle {
+      margin-bottom: 15px;
+    }
+
+    &-link {
+      padding: 5px 10px;
+      margin-bottom: 15px;
+      background: $gray-light-5;
+      border-radius: 6px;
+
+      .profile__referral-text {
+        border: none;
+        padding: 0;
+        background: none;
+        font: normal 14px/22px Roboto;
+        color: $main-color;
+      }
+
+      .profile__referral-copy {
+        cursor: pointer;
+        font: normal 12px/14px Roboto;
+        color: $main-black-color-opacity-4;
+        transition: color .3s;
+
+        &:hover {
+          color: $main-black-color;
+        }
+      }
+
+      p {
+        color: $main-black-color-opacity-6;
+      }
+    }
+  }
+}

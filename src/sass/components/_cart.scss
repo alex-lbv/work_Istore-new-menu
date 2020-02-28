@@ -1,0 +1,113 @@
+.cart {
+	@include screen(l) {
+		position: relative;
+		min-width: 230px;
+		max-width: 230px;
+		border-radius: 8px;
+		background: $second-color;
+		box-shadow: 0px 4px 12px $second-color-opacity-4;
+		cursor: pointer;
+		transition: background-color .3s, box-shadow .3s;
+	}
+
+	&:hover {
+		@include screen(l) {
+			background: $second-dark-color;
+			box-shadow: 0px 4px 15px $second-color-opacity-7;
+		}
+	}
+
+	&--active {
+		@include screen(l) {
+			background: $second-dark-color;
+			box-shadow: 0px 4px 15px $second-color-opacity-7;
+		}
+	}
+
+	&::before {
+		@include screen(l) {
+			position: absolute;
+			display: block !important;
+			content: "";
+			left: 20px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width: 24px;
+			height: 24px;
+			background: url("../img/pic/ico/cart-ico.svg") no-repeat;
+		}
+	}
+
+	span {
+		@include screen(l) {
+			position: relative;
+			display: block;
+			color: $white;
+			text-transform: uppercase;
+		}
+
+		&:first-of-type {
+			@include screen(l) {
+				padding: 12px 0 10px 55px;
+				font: 500 15px/19px FuturaPT;
+			}
+		}
+
+		&:last-of-type {
+			@include screen(l) {
+				padding: 12px 20px 10px 0;
+				font: 300 15px/19px FuturaPT;
+			}
+
+			&::before {
+				@include screen(l) {
+					position: absolute;
+					display: block !important;
+					content: "";
+					left: -20px;
+					top: 0;
+					width: 1px;
+					height: 100%;
+					background: $black-opacity-2;
+				}
+			}
+		}
+	}
+
+	&__mobile {
+		@include screen(xl) {
+			display: flex;
+			padding: 0 30px 0 30px;
+			border-left: 1px solid $black-opacity-1;
+			width: 24px;
+			height: 40px;
+			background: url('../img/pic/ico/cart-icon.svg') no-repeat;
+			background-size: 30px 30px;
+			background-position: 15px center;
+		}
+
+		/* &--active {
+			@include screen(xl) {
+				position: relative;
+				background: url('../img/pic/ico/cart-icon2.svg') no-repeat;
+				background-size: 30px 30px;
+				background-position: 15px center;
+			}
+
+			&::after {
+				content: "1";
+				position: absolute;
+				top: 0;
+				right: 6px;
+				width: 17px;
+				height: 17px;
+				border-radius: 50%;
+				color: $white;
+				font: 600 11px/13px Roboto;
+				background: $main-color;
+				border: 2px solid $white;
+			}
+		} */
+	}
+}

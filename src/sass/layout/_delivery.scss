@@ -1,0 +1,143 @@
+.delivery {
+  &__wrapper {
+    @include screen(xl) {
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding-top: 20px;
+    }
+  }
+
+  .frame {
+    @include screen(xl) {
+      padding: 20px 20px 40px;
+    }
+
+    @include screen(l) {
+      text-align: center;
+      padding: 15px 30px 55px;
+    }
+  }
+
+  &__container {
+    @include screen(l) {
+      padding: 0 40px;
+    }
+  }
+
+  .title {
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  &__lower-text {
+    display: block;
+    font: normal 24px/32px FuturaPT;
+    color: $main-black-color-opacity-5;
+  }
+
+  &__inner-frame {
+    background: $gray-light;
+    border: 1px solid $gray-3;
+    border-radius: 20px;
+
+    @include screen(xl) {
+      padding: 30px 15px;
+    }
+
+    @include screen(l) {
+      padding: 40px 15px;
+    }
+
+    span {
+      font: normal 24px/32px FuturaPT;
+    }
+  }
+
+  &__circle-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    color: $white;
+    border-radius: 50%;
+
+    @include screen(xl) {
+      margin: 30px auto 0;
+      width: 150px;
+      height: 150px;
+      font: normal 18px/10px FuturaPT;
+    }
+
+    @include screen(l) {
+      margin: 30px auto 0;
+      width: 170px;
+      height: 170px;
+      font: normal 24px/20px FuturaPT;
+    }
+
+    &--orange {
+      background: $gradient-orange;
+    }
+
+    &--violet {
+      background: $gradient-vioelt-3;
+    }
+
+    span {
+      @include screen(xl) {
+        font: normal 40px/36px FuturaPT;
+      }
+
+      @include screen(l) {
+        font: normal 72px/36px FuturaPT;
+      }
+    }
+  }
+
+  .feature {
+    li:not(:last-of-type) {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: $gray-3;
+
+        @include screen(xl) {
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width: 100%;
+          height: 1px;
+        }
+
+        @include screen(l) {
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 1px;
+          height: 270px;
+        }
+      }
+    }
+
+    p {
+      font: normal 16px/26px Roboto;
+    }
+  }
+
+  .accordion {
+    ol {
+      list-style-type: decimal;
+      list-style-position: inside;
+      font: normal 14px/24px Roboto;
+    }
+  }
+}

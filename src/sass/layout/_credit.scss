@@ -1,0 +1,316 @@
+.credit {
+  &__wrapper {
+    @include screen(xl) {
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding-top: 20px;
+    }
+  }
+
+  .frame {
+    overflow: hidden;
+  }
+
+  &__top {
+    @include screen(xl) {
+      padding: 20px 20px 0;
+    }
+
+    @include screen(l) {
+      padding: 15px 30px 40px;
+      border-bottom: 1px solid $gray-10-opacity-5;
+      background: url('../img/pic/bg/credit.svg') no-repeat, $gray-light;
+      background-size: 270px 280px;
+      background-position: 850px 40px;
+    }
+
+    &-text {
+      @include screen(xl) {
+        margin-bottom: 30px;
+        font: normal 24px/32px FuturaPT;
+        color: $main-black-color;
+      }
+
+      @include screen(l) {
+        margin-bottom: 30px;
+        font: normal 24px/32px FuturaPT;
+        color: $main-black-color;
+      }
+    }
+
+    &-features {
+      @include screen(xl) {
+        padding-bottom: 30px;
+        border-bottom: 1px solid $gray-10-opacity-5;
+      }
+
+      ul {
+        &:first-of-type {
+          @include screen(xl) {
+            margin-bottom: 10px;
+          }
+
+          @include screen(l) {
+            margin-right: 60px;
+          }
+
+          li {
+            &:not(:last-of-type) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+
+        &:last-of-type {
+          @include screen(l) {
+            margin-right: 60px;
+          }
+
+          li {
+            &:not(:last-of-type) {
+              @include screen(xl) {
+                margin-bottom: 10px;
+              }
+
+              @include screen(l) {
+                margin-bottom: 15px;
+              }
+            }
+          }
+        }
+
+        span {
+          position: relative;
+          padding-left: 20px;
+          font: normal 14px/24px Roboto;
+          color: $main-black-color;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 15px;
+            height: 12px;
+            background: url("../img/pic/ico/check-green.svg") no-repeat;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    @include screen(xl) {
+      padding: 30px 20px 50px;
+    }
+
+    @include screen(l) {
+      padding: 40px 80px 50px 40px;
+    }
+  }
+
+  &__subtitle {
+    display: inline-block;
+    font: 400 24px/32px FuturaPT;
+    color: $third-black-color;
+
+    @include screen(xl) {
+      margin-bottom: 30px;
+    }
+
+    @include screen(l) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__steps {
+    @include screen(xl) {
+      margin-bottom: 40px;
+    }
+
+    @include screen(l) {
+      width: 70%;
+    }
+
+    .credit__subtitle {
+      @include screen(xl) {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    &-tabs {
+      @include screen(xl) {
+        justify-content: center;
+      }
+
+      @include screen(l) {
+        padding-left: 25px;
+      }
+
+      a {
+        display: inline-block;
+        position: relative;
+        color: $second-black-color;
+
+        @include screen(xl) {
+          padding: 10px;
+          font: 500 16px/20px FuturaPT;
+        }
+
+        @include screen(l) {
+          padding: 10px 20px;
+          font: 500 20px/24px FuturaPT;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 50%;
+          height: 6px;
+          background: transparent;
+          border-radius: 100px 100px 0px 0px;
+          transition: width .15s;
+        }
+      }
+
+      li {
+        &.uk-active {
+          a {
+            color: $main-color;
+
+            &::after {
+              width: 100%;
+              background: $main-color;
+            }
+          }
+        }
+      }
+    }
+
+    &-content {
+      background: $gray-light;
+      border: 1px solid $gray-3;
+      border-radius: 20px;
+
+      @include screen(xl) {
+        padding: 20px;
+      }
+
+      @include screen(l) {
+        padding: 30px 30px 30px 40px;
+      }
+
+      p {
+        color: $second-black-color;
+
+        @include screen(xl) {
+          margin-bottom: 20px;
+          font: 500 20px/32px FuturaPT;
+        }
+
+        @include screen(l) {
+          font: 400 22px/32px FuturaPT;
+          width: 50%;
+        }
+      }
+
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+
+  &__conditions {
+    @include screen(l) {
+      padding-left: 100px;
+    }
+
+    .feature {
+      @include screen(xl) {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid $gray-9;
+      }
+
+      @include screen(l) {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid $gray-9;
+      }
+
+      div {
+        &:first-of-type {
+          width: 80px;
+          height: 80px;
+
+          svg {
+            width: 45px;
+            height: 45px;
+          }
+        }
+
+        &:last-of-type {
+          align-self: center;
+        }
+      }
+
+      li {
+        &:not(:last-of-type) {
+          @include screen(xl) {
+            margin-bottom: 20px;
+          }
+
+          @include screen(l) {
+            margin-bottom: 30px;
+          }
+        }
+      }
+
+      p {
+        color: $main-black-color;
+
+        @include screen(xl) {
+          font: 500 20px/24px FuturaPT;
+        }
+
+        @include screen(l) {
+          font: 400 20px/24px FuturaPT;
+        }
+
+        span {
+          display: inline-block;
+          opacity: .5;
+        }
+      }
+    }
+
+    &-section {
+      &:first-of-type {
+        margin-bottom: 25px;
+      }
+
+      span {
+        display: inline-block;
+
+        &:first-of-type {
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          font: 500 14px/15px FuturaPT;
+          color: $third-black-color-opacity-3;
+        }
+
+        &:last-of-type {
+          font: normal 32px/44px Roboto;
+          color: $third-black-color-opacity-9;
+        }
+      }
+    }
+  }
+}

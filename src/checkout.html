@@ -1,0 +1,413 @@
+//= components/head.html
+
+<body class="checkout">
+  //= components/header.html
+  <div class="checkout__wrapper uk-container bg-full-width--gradient">
+    <div class="frame uk-flex uk-flex-column@s uk-child-width-1-2@l">
+      <div class="checkout__product-container">
+        <h1 class="title title--medium uk-margin-bottom uk-padding-small-bottom@s">Корзина</h1>
+        <span class="checkout__container-title uk-margin-small-bottom">Состав заказа</span>
+        <ul class="checkout__cards">
+          <li class="checkout__card">
+            <div class="product-card product-card--checkout uk-flex">
+              <a class="product-card__image" href="#">
+                <img src="img/temp/checkout-card.jpg" alt="">
+              </a>
+              <div class="uk-flex uk-flex-column uk-width-expand">
+                <a href="#" class="product-card__name uk-width-3-4@s uk-width-1-3@l">Apple iPhone XS Max Dual SIM
+                  512GB (черный)</a>
+                <div class="uk-flex uk-flex-between uk-flex-middle@l uk-flex-column@s">
+                  <div class="product-card__quantity uk-flex uk-flex-middle uk-flex-between">
+                    <button type="button">
+                      <svg width="12" height="3">
+                        <use xlink:href="img/symbol/sprite.svg#minus" />
+                      </svg>
+                    </button>
+                    <input type="text" value="1">
+                    <button type="button">
+                      <svg width="11" height="11">
+                        <use xlink:href="img/symbol/sprite.svg#plus" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="product-card__price uk-flex uk-flex-middle">
+                    <div class="uk-flex uk-flex-column uk-margin-small-right">
+                      <span class="product-card__price-old">97&nbsp;990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">95&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                </div>
+              </div>
+              <button class="product-card__close">
+                <svg width="16" height="16">
+                  <use xlink:href="img/symbol/sprite.svg#close" />
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="checkout__card">
+            <div class="product-card product-card--checkout uk-flex">
+              <a class="product-card__image" href="#">
+                <img src="img/temp/checkout-card.jpg" alt="">
+              </a>
+              <div class="uk-flex uk-flex-column uk-width-expand">
+                <a href="#" class="product-card__name uk-width-3-4@s uk-width-1-3@l">Apple iPhone XS Max Dual SIM
+                  512GB (черный)</a>
+                <div class="uk-flex uk-flex-between uk-flex-middle@l uk-flex-column@s">
+                  <div class="product-card__quantity uk-flex uk-flex-middle uk-flex-between">
+                    <button type="button">
+                      <svg width="12" height="3">
+                        <use xlink:href="img/symbol/sprite.svg#minus" />
+                      </svg>
+                    </button>
+                    <input type="text" value="1">
+                    <button type="button">
+                      <svg width="11" height="11">
+                        <use xlink:href="img/symbol/sprite.svg#plus" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div class="product-card__price uk-flex uk-flex-middle">
+                    <div class="uk-flex uk-flex-column uk-margin-small-right">
+                      <span class="product-card__price-old">97&nbsp;990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">95&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                </div>
+              </div>
+              <button class="product-card__close">
+                <svg width="16" height="16">
+                  <use xlink:href="img/symbol/sprite.svg#close" />
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+
+        <span class="checkout__container-title uk-margin-small-bottom">Ваши подарки:</span>
+        <ul class="checkout__cards">
+          <li class="checkout__card">
+            <div class="product-card product-card--present uk-flex">
+              <a class="product-card__image" href="#">
+                <img src="img/temp/checkout-present.jpg" alt="">
+              </a>
+              <div class="uk-flex uk-flex-column uk-flex-between uk-width-expand">
+                <a href="#" class="product-card__name">Защитное стелко для iPhone XS Max</a>
+                <span class="product-card__price">0&nbsp;&#8381;</span>
+              </div>
+            </div>
+          </li>
+          <li class="checkout__card">
+            <div class="product-card product-card--present uk-flex">
+              <a class="product-card__image" href="#">
+                <img src="img/temp/checkout-present-2.jpg" alt="">
+              </a>
+              <div class="uk-flex uk-flex-column uk-flex-between uk-width-expand">
+                <a href="#" class="product-card__name">Силиконовый чехол</a>
+                <span class="product-card__price">0&nbsp;&#8381;</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <span class="checkout__container-subtitle">Не забудьте добавить аксессуары:</span>
+        <!-- Swiper -->
+        <div class="checkout__swiper">
+          <ul class="swiper-wrapper uk-child-width-1-2@l">
+            <li class="swiper-slide">
+              <div
+                class="product-card product-card--accessories product-card--accessories product-card--active uk-flex">
+                <a class="product-card__image" href="#">
+                  <img src="img/temp/product-card-accessories.jpg" alt="">
+                </a>
+                <div class="uk-flex uk-flex-column uk-width-expand">
+                  <a href="#" class="product-card__name uk-width-3-4@s">Apple Watch
+                    Series 4, 44 мм</a>
+                  <div class="uk-flex uk-flex-between uk-flex-column">
+
+                    <div class="product-card__price uk-flex uk-flex-column">
+                      <div class="uk-flex uk-flex uk-flex-middle">
+                        <span class="product-card__price-old">97&nbsp;990&nbsp;&#8381;</span>
+                        <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                      </div>
+                      <span class="product-card__price-total">95&nbsp;990&nbsp;&#8381;</span>
+                    </div>
+
+                    <button class="btn" type="button" data-uk-toggle="target: #popupCartAdd">Добавлено</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="product-card product-card--accessories uk-flex">
+                <a class="product-card__image" href="#">
+                  <img src="img/temp/product-card-accessories.jpg" alt="">
+                </a>
+                <div class="uk-flex uk-flex-column uk-width-expand">
+                  <a href="#" class="product-card__name uk-width-3-4@s">Apple Watch
+                    Series 4, 44 мм</a>
+                  <div class="uk-flex uk-flex-between uk-flex-column">
+
+                    <div class="product-card__price uk-flex uk-flex-column">
+                      <div class="uk-flex uk-flex uk-flex-middle">
+                        <span class="product-card__price-old">97&nbsp;990&nbsp;&#8381;</span>
+                        <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                      </div>
+                      <span class="product-card__price-total">95&nbsp;990&nbsp;&#8381;</span>
+                    </div>
+
+                    <button class="btn" type="button" data-uk-toggle="target: #popupCartAdd">Добавить</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="product-card product-card--accessories uk-flex">
+                <a class="product-card__image" href="#">
+                  <img src="img/temp/product-card-accessories.jpg" alt="">
+                </a>
+                <div class="uk-flex uk-flex-column uk-width-expand">
+                  <a href="#" class="product-card__name uk-width-3-4@s">Apple Watch
+                    Series 4, 44 мм</a>
+                  <div class="uk-flex uk-flex-between uk-flex-column">
+
+                    <div class="product-card__price uk-flex uk-flex-column">
+                      <div class="uk-flex uk-flex uk-flex-middle">
+                        <span class="product-card__price-old">97&nbsp;990&nbsp;&#8381;</span>
+                        <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                      </div>
+                      <span class="product-card__price-total">95&nbsp;990&nbsp;&#8381;</span>
+                    </div>
+
+                    <button class="btn" type="button" data-uk-toggle="target: #popupCartAdd">Добавить</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="product-card product-card--accessories uk-flex">
+                <a class="product-card__image" href="#">
+                  <img src="img/temp/product-card-accessories.jpg" alt="">
+                </a>
+                <div class="uk-flex uk-flex-column uk-width-expand">
+                  <a href="#" class="product-card__name uk-width-3-4@s">Apple Watch
+                    Series 4, 44 мм</a>
+                  <div class="uk-flex uk-flex-between uk-flex-column">
+
+                    <div class="product-card__price uk-flex uk-flex-column">
+                      <div class="uk-flex uk-flex uk-flex-middle">
+                        <span class="product-card__price-old">97&nbsp;990&nbsp;&#8381;</span>
+                        <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                      </div>
+                      <span class="product-card__price-total">95&nbsp;990&nbsp;&#8381;</span>
+                    </div>
+
+                    <button class="btn" type="button" data-uk-toggle="target: #popupCartAdd">Добавить</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="checkout__frame-wrap">
+        <div class="checkout__frame">
+          <span class="checkout__frame-title uk-margin-bottom">Оформление заказа</span>
+          <ul class="checkout__price-list">
+            <li class="uk-flex uk-flex-between uk-flex-middle">
+              <span class="checkout__container-title">Сумма заказа:</span>
+              <span class="checkout__price-total">108&nbsp;990&nbsp;&#8381;</span>
+            </li>
+            <li class="uk-flex uk-flex-between uk-flex-middle">
+              <span class="checkout__container-title">Сумма скидки:</span>
+              <span class="checkout__price-sale">-10&nbsp;000&nbsp;&#8381;</span>
+            </li>
+            <li class="uk-flex uk-flex-between uk-flex-middle">
+              <span class="checkout__container-title">Доставка:</span>
+              <span class="checkout__price-delivery">0&nbsp;&#8381;</span>
+            </li>
+          </ul>
+
+          <div class="checkout__bonus">
+            <div class="uk-flex uk-flex-between uk-flex-column@s uk-flex-middle@l uk-margin-bottom">
+              <span class="checkout__bonus-title">Бонусные рубли на вашем счету</span>
+              <span class="checkout__bonus-value">95&nbsp;990&nbsp;&#8381;</span>
+            </div>
+
+            <div class="field--checkout uk-flex uk-flex-column@s">
+              <input class="checkout" type="text">
+              <div>
+                <button class="btn">Использовать</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="checkout__promo-code">
+            <span class="checkout__subtitle uk-margin-small-bottom">Промокод</span>
+            <div class="field--checkout uk-flex uk-flex-column@s">
+              <input class="checkout" type="text">
+              <div>
+                <button class="btn">Добавить</button>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="checkout__delivery">
+            <span class="checkout__subtitle uk-margin-small-bottom">Способы получения заказа</span>
+            <ul class="checkout__list-select uk-flex uk-child-width-1-3@l uk-margin-bottom">
+              <li>
+                <input id="c21" class="uk-hidden" type="radio" name="c1" checked>
+                <label class="uk-flex uk-flex-column@l uk-flex-center@s uk-flex-middle@s uk-child-width-1-1@l"
+                  for="c21">
+                  <div>
+                    <img src="img/pic/logo/cdek-logo.jpg" width="112" height="48" alt="">
+                  </div>
+                  <span>CDEK</span>
+                </label>
+              </li>
+              <li>
+                <input id="c31" class="uk-hidden" type="radio" name="c1">
+                <label class="uk-flex uk-flex-column@l uk-flex-center@s uk-flex-middle@s uk-child-width-1-1@l"
+                  for="c31">
+                  <div>
+                    <img src="img/pic/logo/pochta-logo.jpg" width="101" height="48" alt="">
+                  </div>
+                  <span>Почта России EMS</span>
+                </label>
+              </li>
+              <li>
+                <input id="c41" class="uk-hidden" type="radio" name="c1">
+                <label class="uk-flex uk-flex-column@l uk-flex-center@s uk-flex-middle@s uk-child-width-1-1@l"
+                  for="c41">
+                  <div class="uk-width-1-1@l">
+                    <img src="img/pic/ico/pick-up-ico.svg" width="45" height="48" alt="">
+                  </div>
+                  <span>Самовывоз</span>
+                </label>
+              </li>
+            </ul>
+
+            <ul class="checkout__list-select uk-flex uk-child-width-1-2@l uk-margin-bottom">
+              <li>
+                <input id="c1" class="uk-hidden" type="radio" name="c" checked>
+                <label class="uk-flex uk-flex-center@s uk-flex-middle uk-child-width-1-1@s uk-child-width-auto@l"
+                  for="c1">
+                  <div class="uk-margin-right@l">
+                    <img src="img/pic/ico/pick-up-ico.svg" width="45" height="48" alt="">
+                  </div>
+                  <span>Самовывоз</span>
+                </label>
+              </li>
+
+              <li>
+                <input id="c2" class="uk-hidden" type="radio" name="c" checked>
+                <label class="uk-flex uk-flex-center@s uk-flex-middle uk-child-width-1-1@s uk-child-width-auto@l"
+                  for="c2">
+                  <div class="uk-margin-right@l">
+                    <img src="img/pic/ico/courier.svg" width="40" height="48" alt="">
+                  </div>
+                  <span>Курьером по СПб</span>
+                </label>
+              </li>
+            </ul>
+
+            <p>Точку выдачи с товаром в наличии уточняйте <br>у менеджера</p>
+
+            <div>
+              <div class="field field--account uk-margin-bottom">
+                <label for="" class="field__title">Ф.И.О.</label>
+                <input type="text" placeholder="Введите свои Фамилию Имя и Отчество">
+              </div>
+
+              <div class="field field--account uk-margin-bottom">
+                <label for="" class="field__title">Телефон</label>
+                <input type="tel" placeholder="+7">
+              </div>
+
+              <div class="field field--account uk-margin-bottom">
+                <label for="" class="field__title">Город</label>
+                <input type="text">
+              </div>
+
+              <div class="field field--account uk-margin-bottom">
+                <label for="" class="field__title">Адрес доставки</label>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout__payment">
+            <span class="checkout__subtitle uk-margin-small-bottom">Оплата</span>
+            <ul class="checkout__list-select uk-flex uk-child-width-1-3@l uk-margin-bottom">
+              <li>
+                <input id="t1" class="uk-hidden" type="radio" name="t" checked>
+                <label class="uk-flex uk-flex-column@l uk-flex-center@s uk-flex-middle@s uk-child-width-1-1@l" for="t1">
+                  <div class="uk-width-1-1@l">
+                    <img src="img/pic/ico/checkout-pay-1.svg" width="30" height="45" alt="">
+                  </div>
+                  <span>При получении</span>
+                </label>
+              </li>
+              <li>
+                <input id="t2" class="uk-hidden" type="radio" name="t" checked>
+                <label class="uk-flex uk-flex-column@l uk-flex-center@s uk-flex-middle@s uk-child-width-1-1@l" for="t2">
+                  <div class="uk-width-1-1@l">
+                    <img src="img/pic/ico/checkout-pay-2.svg" width="60" height="45" alt="">
+                  </div>
+                  <span>Картой Visa, MC, Мир</span>
+                </label>
+              </li>
+              <li>
+                <input id="t3" class="uk-hidden" type="radio" name="t" checked>
+                <label class="uk-flex uk-flex-column@l uk-flex-center@s uk-flex-middle@s uk-child-width-1-1@l" for="t3">
+                  <div class="uk-width-1-1@l">
+                    <img src="img/pic/ico/checkout-pay-3.svg" width="50" height="45" alt="">
+                  </div>
+                  <span>Безналичный расчет</span>
+                </label>
+              </li>
+            </ul>
+
+            <div class="field field--account uk-margin-bottom">
+              <label for="" class="field__title">Телефон</label>
+              <input type="text" placeholder="Введите номер телефона">
+            </div>
+
+            <div class="checkout__checkbox">
+              <input class="uk-hidden" type="checkbox" id="f2" name="f2" checked>
+              <label for="f2">Согласен с <a href="#">правилами</a> обработки персональных данных</label>
+            </div>
+
+            <button class="btn checkout__btn uk-margin-bottom">Оформить заказ</button>
+
+            <div class="checkout__btn-credit uk-flex uk-flex-between uk-flex-middle"
+              data-uk-toggle="target: #popupCredit">
+              <span>Купить в кредит</span>
+              <span>от&nbsp;1440&nbsp;&#8381 в&nbsp;месяц</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn checkout__btn-question" data-uk-toggle="target: #popupQuestion">Остались вопросы?</button>
+
+        <div class="checkout__contacts uk-flex uk-flex-column uk-flex-center uk-flex-middle">
+          <span>или позвоните нам по номеру:</span>
+          <a href="tel:88125092380">+7 (812) 509-24-80</a>
+          <span>С 10:00 до 21:00, без выходных, <br>бесплатно по РФ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= components/subscribe.html
+  //= components/footer.html
+</body>
+//= components/bottom.html

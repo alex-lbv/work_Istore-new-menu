@@ -1,0 +1,62 @@
+@mixin screen($size) {
+
+  // 0 - 639
+  @if $size=='x' {
+    @media only screen and (min-width: 0) and (max-width: ($breakpoint-sm - 1) + px) {
+      @content;
+    }
+  }
+
+  // 0 - 959
+  @if $size=='xs' {
+    @media only screen and (min-width: 0) and (max-width: ($breakpoint-md - 1) + px) {
+      @content;
+    }
+  }
+
+  // 640 - 959
+  @if $size=='s' {
+    @media only screen and (min-width: $breakpoint-sm + px) and (max-width: ($breakpoint-md - 1) + px) {
+      @content;
+    }
+  }
+
+  // 640 - 1299
+  @if $size=='sm' {
+    @media only screen and (min-width: $breakpoint-sm + px) and (max-width: ($breakpoint-lg - 1) + px) {
+      @content;
+    }
+  }
+
+  // 959 - 1299
+  @if $size=='m' {
+    @media only screen and (min-width: $breakpoint-md + px) and (max-width: ($breakpoint-lg - 1) + px) {
+      @content;
+    }
+  }
+
+  // 1300 +
+  @if $size=='l' {
+    @media only screen and (min-width: $breakpoint-lg + px) {
+      @content;
+    }
+  }
+
+  // 0 - 1299
+  @if $size=='xl' {
+    @media only screen and (min-width: 0) and (max-width: ($breakpoint-lg - 1) + px) {
+      @content;
+    }
+  }
+}
+
+/* Fonts */
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($file-name + '.woff') format('woff');
+    font-weight: $weight;
+    font-style: $style;
+    font-display: block;
+  }
+}

@@ -1,0 +1,109 @@
+.review {
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  background-color: $gray-light;
+  transition: border-color .3s;
+
+  @include screen(xl) {
+    padding: 20px;
+  }
+
+  @include screen(l) {
+    padding: 20px 20px 20px 80px;
+  }
+
+  &:hover {
+    border: 1px solid $gray-3;
+  }
+
+  img {
+    position: absolute;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    @include screen(xl) {
+      top: 20px;
+    }
+
+    @include screen(l) {
+      top: 15px;
+    }
+  }
+
+  &__name {
+    font: 400 22px/26px FuturaPT;
+    color: $main-black-color;
+
+    @include screen(xl) {
+      margin-bottom: 5px;
+      padding-left: 60px;
+    }
+
+    @include screen(l) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    padding-left: 15px;
+    font: normal 14px/26px Roboto;
+    color: $main-black-color-opacity-9;
+
+    @include screen(xl) {
+      order: 1;
+    }
+
+    @include screen(l) {
+      margin-bottom: 15px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 0px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: $gray-14;
+    }
+
+    &--minus {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 15px;
+
+      &::before {
+        background-color: $main-color;
+      }
+    }
+
+    &--plus {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 15px;
+
+      &::before {
+        background-color: $green-5;
+      }
+    }
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__date {
+    font: normal 14px/22px Roboto;
+    color: $main-black-color-opacity-5;
+
+    @include screen(xl) {
+      margin-bottom: 20px;
+      padding-left: 60px;
+    }
+  }
+}

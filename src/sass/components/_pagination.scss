@@ -1,0 +1,127 @@
+.pagination {
+  &__btn {
+    padding: 9px 15px 10px;
+    min-width: 40px;
+    min-height: 40px;
+    text-align: center;
+    transition: background-color .3s, color .1s, box-shadow .3s;
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+
+    &--large {
+      padding: 11px 15px;
+      border-radius: 20px;
+      font: 500 16px/28px FuturaPT;
+      color: $third-color;
+      background-color: $gray-light;
+      transition: background-color .3s, color .1s;
+
+      &-light {
+        background-color: $white;
+      }
+
+      &:hover {
+        background-color: $third-color;
+        color: $white;
+
+        svg {
+          fill: $white;
+          transform: rotate(360deg);
+        }
+      }
+
+      span {
+        position: relative;
+        padding-left: 25px;
+
+        svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 16px;
+          height: 16px;
+          fill: $third-color;
+          transition: fill .1s, transform .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+        }
+      }
+    }
+
+    &--small {
+      font: 500 16px/19px FuturaPT;
+      color: $main-black-color;
+      background-color: $gray-7;
+      border-radius: 10px;
+
+      &:hover {
+        color: #ffffff;
+        background: $third-color;
+        box-shadow: 0px 2px 7px $black-opacity-05;
+      }
+    }
+
+    &--active {
+      background: $third-color;
+      color: $white;
+    }
+
+    &--prev,
+    &--next {
+      position: relative;
+      background-color: $gray-light;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &-light {
+        background-color: $white;
+      }
+
+      &:hover {
+        background-color: $third-color;
+        box-shadow: 0px 2px 7px $black-opacity-05;
+      }
+
+      svg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+
+    &--prev {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &--is-loading {
+
+    .pagination__btn {
+      &--large {
+        svg {
+          animation-iteration-count: infinite;
+          animation-name: is-loading;
+          animation-duration: 1s;
+          animation-timing-function: linear;
+        }
+      }
+    }
+  }
+
+  @keyframes is-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

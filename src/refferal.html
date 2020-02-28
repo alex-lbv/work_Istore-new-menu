@@ -1,0 +1,96 @@
+//= components/head.html
+
+<body class="refferal">
+  //= components/header.html
+  <div
+    class="refferal__wrapper uk-container bg-full-width--gradient uk-padding-large-bottom@l uk-padding-large-bottom@s">
+    <div class="frame">
+      <ul class="breadcrumbs uk-subnav uk-subnav-divider">
+        <li><a href="#">Главная</a></li>
+        <li class="uk-active"><a href="#">Доставка и оплата</a></li>
+      </ul>
+
+      <div class="refferal__header uk-flex uk-flex-column-reverse@s uk-child-width-1-2@l">
+        <div>
+          <h1 class="title title--medium uk-margin-bottom">Получайте кеш-бэк на свои покупки и до 50% от всех платежей
+            приведенных клиентов</h1>
+          <p>За каждого, кто совершит покупку по вашей пригласительной ссылке вы получите бонус бонус до 5000 рублей
+          </p>
+
+          <div class="refferal__copy-wrap uk-flex uk-flex-column">
+            <span class="refferal__copy-title">Поделиться пригласительной ссылкой</span>
+            <div class="referral__copy uk-flex uk-flex-column@s uk-flex-between uk-flex-middle"
+              onclick="$('.refferal__copy-text').select().focus(); document.execCommand('copy');">
+              <input class="refferal__copy-text uk-margin-bottom@s" type="text" value="https://ist.r/QWERTY" readonly>
+              <span class="btn refferal__copy-btn">Скопировать</span>
+            </div>
+          </div>
+        </div>
+        <img class="uk-margin-bottom@s" src="img/pic/bg/refferal-bg.jpg" width="626" height="434" alt="">
+      </div>
+
+      <div class="delivery__inner-frame uk-text-center">
+        <h2 class="title title--small uk-margin-medium-bottom uk-padding-bottom@l">Как это работает?</h2>
+        <ul class="feature uk-flex uk-flex-column@s uk-flex-around@l uk-child-width-1-3@l uk-padding-medium-bottom@l">
+          <li
+            class="feature--blue uk-flex uk-flex-column uk-flex-middle uk-margin-medium-bottom@s uk-padding-medium-bottom@s">
+            <div class="uk-margin-bottom">
+              <svg width="48" height="48" fill="#ffffff">
+                <use xlink:href="img/symbol/sprite.svg#feature-cash-icon" />
+              </svg>
+            </div>
+            <p class="uk-margin-small-bottom">Поделитесь ссылкой</p>
+            <p class="uk-padding-medium-right@l uk-padding-medium-left@l">Пригласите друзей совершить покупку на iStore2
+              по уникальной ссылке.</p>
+          </li>
+          <li
+            class="feature--green uk-flex uk-flex-column uk-flex-middle uk-margin-medium-bottom@s uk-padding-medium-bottom@s">
+            <div class="uk-margin-bottom">
+              <svg width="48" height="48">
+                <use xlink:href="img/symbol/sprite.svg#feature-card-icon" />
+              </svg>
+            </div>
+            <p class="uk-margin-small-bottom">Подарите&nbsp;5000&nbsp;&#8381;</p>
+            <p class="uk-padding-medium-right@l uk-padding-medium-left@l">Зарегистрировавшись на iStore 2 по вашей
+              ссылке, друзья получат кешбек на покупку устройств.</p>
+          </li>
+          <li class="feature--pink uk-flex uk-flex-column uk-flex-middle">
+            <div class="uk-margin-bottom">
+              <svg width="48" height="48">
+                <use xlink:href="img/symbol/sprite.svg#feature-cashless-icon" />
+              </svg>
+            </div>
+            <p class="uk-margin-small-bottom">Получите&nbsp;2500&nbsp;&#8381;</p>
+            <p class="uk-padding-medium-right@l uk-padding-medium-left@l">Когда ваш друг впервые совершит покупку, вы
+              получите до 2500&nbsp;&#8381; на свой счет.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="refferal__info uk-flex uk-flex-column@s uk-flex-center@l uk-child-width-1-2@l">
+        <div class="uk-margin-bottom@s">
+          <span class="title title--small uk-margin-bottom">Как выводить деньги?</span>
+          <p>Вывести деньги можно в личном кабинете. Тем способом котрый будет для вас удобен. Это может быть перевод на
+            карту или на электронные кошельки: Qiwi, Яндекс Деньги, WebMoney</p>
+        </div>
+        <div>
+          <img src="img/pic/bg/refferal-image-2.jpg" width="450" height="427" alt="">
+        </div>
+      </div>
+
+      <div class="refferal__footer">
+        <p class="title title--small uk-margin-medium-bottom">Зарегистрируйтесь чтобы начать получать <br>кеш-бэк и
+          зарабатывать на&nbsp;приглашениях</p>
+        <div class="uk-flex uk-flex-middle uk-flex-center uk-flex-column@s uk-margin-auto uk-width-1-2">
+          <button class="btn uk-margin-bottom@s" type="button">Вход</button>
+          <button class="btn" type="button">Регистрация</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  //= components/accordion.html
+  //= components/subscribe.html
+  //= components/footer.html
+</body>
+//= components/bottom.html

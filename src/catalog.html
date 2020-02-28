@@ -1,0 +1,634 @@
+//= components/head.html
+
+<body class="catalog">
+  //= components/header.html
+  <div class="catalog__header uk-container bg-full-width--gradient">
+    <div class="catalog__header-top catalog__header-top--iphone uk-margin-bottom@l">
+      <ul class="breadcrumbs uk-subnav uk-subnav-divider uk-margin-bottom">
+        <li><a href="#">Главная</a></li>
+        <li class="uk-active"><a href="#">Сматрфоны iPhone</a></li>
+      </ul>
+      <h1 class="title title--medium uk-margin-bottom@l">Смартфоны iPhone</h1>
+    </div>
+
+    <div class="catalog__header-top catalog__header-top--ipad uk-margin-bottom@l">
+      <ul class="breadcrumbs uk-subnav uk-subnav-divider uk-margin-bottom">
+        <li><a href="#">Главная</a></li>
+        <li class="uk-active"><a href="#">Сматрфоны iPhone</a></li>
+      </ul>
+      <h1 class="title title--medium uk-margin-bottom@l">Планшеты iPad</h1>
+    </div>
+
+    <div class="catalog__header-top catalog__header-top--macbook uk-margin-bottom@l">
+      <ul class="breadcrumbs uk-subnav uk-subnav-divider uk-margin-bottom">
+        <li><a href="#">Главная</a></li>
+        <li class="uk-active"><a href="#">Сматрфоны iPhone</a></li>
+      </ul>
+      <h1 class="title title--medium uk-margin-bottom@l">Ноутбуки MacBook</h1>
+    </div>
+
+    <div class="catalog__header-top catalog__header-top--iwatch uk-margin-bottom@l">
+      <ul class="breadcrumbs uk-subnav uk-subnav-divider uk-margin-bottom">
+        <li><a href="#">Главная</a></li>
+        <li class="uk-active"><a href="#">Сматрфоны iPhone</a></li>
+      </ul>
+      <h1 class="title title--medium uk-margin-bottom@l">Умные часы Apple Watch</h1>
+    </div>
+
+    <div class="catalog__header-top catalog__header-top--accessories uk-margin-bottom@l">
+      <ul class="breadcrumbs uk-subnav uk-subnav-divider uk-margin-bottom">
+        <li><a href="#">Главная</a></li>
+        <li class="uk-active"><a href="#">Сматрфоны iPhone</a></li>
+      </ul>
+      <h1 class="title title--medium uk-margin-bottom@l">Аксессуары</h1>
+    </div>
+
+    <div class="catalog__header-bottom uk-flex uk-flex-column-reverse@s uk-padding-bottom@l uk-padding-small-bottom@s">
+
+      <div class="catalog__swiper uk-width-expand uk-margin-right@l uk-margin-top@s">
+
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="#">iPhone 11 Pro MAX</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone 11 Pro</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone 11</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone XS Max</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone XS</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone XR</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone X</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone 8 Plus</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone 8</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone 7 Plus</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone 7</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone 6S Plus</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone 6S</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone SE</a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">iPhone 6 Plus</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="catalog__settings uk-flex uk-flex-top uk-margin-small-top@l uk-padding-left@s uk-padding-right@s">
+        <div class="catalog__sort uk-flex uk-flex-column@s uk-flex-middle@l uk-margin-small-right@s">
+          <label class="uk-margin-small-right@l uk-margin-small-bottom@s">Сортировать</label>
+          <select>
+            <option data-display="Санкт-Петербург">Популярные</option>
+            <option value="1">По рейтингу</option>
+            <option value="2">Новинки</option>
+          </select>
+        </div>
+        <button class="btn catalog__open-filter uk-hidden@l" data-uk-toggle="target: #popupFilter">Фильтр</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-container bg-full-width uk-padding-top@l uk-padding-large-bottom@l uk-padding-large-bottom@s">
+    <div class="catalog__content uk-flex uk-flex-column@s">
+      <div class="uk-width-1-4@l uk-visible@l uk-margin-right@l">
+        <button class="catalog__btn uk-margin-bottom uk-visible@l" type="button"
+          data-uk-toggle="target: #popupQuestion">Есть вопросы по модели?</button>
+
+        <div id="popupFilter" class="popup popup--filter uk-flex-top" data-uk-modal>
+          <div class="popup__dialog popup__dialog--medium uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <div class="popup__content">
+              <div class="uk-hidden@l uk-flex uk-flex-between uk-flex-middle uk-child-width-1-2 uk-margin-small-bottom">
+                <span class="popup__title">Фильтр</span>
+                <button class="btn" data-uk-toggle="target: #popupFilter">Закрыть</button>
+              </div>
+              <div class="filter uk-margin-large-bottom@l">
+                <ul class="accordion" uk-accordion="multiple: true">
+                  <li class="uk-margin-small-bottom uk-open">
+                    <a class="uk-accordion-title" href="#">Модель</a>
+                    <div class="uk-accordion-content">
+                      <ul class="filter__checkbox">
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="model1" name="model" checked="">
+                          <label for="model1">iPhone Xs <span>(9)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="model2" name="model">
+                          <label for="model2">iPhone Xs Max <span>(19)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="model3" name="model">
+                          <label for="model3">iPhone Xr <span>(36)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="model4" name="model">
+                          <label for="model4">iPhone X <span>(14)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="model5" name="model">
+                          <label for="model5">iPhone 8 <span>(10)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="model6" name="model">
+                          <label for="model6">iPhone 8 <span>(10)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="model7" name="model">
+                          <label for="model7">iPhone 8 <span>(10)</span></label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="model8" name="model">
+                          <label for="model8">iPhone 8 <span>(10)</span></label>
+                        </li>
+                      </ul>
+                      <button class="filter__btn-see-all uk-margin-top" type="button"
+                        data-uk-toggle="target: - .filter__checkbox; cls: filter__checkbox-full">Показать
+                        еще</button>
+                    </div>
+                  </li>
+
+                  <li class="uk-margin-small-bottom uk-open">
+                    <a class="uk-accordion-title" href="#">Объем памяти</a>
+                    <div class="uk-accordion-content">
+                      <ul class="filter__memory uk-flex uk-flex-between uk-flex-wrap uk-flex-middle">
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="memory1" name="memory">
+                          <label for="memory1">64 Gb</label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="memory2" name="memory" checked="">
+                          <label for="memory2">256 Gb</label>
+                        </li>
+                        <li>
+                          <input class="uk-hidden" type="checkbox" id="memory3" name="memory">
+                          <label for="memory3">512 Gb</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="uk-margin-small-bottom uk-open">
+                    <a class="uk-accordion-title" href="#">Цвет</a>
+                    <div class="uk-accordion-content">
+                      <ul class="filter__colors uk-flex uk-flex-middle uk-child-width-1-6 uk-grid-small" data-uk-grid>
+                        <li class="filter__color filter__color--orange">
+                          <input class="uk-hidden" type="checkbox" id="color1" name="color" checked="">
+                          <label for="color1"></label>
+                        </li>
+                        <li class="filter__color filter__color--black">
+                          <input class="uk-hidden" type="checkbox" id="color2" name="color">
+                          <label for="color2"></label>
+                        </li>
+                        <li class="filter__color filter__color--violet">
+                          <input class="uk-hidden" type="checkbox" id="color3" name="color">
+                          <label for="color3"></label>
+                        </li>
+                        <li class="filter__color filter__color--white">
+                          <input class="uk-hidden" type="checkbox" id="color4" name="color">
+                          <label for="color4"></label>
+                        </li>
+                        <li class="filter__color filter__color--turquoise">
+                          <input class="uk-hidden" type="checkbox" id="color5" name="c5">
+                          <label for="color5"></label>
+                        </li>
+                        <li class="filter__color filter__color--pearl">
+                          <input class="uk-hidden" type="checkbox" id="color6" name="color">
+                          <label for="color6"></label>
+                        </li>
+                        <li class="filter__color filter__color--gray">
+                          <input class="uk-hidden" type="checkbox" id="color7" name="color">
+                          <label for="color7"></label>
+                        </li>
+                        <li class="filter__color filter__color--blue">
+                          <input class="uk-hidden" type="checkbox" id="color8" name="color">
+                          <label for="color8"></label>
+                        </li>
+                        <li class="filter__color filter__color--green">
+                          <input class="uk-hidden" type="checkbox" id="color9" name="color">
+                          <label for="color9"></label>
+                        </li>
+                        <li class="filter__color filter__color--red">
+                          <input class="uk-hidden" type="checkbox" id="color10" name="color">
+                          <label for="color10"></label>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="uk-margin-small-bottom uk-open">
+                    <a class="uk-accordion-title" href="#">Количество SIM</a>
+                    <div class="uk-accordion-content">
+                      123
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__features uk-visible@l">
+          <ul class="feature uk-flex uk-flex-column uk-padding-medium-bottom@l">
+            <li class="feature--green uk-flex uk-margin-medium-bottom">
+              <div class="uk-margin-right">
+                <svg width="48" height="48" fill="#ffffff">
+                  <use xlink:href="img/symbol/sprite.svg#feature-car-icon" />
+                </svg>
+              </div>
+              <div class="uk-flex uk-flex-column uk-width-expand">
+                <p class="uk-margin-small-bottom">Доставка</p>
+                <p>Бесплатная доставка <br>по Москве в течение <br>2-3 часов.</p>
+              </div>
+            </li>
+
+            <li class="feature--blue uk-flex uk-margin-medium-bottom">
+              <div class="uk-margin-right">
+                <svg width="48" height="48" fill="#ffffff">
+                  <use xlink:href="img/symbol/sprite.svg#feature-rub-icon" />
+                </svg>
+              </div>
+              <div class="uk-flex uk-flex-column uk-width-expand">
+                <p class="uk-margin-small-bottom">Оплата</p>
+                <p>Оплата наличными, <br>картой, безналичный <br>расчет, переводы, <br>оплата онлайн</p>
+              </div>
+            </li>
+
+            <li class="feature--yellow uk-flex uk-margin-medium-bottom">
+              <div class="uk-margin-right">
+                <svg width="48" height="48" fill="#ffffff">
+                  <use xlink:href="img/symbol/sprite.svg#feature-credit-icon" />
+                </svg>
+              </div>
+              <div class="uk-flex uk-flex-column uk-width-expand">
+                <p class="uk-margin-small-bottom">Кредит</p>
+                <p>Кредитные программы <br>от 10 главных банков <br>России</p>
+              </div>
+            </li>
+
+            <li class="feature--violet uk-flex">
+              <div class="uk-margin-right">
+                <svg width="48" height="48" fill="#ffffff">
+                  <use xlink:href="img/symbol/sprite.svg#feature-shape-icon" />
+                </svg>
+              </div>
+              <div class="uk-flex uk-flex-column uk-width-expand">
+                <p class="uk-margin-small-bottom">Гарантия</p>
+                <p>Получите сервисное <br>облсуживание сроком <br>в 1 год</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="uk-width-expand">
+        <ul
+          class="uk-grid-small uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-3@l uk-margin-bottom"
+          data-uk-grid data-uk-height-match="target: .product-card">
+          <li>
+            <div class="product-card product-card--default uk-flex uk-flex-column">
+              <a href="#" class="product-card__image">
+                <img src="img/temp/product-card-1.jpg" alt="">
+              </a>
+              <span class="product-card__title">iPhone Xr 128GB Blue</span>
+              <div class="product-card__footer">
+                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                  <div class="product-card__price">
+                    <div class="uk-flex uk-flex-middle">
+                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                  <a href="#" class="btn">В корзину</a>
+                </div>
+                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                  <a href="#">Подробнее</a>
+                  <span>Купить в 1 клик</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product-card product-card--default uk-flex uk-flex-column">
+              <a href="#" class="product-card__image">
+                <img src="img/temp/product-card-1.jpg" alt="">
+              </a>
+              <span class="product-card__title">iPhone Xr 128GB Blue</span>
+              <div class="product-card__footer">
+                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                  <div class="product-card__price">
+                    <div class="uk-flex uk-flex-middle">
+                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                  <a href="#" class="btn">В корзину</a>
+                </div>
+                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                  <a href="#">Подробнее</a>
+                  <span>Купить в 1 клик</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product-card product-card--default uk-flex uk-flex-column">
+              <a href="#" class="product-card__image">
+                <img src="img/temp/product-card-1.jpg" alt="">
+              </a>
+              <span class="product-card__title">iPhone Xr 128GB Blue</span>
+              <div class="product-card__footer">
+                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                  <div class="product-card__price">
+                    <div class="uk-flex uk-flex-middle">
+                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                  <a href="#" class="btn">В корзину</a>
+                </div>
+                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                  <a href="#">Подробнее</a>
+                  <span>Купить в 1 клик</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product-card product-card--default uk-flex uk-flex-column">
+              <a href="#" class="product-card__image">
+                <img src="img/temp/product-card-1.jpg" alt="">
+              </a>
+              <span class="product-card__title">iPhone Xr 128GB Blue</span>
+              <div class="product-card__footer">
+                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                  <div class="product-card__price">
+                    <div class="uk-flex uk-flex-middle">
+                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                  <a href="#" class="btn">В корзину</a>
+                </div>
+                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                  <a href="#">Подробнее</a>
+                  <span>Купить в 1 клик</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product-card product-card--default uk-flex uk-flex-column">
+              <a href="#" class="product-card__image">
+                <img src="img/temp/product-card-1.jpg" alt="">
+              </a>
+              <span class="product-card__title">iPhone Xr 128GB Blue</span>
+              <div class="product-card__footer">
+                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                  <div class="product-card__price">
+                    <div class="uk-flex uk-flex-middle">
+                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                  <a href="#" class="btn">В корзину</a>
+                </div>
+                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                  <a href="#">Подробнее</a>
+                  <span>Купить в 1 клик</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product-card product-card--default uk-flex uk-flex-column">
+              <a href="#" class="product-card__image">
+                <img src="img/temp/product-card-1.jpg" alt="">
+              </a>
+              <span class="product-card__title">iPhone Xr 128GB Blue</span>
+              <div class="product-card__footer">
+                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                  <div class="product-card__price">
+                    <div class="uk-flex uk-flex-middle">
+                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                  <a href="#" class="btn">В корзину</a>
+                </div>
+                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                  <a href="#">Подробнее</a>
+                  <span>Купить в 1 клик</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product-card product-card--default uk-flex uk-flex-column">
+              <a href="#" class="product-card__image">
+                <img src="img/temp/product-card-1.jpg" alt="">
+              </a>
+              <span class="product-card__title">iPhone Xr 128GB Blue</span>
+              <div class="product-card__footer">
+                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                  <div class="product-card__price">
+                    <div class="uk-flex uk-flex-middle">
+                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                  <a href="#" class="btn">В корзину</a>
+                </div>
+                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                  <a href="#">Подробнее</a>
+                  <span>Купить в 1 клик</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product-card product-card--default uk-flex uk-flex-column">
+              <a href="#" class="product-card__image">
+                <img src="img/temp/product-card-1.jpg" alt="">
+              </a>
+              <span class="product-card__title">iPhone Xr 128GB Blue</span>
+              <div class="product-card__footer">
+                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                  <div class="product-card__price">
+                    <div class="uk-flex uk-flex-middle">
+                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                  <a href="#" class="btn">В корзину</a>
+                </div>
+                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                  <a href="#">Подробнее</a>
+                  <span>Купить в 1 клик</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product-card product-card--default uk-flex uk-flex-column">
+              <a href="#" class="product-card__image">
+                <img src="img/temp/product-card-1.jpg" alt="">
+              </a>
+              <span class="product-card__title">iPhone Xr 128GB Blue</span>
+              <div class="product-card__footer">
+                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                  <div class="product-card__price">
+                    <div class="uk-flex uk-flex-middle">
+                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                  <a href="#" class="btn">В корзину</a>
+                </div>
+                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                  <a href="#">Подробнее</a>
+                  <span>Купить в 1 клик</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product-card product-card--default uk-flex uk-flex-column">
+              <a href="#" class="product-card__image">
+                <img src="img/temp/product-card-1.jpg" alt="">
+              </a>
+              <span class="product-card__title">iPhone Xr 128GB Blue</span>
+              <div class="product-card__footer">
+                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                  <div class="product-card__price">
+                    <div class="uk-flex uk-flex-middle">
+                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                  <a href="#" class="btn">В корзину</a>
+                </div>
+                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                  <a href="#">Подробнее</a>
+                  <span>Купить в 1 клик</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product-card product-card--default uk-flex uk-flex-column">
+              <a href="#" class="product-card__image">
+                <img src="img/temp/product-card-1.jpg" alt="">
+              </a>
+              <span class="product-card__title">iPhone Xr 128GB Blue</span>
+              <div class="product-card__footer">
+                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                  <div class="product-card__price">
+                    <div class="uk-flex uk-flex-middle">
+                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                  <a href="#" class="btn">В корзину</a>
+                </div>
+                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                  <a href="#">Подробнее</a>
+                  <span>Купить в 1 клик</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product-card product-card--default uk-flex uk-flex-column">
+              <a href="#" class="product-card__image">
+                <img src="img/temp/product-card-1.jpg" alt="">
+              </a>
+              <span class="product-card__title">iPhone Xr 128GB Blue</span>
+              <div class="product-card__footer">
+                <div class="product-card__footer-top uk-flex uk-flex-between uk-flex-middle">
+                  <div class="product-card__price">
+                    <div class="uk-flex uk-flex-middle">
+                      <span class="product-card__price-old uk-margin-small-right">99990&nbsp;&#8381;</span>
+                      <span class="product-card__price-sale">-&nbsp;2000&nbsp;&#8381;</span>
+                    </div>
+                    <span class="product-card__price-total">97&nbsp;990&nbsp;&#8381;</span>
+                  </div>
+                  <a href="#" class="btn">В корзину</a>
+                </div>
+                <div class="product-card__footer-bottom uk-flex uk-flex-middle uk-flex-between">
+                  <a href="#">Подробнее</a>
+                  <span>Купить в 1 клик</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="pagination uk-flex uk-flex-column">
+          <button class="pagination__btn--large pagination__btn--large-light uk-margin-bottom" type="button">
+            <span>
+              <svg width="16" height="16" fill="#2C0952">
+                <use xlink:href="img/symbol/sprite.svg#refresh-ico" />
+              </svg>
+              Показать еще</span>
+          </button>
+          <div class="uk-flex uk-flex-center">
+            <a class="pagination__btn pagination__btn--prev pagination__btn--prev-light">
+              <svg width="7" height="13" fill="#FF548C">
+                <use xlink:href="img/symbol/sprite.svg#arrow" />
+              </svg>
+            </a>
+            <a href="#" class="pagination__btn pagination__btn--active pagination__btn--small">1</a>
+            <a href="#" class="pagination__btn pagination__btn--small">2</a>
+            <a href="#" class="pagination__btn pagination__btn--small">3</a>
+            <a href="#" class="pagination__btn pagination__btn--small">4</a>
+            <a href="#" class="pagination__btn pagination__btn--small">5</a>
+            <a href="#" class="pagination__btn pagination__btn--next pagination__btn--next-light">
+              <svg width="7" height="13" fill="#FF548C">
+                <use xlink:href="img/symbol/sprite.svg#arrow" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= components/seo-features.html
+  //= components/seo.html
+  //= components/seo-msk.html
+  //= components/subscribe.html
+  //= components/footer.html
+</body>
+//= components/bottom.html

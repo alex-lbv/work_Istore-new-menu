@@ -1,0 +1,110 @@
+.search {
+	position: relative;
+
+	@include screen(xl) {
+		padding-top: 5px;
+	}
+
+	@include screen(l) {
+		margin-right: 10px;
+	}
+
+	&__close {
+		position: absolute;
+		top: 7px;
+		bottom: 0;
+		right: -20px;
+		width: 100px;
+		transition: opacity .3s;
+		z-index: 110;
+
+		svg {
+			vertical-align: middle;
+			width: 25px;
+			height: 25px;
+			fill: $main-color;
+		}
+
+		&-wrap {
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width: 50px;
+			overflow: hidden;
+		}
+	}
+
+	input {
+		padding: 10px 20px;
+		width: 100%;
+		border-radius: 8px;
+		border: 1px solid transparent;
+		background: url("../img/pic/ico/search-ico.svg") no-repeat, $gray-15-opacity-6;
+		background-size: 18px 18px;
+		background-position: 700px;
+
+		&::placeholder {
+			font: normal 15px/18px FuturaPT;
+			color: $main-black-color-opacity-6;
+		}
+
+		&:valid {
+
+			&~.search__close-wrap .search__close {
+				transform: translate(100px);
+				opacity: 0;
+				transition: opacity .3s, transform .4s;
+			}
+		}
+
+		&:invalid {
+			background-position: 1000px;
+
+			&~.search__close-wrap .search__close {
+				transform: translate(0px);
+				opacity: 1;
+				pointer-events: inherit;
+				transition: opacity .3s, transform .4s;
+			}
+		}
+	}
+
+	&__mobile {
+		@include screen(xl) {
+			margin-right: 25px;
+		}
+	}
+
+	&__result {
+		z-index: 100;
+		opacity: 0;
+		pointer-events: none;
+		position: absolute;
+		top: 44px;
+		width: 100%;
+		background: $white;
+		border: 1px solid $gray-16;
+		box-shadow: 0px 4px 24px $black-opacity-1;
+		border-radius: 8px;
+		overflow: hidden;
+		transition: opacity .3s;
+
+		a {
+			display: block;
+			padding: 17px 20px 15px;
+			color: $main-black-color;
+
+			&:not(:last-of-type) {
+				border-bottom: 1px solid $gray-17;
+				font: normal 16px/19px Roboto;
+			}
+
+			&:hover {
+				background: $third-color;
+				color: $white-opacity-9;
+			}
+		}
+	}
+}

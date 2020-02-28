@@ -1,0 +1,206 @@
+.seo {
+  @include screen(xl) {
+    padding: 40px 20px;
+  }
+
+  @include screen(l) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    @include screen(xl) {
+      margin-bottom: 20px;
+      font: 600 32px/38px FuturaPT;
+    }
+
+    @include screen(l) {
+      position: relative;
+      z-index: 1;
+      padding-top: 50px;
+      padding-left: 40px;
+      font: 600 42px/48px FuturaPT;
+    }
+
+    br {
+      @include screen(xl) {
+        display: none;
+      }
+    }
+  }
+
+  &__banner {
+    @include screen(xl) {
+      margin-bottom: 30px;
+    }
+
+    @include screen(l) {
+      position: relative;
+      overflow: hidden;
+      max-width: 1330px;
+      height: 320px;
+      border-radius: 10px;
+    }
+
+    img {
+      @include screen(xl) {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @include screen(l) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__description {
+    @include screen(xl) {
+      margin-bottom: 30px;
+    }
+
+    @include screen(l) {
+      padding: 50px 40px 40px;
+    }
+
+    p {
+      color: $main-black-color;
+
+      @include screen(xl) {
+        margin-bottom: 20px;
+        font: normal 14px/22px Roboto;
+      }
+
+      @include screen(l) {
+        font: normal 14px/26px Roboto;
+      }
+    }
+
+    ul {
+      @include screen(l) {
+        align-self: center;
+        position: relative;
+        padding-left: 45px;
+        margin-left: 150px;
+      }
+
+      &::before {
+        @include screen(l) {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 3px;
+          height: 140px;
+          background-color: $gray-7;
+          border-radius: 10px;
+        }
+      }
+
+      li {
+        position: relative;
+        padding-left: 25px;
+        font: normal 18px/21px FuturaPT;
+        color: $main-black-color;
+
+        &:not(:last-of-type) {
+          @include screen(xl) {
+            margin-bottom: 20px;
+          }
+
+          @include screen(l) {
+            margin-bottom: 23px;
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 7px;
+          width: 8px;
+          height: 8px;
+          background-color: $main-dark-color;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &__features {
+    padding: 20px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 7px $black-opacity-05;
+    border-radius: 10px;
+    color: $main-black-color;
+
+    li {
+      padding: 10px 30px;
+
+      &:not(:last-of-type) {
+        border-right: 3px solid $gray-7;
+      }
+    }
+
+    span {
+      display: inline-block;
+      margin-bottom: 10px;
+      font: 600 20px/36px FuturaPT;
+    }
+
+    p {
+      font: normal 14px/26px Roboto;
+    }
+  }
+
+  &__footer {
+    @include screen(l) {
+      padding: 40px 0 0;
+    }
+
+    div {
+      @include screen(l) {
+        padding-top: 20px;
+      }
+    }
+
+    span {
+      display: inline-block;
+
+      @include screen(xl) {
+        margin-bottom: 20px;
+        font: 600 24px/28px FuturaPT;
+      }
+
+      @include screen(l) {
+        margin-bottom: 25px;
+        font: 600 28px/33px FuturaPT;
+      }
+    }
+
+    p {
+      @include screen(xl) {
+        font: normal 14px/22px Roboto;
+      }
+
+      @include screen(l) {
+        font: normal 14px/26px Roboto;
+      }
+    }
+
+    img {
+      mix-blend-mode: darken;
+    }
+  }
+}

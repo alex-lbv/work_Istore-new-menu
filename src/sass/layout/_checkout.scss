@@ -1,0 +1,532 @@
+.checkout {
+  &__wrapper {
+    @include screen(xl) {
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding-top: 20px;
+    }
+  }
+
+  &__container {
+    &-title {
+      display: block;
+      text-transform: uppercase;
+      font: 600 12px/20px FuturaPT;
+      color: $main-black-color-opacity-8;
+    }
+
+    &-subtitle {
+      display: inline-block;
+      font: 600 18px/20px FuturaPT;
+      color: $main-black-color-opacity-8;
+
+      @include screen(xl) {
+        margin-bottom: 30px;
+      }
+
+      @include screen(l) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__cards {
+    border-top: 1px solid $gray-10-opacity-5;
+    border-bottom: 1px solid $gray-10-opacity-5;
+
+    @include screen(xl) {
+      margin-bottom: 40px;
+    }
+
+    @include screen(l) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__card {
+    border-top: 1px solid $gray-10-opacity-5;
+
+    &:first-of-type {
+      border-top: none;
+    }
+  }
+
+  &__btn {
+    padding: 18px 15px;
+    text-transform: uppercase;
+    font: 600 18px/24px FuturaPT;
+    color: $white;
+    background: $green;
+    box-shadow: 0px 3px 10px $green-opacity-35;
+
+    &:hover {
+      background-color: $green-2;
+      box-shadow: 0px 3px 20px $green-4-opacity-7;
+    }
+  }
+
+  &__btn-credit {
+    box-shadow: 0px 4px 12px $black-opacity-08;
+    border-radius: 8px;
+    background: $white;
+    cursor: pointer;
+    transition: box-shadow .3s;
+
+    @include screen(xl) {
+      padding: 21px 20px 20px;
+    }
+
+    @include screen(l) {
+      padding: 21px 30px 20px;
+    }
+
+    @media (max-width: 374px) {
+      justify-content: center;
+    }
+
+    &:hover {
+      background: $white;
+      box-shadow: 5px 5px 15px $black-opacity-2;
+    }
+
+    span {
+      &:first-of-type {
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: $main-color;
+
+        @include screen(xl) {
+          font: 500 16px/19px FuturaPT;
+        }
+
+        @include screen(l) {
+          font: 600 16px/19px FuturaPT;
+        }
+      }
+
+      &:last-of-type {
+        border-left: 1px solid $gray-4-opacity-5;
+        font: normal 14px/16px FuturaPT;
+        color: $second-black-color;
+
+        @include screen(xl) {
+          padding-left: 15px;
+          margin-left: 15px;
+        }
+
+        @include screen(l) {
+          padding-left: 20px;
+        }
+
+        @media (max-width: 374px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__btn-question {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: $white;
+    border: 1px solid $green;
+    border-radius: 8px;
+    color: $green;
+    font: 600 18px/24px FuturaPT;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $white;
+      box-shadow: 5px 5px 15px $black-opacity-1;
+    }
+  }
+
+  .frame {
+    @include screen(xl) {
+      padding: 20px 20px 40px;
+    }
+
+    @include screen(l) {
+      padding: 40px 40px 40px 30px;
+    }
+  }
+
+  &__product-container {
+    @include screen(xl) {
+      margin-bottom: 40px;
+    }
+
+    @include screen(l) {
+      padding-right: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  &__frame {
+    margin-bottom: 30px;
+    border: 1px solid $gray-3;
+    border-radius: 15px;
+    background: $gray-light;
+
+    @include screen(xl) {
+      padding: 20px;
+    }
+
+    @include screen(l) {
+      padding: 20px 30px 30px;
+    }
+
+    &-title {
+      display: inline-block;
+      font: 500 24px/28px FuturaPT;
+      color: $third-black-color;
+    }
+  }
+
+  &__price {
+    &-list {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $gray-3-opacity-5;
+
+      li {
+        &:not(:last-of-type) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &-total {
+      font: 600 24px/28px FuturaPT;
+      color: $third-color;
+    }
+
+    &-sale {
+      font: 600 18px/22px FuturaPT;
+      color: $main-color;
+    }
+
+    &-delivery {
+      font: 600 18px/22px FuturaPT;
+      color: $third-color;
+    }
+  }
+
+  &__bonus {
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $gray-3-opacity-5;
+
+    &-title {
+      font: 500 18px/26px FuturaPT;
+      color: $main-black-color;
+
+      @include screen(xl) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-value {
+      font: 500 24px/28px FuturaPT;
+      color: $main-color;
+    }
+  }
+
+  &__promo-code {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $gray-3-opacity-5;
+  }
+
+  &__delivery {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $gray-3-opacity-5;
+
+    p {
+      font: normal 16px/24px Roboto;
+      text-align: center;
+
+      br {
+        @include screen(xl) {
+          display: none;
+        }
+      }
+    }
+
+    &-field-wrap {
+      .field--account {
+        &:first-of-type {
+          @include screen(l) {
+            width: 280px;
+          }
+        }
+
+        input {
+          @include screen(xl) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &__list-select {
+    border: 1px solid $gray-7;
+    border-radius: 10px;
+
+    @include screen(xl) {
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: auto;
+      height: 48px;
+      mix-blend-mode: darken;
+
+      @include screen(xl) {
+        margin: auto;
+      }
+
+      @include screen(l) {
+        margin: 0 auto 0px;
+      }
+    }
+
+    span {
+      font: 400 14px/16px Roboto;
+      color: $third-black-color-opacity-8;
+
+      @include screen(xl) {
+        text-align: left;
+      }
+    }
+
+    li {
+      label {
+        position: relative;
+        text-align: center;
+        background: $gray-light;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: transform .15s;
+
+
+        @include screen(xl) {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 10px;
+          border-bottom: 1px solid $gray-7;
+          border-right: 1px solid $gray-7;
+
+        }
+
+        @include screen(l) {
+          padding: 10px 10px 5px;
+        }
+      }
+
+      div {
+        @include screen(xl) {
+          margin-right: 20px;
+        }
+      }
+
+      input:checked+label {
+        z-index: 1;
+        background-color: $white;
+        border: 1px solid $main-color;
+        box-shadow: 0px 2px 8px $black-opacity-1;
+        border-radius: 10px;
+        transform: scale(1.05, 1.05);
+
+        span {
+          color: $main-color;
+        }
+      }
+
+      &:not(:last-of-type) {
+        label {
+          @include screen(l) {
+            border-right: 1px solid $gray-7;
+          }
+        }
+      }
+
+      &:first-of-type {
+        label {
+          @include screen(xl) {
+            border-radius: 10px 10px 0 0;
+          }
+
+          @include screen(l) {
+            border-radius: 10px 0 0 10px;
+          }
+        }
+      }
+
+      &:last-of-type {
+        label {
+          @include screen(xl) {
+            border-radius: 0 0 10px 10px;
+          }
+
+          @include screen(l) {
+            border-radius: 0 10px 10px 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__payment {
+    .checkout__list-select {
+      margin-bottom: 30px;
+    }
+
+    li {
+      label {
+        display: block;
+        position: relative;
+        text-align: center;
+        background: $gray-light;
+        cursor: pointer;
+        transition: transform .15s;
+
+        @include screen(xl) {
+          padding: 10px;
+          border-bottom: 1px solid $gray-7;
+          border-right: 1px solid $gray-7;
+
+        }
+
+        @include screen(l) {
+          padding: 10px 10px 5px;
+        }
+      }
+
+      input:checked+label {
+        z-index: 1;
+        background-color: $white;
+        border: 1px solid $main-color;
+        box-shadow: 0px 2px 8px $black-opacity-1;
+        border-radius: 10px;
+        transform: scale(1.05, 1.1);
+
+        span {
+          color: $main-color;
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    display: inline-block;
+    text-transform: uppercase;
+    font: 600 16px/19px FuturaPT;
+    color: $main-black-color;
+  }
+
+  &__checkbox {
+    margin-bottom: 30px;
+    padding-left: 25px;
+
+    label {
+      position: relative;
+      cursor: pointer;
+      font: normal 14px/16px Roboto;
+    }
+
+    input+label::after {
+      content: "";
+      position: absolute;
+      left: -25px;
+      top: -2px;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      background-color: $white;
+      border: 2px solid $gray-9;
+    }
+
+    input:checked+label::before {
+      content: "";
+      position: absolute;
+      left: -21px;
+      top: 3px;
+      width: 12px;
+      height: 10px;
+      background: url("../img/pic/ico/checkout-check-ico.svg") no-repeat;
+      background-size: cover;
+      z-index: 1;
+    }
+
+    a {
+      color: $main-color;
+      border-bottom: 1px solid transparent;
+      transition: border-color .3s;
+
+      &:hover {
+        border-color: $main-color;
+      }
+    }
+  }
+
+  &__contacts {
+    text-align: center;
+
+    a {
+      margin-bottom: 12px;
+      display: inline-block;
+      font: 500 32px/37px Roboto;
+      color: $third-black-color;
+    }
+
+    span {
+      display: inline-block;
+
+      &:first-of-type {
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        font: 600 12px/20px FuturaPT;
+        color: $main-black-color-opacity-8;
+      }
+
+      &:last-of-type {
+        font: normal 14px/20px Roboto;
+        color: $main-black-color-opacity-5;
+      }
+    }
+  }
+
+  &__swiper {
+    .swiper-wrapper {
+      display: flex;
+
+      @include screen(l) {
+        flex-wrap: wrap;
+        margin-left: -10px;
+      }
+    }
+
+    .swiper-slide {
+      @include screen(xl) {
+        max-width: 280px;
+      }
+
+      @include screen(l) {
+        padding-left: 10px;
+        padding-bottom: 10px;
+      }
+
+      &:not(:last-of-type) {
+        @include screen(xl) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

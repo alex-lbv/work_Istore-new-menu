@@ -1,0 +1,112 @@
+//= components/head.html
+
+<body class="account account--main">
+  //= components/header.html
+  <div class="account__wrapper uk-container bg-full-width--gradient">
+    <div class="frame uk-flex uk-flex-column-reverse@s">
+
+      <div class="uk-width-expand@l">
+        <h1 class="title title--medium uk-margin-bottom@s uk-visible@l">Здравствуйте, Василий!</h1>
+        <ul class="account__list uk-flex">
+          <li class="active">
+            <a href="">Главная</a>
+          </li>
+          <!--  <li>
+            <a href="account-cart.html">Мои товары</a>
+          </li> -->
+          <li>
+            <a href="account-orders.html">Мои заказы</a>
+          </li>
+          <li>
+            <a href="account-cashback.html">Кешбэк</a>
+          </li>
+          <li>
+            <a href=""><span class="uk-visible@l">Отзывы и обратная связь</span><span class="uk-hidden@l">Задать
+                вопрос</span></a>
+          </li>
+          <!-- <li class="uk-visible@l">
+            <a class=" account__logout" href="#">Выйти
+              <svg width="20" height="20" fill="#FF548C">
+                <use xlink:href="img/symbol/sprite.svg#log-out" />
+              </svg>
+            </a>
+          </li> -->
+        </ul>
+
+        <div class="account__content">
+          <div class="account__container account__container--cart uk-margin-bottom uk-flex uk-flex-column@s">
+            <div class="account__container-left uk-width-1-4@l uk-flex uk-flex-column uk-flex-between">
+              <div class="uk-flex uk-flex-column">
+                <span class="account__container-title">Моя корзина</span>
+                <span>1 товар</span>
+              </div>
+              <a class="account__container-link uk-visible@l" href="#">Продолжить оформление заказа</a>
+            </div>
+            <ul class="account__container-right uk-width-expand@l">
+              <li class="uk-flex uk-flex-between">
+                <span>iPhone&nbsp;XS&nbsp;Max</span>
+                <span>58&nbsp;900&nbsp;&#8381;</span>
+              </li>
+              <li class="uk-flex uk-flex-between">
+                <span>AirPods&nbsp;2</span>
+                <span>12&nbsp;900&nbsp;&#8381;</span>
+              </li>
+            </ul>
+            <a class="account__container-link uk-hidden@l" href="#">Подробнее</a>
+          </div>
+
+          <div class="account__container account__container--order uk-flex uk-flex-column@s">
+            <div class="account__container-left uk-width-1-4@l uk-flex uk-flex-column uk-flex-between">
+              <div class="uk-flex uk-flex-column">
+                <span class="account__container-title">Мои заказы</span>
+                <span>В процессе: 2</span>
+              </div>
+              <a class="account__container-link uk-visible@l" href="#">Продолжить оформление заказа</a>
+            </div>
+            <ul class="account__container-right uk-width-expand@l">
+              <li>
+                <div class="uk-flex uk-flex-between uk-margin-small-bottom@s">
+                  <span class="account__order-number">&#8470;34503</span>
+                  <span class="account__order-status account__order-status--process uk-width-1-4@l">Заказ
+                    обрабатывается</span>
+                </div>
+                <div class="uk-flex uk-flex-column@s uk-flex-bottom uk-flex-between">
+                  <ul class="account__info-list uk-margin-small-bottom@s">
+                    <li>iPhone X 128 Gb Black 44&nbsp;990&nbsp;&#8381;</li>
+                    <li>Доставка: Почта России EMS</li>
+                    <li>Адрес доставки: Москва, ул. Пушкина 19, кв 88. 908800</li>
+                    <li>Оплата: наложенный платеж (при получении)</li>
+                  </ul>
+                  <span class="account__date">29 сентября 2019</span>
+                </div>
+              </li>
+
+              <li>
+                <div class="uk-flex uk-flex-between uk-margin-small-bottom@s">
+                  <span class="account__order-number">&#8470;34504</span>
+                  <span class="account__order-status account__order-status--transit uk-width-1-4@l">В пути</span>
+                </div>
+                <div class="uk-flex uk-flex-column@s uk-flex-bottom uk-flex-between">
+                  <ul class="account__info-list uk-margin-small-bottom@s">
+                    <li>iPhone X 128 Gb Black 44&nbsp;990&nbsp;&#8381;</li>
+                    <li>Доставка: Почта России EMS</li>
+                    <li>Адрес доставки: Москва, ул. Пушкина 19, кв 88. 908800</li>
+                    <li>Оплата: наложенный платеж (при получении)</li>
+                  </ul>
+                  <span class="account__date">29 сентября 2019</span>
+                </div>
+              </li>
+            </ul>
+            <a class="account__container-link uk-hidden@l" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      //= components/account-profile.html
+    </div>
+  </div>
+
+  //= components/subscribe.html
+  //= components/footer.html
+</body>
+//= components/bottom.html

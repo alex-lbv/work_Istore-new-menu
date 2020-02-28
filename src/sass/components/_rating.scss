@@ -1,0 +1,55 @@
+.rating {
+  display: flex;
+  margin-top: 5px;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+
+  &__title {
+    font: 600 14px/18px FuturaPT;
+  }
+
+  &>label:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+  }
+
+  &:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  &:not(:checked)>label {
+    float: right;
+    width: 20px;
+    margin-right: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+    color: $gray;
+  }
+
+  &:not(:checked)>label:before {
+    content: '★ ';
+  }
+
+  &>input:checked~label {
+    color: $main-color;
+  }
+
+  &:not(:checked)>label:hover,
+  &:not(:checked)>label:hover~label {
+    color: $main-color;
+  }
+
+  &>input:checked+label:hover,
+  &>input:checked+label:hover~label,
+  &>input:checked~label:hover,
+  &>input:checked~label:hover~label,
+  &>label:hover~input:checked~label {
+    color: $main-color;
+  }
+}

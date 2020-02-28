@@ -1,0 +1,1131 @@
+.product {
+  &__wrapper {
+    @include screen(xl) {
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding-top: 20px;
+    }
+  }
+
+  .uk-subnav {
+    @include screen(xl) {
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  .frame {
+    @include screen(xl) {
+      box-shadow: none;
+    }
+
+    @include screen(l) {
+      padding: 0 0 30px;
+    }
+  }
+
+  &__section {
+    @include screen(l) {
+      padding: 30px 40px 0;
+      width: 350px;
+    }
+
+    .btn {
+      padding: 9px 15px;
+      font: 600 16px/22px FuturaPT;
+
+      @include screen(xl) {
+        width: 85%;
+        max-width: 335px;
+        margin: auto;
+      }
+
+      @include screen(l) {
+        margin-bottom: 85px;
+        margin-top: 30px;
+        max-width: 270px;
+        color: $main-color;
+        background-color: $white;
+        border: 1px solid $gray-12-opacity-7;
+        transition: border .3s, background-color .3s, box-shadow .3s, color .15s;
+        overflow: hidden;
+
+        &:hover {
+          background-color: $main-color;
+          color: $white;
+          border-color: $main-color;
+          box-shadow: 0px 6px 30px $main-dark-color-opacity-4;
+        }
+      }
+    }
+
+    .feature {
+      @include screen(xl) {
+        margin-top: 20px;
+        padding: 20px 5px 15px;
+        width: 100%;
+        overflow-x: scroll;
+        background: $gray-light;
+        border-bottom: 1px solid $gray-3-opacity-8;
+      }
+
+      div:first-of-type {
+        width: 40px;
+        height: 40px;
+
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      li {
+        @include screen(xl) {
+          background: $white;
+          box-shadow: 0px 2px 6px $black-opacity-05;
+          border-radius: 8px;
+          min-width: 276px;
+          padding: 15px;
+        }
+
+        &:not(:last-of-type) {
+          @include screen(xl) {
+            margin-right: 10px;
+          }
+
+          @include screen(l) {
+            margin-bottom: 40px;
+          }
+        }
+      }
+
+      p {
+        &:first-of-type {
+          font: 500 22px/26px FuturaPT;
+        }
+
+        &:last-of-type {
+          font: normal 14px/21px Roboto;
+        }
+      }
+    }
+  }
+
+  &__content {
+    @include screen(xl) {
+      padding: 20px 20px 0;
+    }
+
+    &-footer {
+      padding: 20px 160px 0 40px;
+    }
+  }
+
+  &__header {
+    @include screen(xl) {
+      margin-bottom: 30px;
+    }
+
+    @include screen(l) {
+      padding: 15px 30px;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      @include screen(xl) {
+        margin-bottom: 10px;
+      }
+
+      @include screen(l) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__rating {
+    margin-left: 15px;
+    margin-top: 4px;
+    margin: 4px 20px 0 15px;
+
+    li {
+      &:not(:last-of-type) {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font: normal 13px/15px Roboto;
+    text-decoration: underline;
+    color: $main-color;
+  }
+
+  &__status {
+    display: inline-block;
+    font: 700 14px/16px Roboto;
+    text-transform: uppercase;
+
+    &--preorder {
+      color: $blue;
+    }
+  }
+
+  &__vendor-code {
+    display: inline-block;
+    font: normal 14px/16px Roboto;
+    color: $second-black-color-opacity-5;
+  }
+
+  &__frame {
+    border: 1px solid $gray-3;
+    border-radius: 15px;
+    background: $gray-light;
+
+    @include screen(xl) {
+      padding: 15px 0 20px;
+    }
+
+    @include screen(l) {
+      height: max-content;
+      width: 410px;
+      padding: 15px 20px 20px;
+    }
+
+    .product__container {
+      &:not(.product__container--present) {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $gray-3;
+
+        @include screen(xl) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+
+      &--present {
+        @include screen(xl) {
+          width: 100%;
+        }
+      }
+
+      &-input {
+        width: 100%;
+        padding: 15px;
+        font: normal 15px/18px Roboto;
+        color: $main-black-color;
+        background: $white;
+        border: 1px solid $gray-7;
+        box-shadow: 0px 4px 12px $black-opacity-08;
+        border-radius: 8px;
+
+        @include screen(l) {
+          margin-right: 10px;
+          max-width: 240px;
+        }
+
+        &::placeholder {
+          opacity: .3;
+        }
+      }
+
+      &-btn {
+        padding: 15px 13px;
+        font: 500 18px/21px FuturaPT;
+        text-transform: uppercase;
+        background: $green;
+        box-shadow: 0px 3px 10px $green-opacity-35;
+        border-radius: 8px;
+        transition: background-color .3s, box-shadow .3s;
+
+        &:hover {
+          background: $green-2;
+          box-shadow: 0px 3px 20px $green-4-opacity-7;
+        }
+
+        @include screen(l) {
+          max-width: 120px;
+        }
+      }
+
+      &-btn--green {
+        padding: 19px 15px;
+        font: 500 18px/21px FuturaPT;
+        text-transform: uppercase;
+        background: $green;
+        box-shadow: 0px 3px 10px $green-opacity-35;
+
+        span {
+          position: relative;
+        }
+
+        svg {
+          position: absolute;
+          left: -35px;
+
+          @media (max-width: 374px) {
+            display: none;
+          }
+        }
+
+        &:hover {
+          background: $second-color;
+          box-shadow: 0px 4px 12px $second-color-opacity-4;
+        }
+      }
+    }
+
+    .checkout__container-title {
+      margin-bottom: 5px;
+    }
+
+    .filter__memory {
+      padding: 3px;
+      background: $white;
+      border: 1px solid $gray-7;
+      border-radius: 10px;
+      text-align: center;
+
+      label {
+        display: block;
+        padding: 9px;
+        white-space: nowrap;
+        font: 500 12px/16px Roboto;
+      }
+    }
+
+    .filter__radio {
+      padding: 3px;
+      background: $white;
+      border: 1px solid $gray-7;
+      border-radius: 10px;
+      text-align: center;
+
+      label {
+        display: block;
+        padding: 9px;
+        white-space: nowrap;
+        font: 500 12px/16px Roboto;
+      }
+    }
+
+    .nice-select {
+      @include screen(xl) {
+        min-width: 120px !important;
+      }
+
+      @include screen(l) {
+        min-width: 175px !important;
+        width: 175px !important;
+      }
+
+      img,
+      svg {
+        margin-right: 10px;
+        width: 28px;
+        height: 28px;
+      }
+
+      .current {
+        display: flex;
+        align-items: center;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &__price {
+    margin-bottom: 10px;
+
+    @include screen(xl) {
+      padding-top: 20px;
+    }
+
+    &-old {
+      text-align: right;
+      font: 600 18px/21px FuturaPT;
+      text-decoration-line: line-through;
+      color: $main-black-color-opacity-5;
+    }
+
+    &-total {
+      font: 600 38px/28px FuturaPT;
+      color: $third-color;
+
+      @include screen(xl) {
+        align-self: flex-start;
+        margin-bottom: 5px;
+      }
+    }
+
+    &-sale {
+      padding: 3px 5px 2px;
+      margin: 2px 0 0 0;
+      text-align: center;
+      font: 600 14px/16px FuturaPT;
+      color: $main-color;
+      background-color: $main-color-opacity-2;
+      border-radius: 13px;
+    }
+  }
+
+  &__present {
+    @include screen(xl) {
+      padding-left: 20px;
+      width: 100%;
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        height: 0;
+        opacity: 0;
+        display: none;
+      }
+
+      &::-webkit-scrollbar-button {
+        height: 0;
+        opacity: 0;
+        display: none;
+      }
+
+      &::-webkit-scrollbar-track-piece {
+        height: 0;
+        opacity: 0;
+        display: none;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        height: 0;
+        opacity: 0;
+        display: none;
+      }
+
+      &::-webkit-scrollbar-corner {
+        height: 0;
+        opacity: 0;
+        display: none;
+      }
+
+      &::-webkit-resize {
+        height: 0;
+        opacity: 0;
+        display: none;
+      }
+    }
+
+    li {
+      position: relative;
+      min-width: 116px;
+      min-height: 65px;
+
+      &:not(:last-of-type) {
+        margin-right: 10px;
+      }
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      background: $white;
+      border-radius: 10px;
+
+      span {
+        position: relative;
+        z-index: 1;
+        font: 500 14px/16px FuturaPT;
+        width: min-content;
+      }
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    input:checked+label {
+      border: 1px solid $main-color;
+      box-shadow: 0px 2px 8px $black-opacity-1;
+      border-radius: 10px;
+    }
+
+    &-label {
+      &--disable {
+        opacity: .5;
+        pointer-events: none;
+      }
+    }
+  }
+
+  /* swiper-gallery */
+
+  &__gallery {
+    @include screen(l) {
+      min-width: 430px;
+      min-height: 540px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &-wrap {
+      margin-right: 30px;
+      align-items: center;
+    }
+
+    .swiper-container {
+      width: 100% !important;
+      max-width: 333px !important;
+      height: auto;
+      max-height: 455px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .gallery-top {
+      @include screen(xl) {
+        position: relative;
+        display: flex;
+        align-self: center;
+        width: 300px !important;
+        height: 350px !important;
+      }
+
+      @include screen(l) {
+        display: flex;
+        align-self: center;
+        width: 319px !important;
+        height: 455px !important;
+      }
+
+      .swiper-wrapper {
+        @include screen(xl) {
+          margin-bottom: 60px;
+          height: auto;
+        }
+      }
+
+      .swiper-pagination {
+        &-bullet {
+          background: $gray-light-4;
+          opacity: 1;
+
+          &-active {
+            background: $gray-29;
+          }
+        }
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-self: center;
+        background-size: contain !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+
+        &:not(.swiper-slide-active) {
+          opacity: 0 !important;
+        }
+
+        a {
+          width: 100%;
+        }
+      }
+    }
+
+    .gallery-thumbs {
+      display: flex;
+      align-self: center;
+      width: 150px !important;
+      box-sizing: border-box;
+
+      @include screen(xl) {
+        display: none;
+      }
+    }
+
+    .gallery-thumbs .swiper-slide {
+      position: relative;
+      background-color: $white !important;
+      background-size: contain !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      width: 70px !important;
+      height: 80px !important;
+      cursor: pointer;
+
+      @include screen(l) {
+        margin-left: 15px !important;
+      }
+    }
+
+    .gallery-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+      position: relative;
+
+      &::before {
+        @include screen(l) {
+          content: "";
+          display: block;
+          position: absolute;
+          left: -15px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 4px;
+          height: 80px;
+          background: $main-dark-color;
+          border-radius: 0px 100px 100px 0px;
+        }
+      }
+    }
+
+    .swiper-button-next {
+      right: 0;
+      transform: rotate(-90deg);
+      background-image: url(../img/pic/ico/arrow.svg);
+      background-size: 10px;
+    }
+
+    .swiper-button-prev {
+      left: 0;
+      transform: rotate(90deg);
+      background-image: url(../img/pic/ico/arrow.svg);
+      background-size: 10px;
+    }
+  }
+
+  &__points {
+    display: inline-block;
+    padding: 8px 15px 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    font: 600 16px/22px FuturaPT;
+    background: $white;
+
+    cursor: pointer;
+    white-space: nowrap;
+
+    @include screen(xl) {
+      color: $second-color;
+    }
+
+
+    @include screen(l) {
+      align-self: flex-start;
+      margin-left: 40px;
+      max-width: 244px;
+      color: $main-color;
+      border: 1px solid $main-color;
+    }
+  }
+
+  &__faq {
+    @include screen(xl) {
+      padding-bottom: 25px;
+      padding-top: 15px;
+    }
+
+    .frame {
+      background: $white;
+
+
+      @include screen(xl) {
+        box-shadow: 0px 2px 7px $black-opacity-1;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      @include screen(l) {
+        padding: 30px 25px 40px 0;
+        box-shadow: 0px 2px 7px $black-opacity-05;
+      }
+    }
+
+    &-title {
+      position: relative;
+      color: $second-black-color;
+
+      @include screen(xl) {
+        padding: 20px 40px 20px 20px;
+        font: 600 28px/32px FuturaPT;
+      }
+
+      @include screen(l) {
+        padding-left: 40px;
+        margin-bottom: 35px;
+        pointer-events: none;
+        font: 600 28px/42px FuturaPT;
+      }
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        @include screen(xl) {
+          position: absolute;
+          display: block;
+          content: "";
+          top: 0;
+          bottom: 0;
+          right: 20px;
+          margin: auto;
+          width: 15px;
+          height: 12px;
+          background: url(../img/pic/ico/faq-arrow-mobile.svg) no-repeat, transparent;
+          background-size: 15px 10px;
+          background-position: center;
+          border-radius: 0;
+          transition: transform .3s;
+          transform: rotate(180deg);
+
+          .uk-open & {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+
+    .uk-accordion-content {
+      @include screen(xl) {
+        margin-top: 0;
+      }
+
+      @include screen(l) {
+        height: 250px;
+
+      }
+
+      &.active {
+        @include screen(l) {
+          height: 100%;
+        }
+      }
+    }
+
+    .accordion {
+      box-shadow: none;
+      border-top: 1px solid $gray-7;
+      border-radius: 0;
+
+      @include screen(l) {
+        min-width: 470px;
+        max-width: 470px;
+        margin-right: 35px;
+        overflow: visible;
+      }
+
+      li {
+        &:last-of-type {
+          height: 0;
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        &.uk-active {
+          .uk-accordion-title {
+            @include screen(l) {
+              background: $gray-light;
+            }
+          }
+        }
+      }
+
+      .uk-accordion-title {
+        position: relative;
+        border-bottom: 1px solid $gray-7;
+        text-transform: uppercase;
+        color: $main-black-color;
+
+        @include screen(xl) {
+          padding: 15px 60px 15px 25px;
+          font: 600 14px/22px FuturaPT;
+        }
+
+        @include screen(l) {
+          padding: 10px 20px 11px 25px;
+          font: 600 14px/28px FuturaPT;
+        }
+
+        &::before {
+          @include screen(xl) {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            bottom: 0;
+            right: 25px;
+            margin: auto;
+            width: 10px;
+            height: 16px;
+            background: url(../img/pic/ico/arrow-2.svg) no-repeat, transparent;
+            background-size: 10px 16px;
+            background-position: center;
+            border-radius: 0;
+            transition: transform .3s;
+            transform: rotate(90deg);
+          }
+
+          @include screen(l) {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 10px;
+            margin: auto;
+            width: 10px;
+            height: 16px;
+            background: url(../img/pic/ico/arrow-2.svg) no-repeat, transparent;
+            background-size: 10px 16px;
+            background-position: center;
+            border-radius: 0;
+            transition: transform .3s;
+            transform: none;
+          }
+        }
+      }
+
+      & li.uk-open>.uk-accordion-title::before {
+        transition: transform .3s;
+
+        @include screen(xl) {
+          transform: rotate(270deg);
+        }
+
+        @include screen(l) {
+          transform: none;
+        }
+      }
+
+      .uk-accordion-content {
+        @include screen(l) {
+          display: none;
+        }
+      }
+    }
+
+    .uk-switcher {
+      @include screen(l) {
+        padding-right: 70px;
+      }
+
+      p {
+        font: normal 18px/29px Roboto;
+        color: $main-black-color;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-btn {
+      padding: 9px 15px;
+      font: 600 16px/22px FuturaPT;
+
+      @include screen(xl) {
+        max-width: 335px;
+        margin: 15px auto 0;
+      }
+    }
+
+    &-see-all {
+      @include screen(xl) {
+        display: none;
+      }
+
+      @include screen(l) {
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        z-index: 1;
+        color: $main-color;
+        display: inline-block;
+        padding: 8px 15px 10px;
+        width: 100%;
+        max-width: 480px;
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        font: 600 16px/22px FuturaPT;
+        background: $white;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: border-color .3s;
+      }
+
+      &:hover {
+        @include screen(l) {
+          border-color: $main-color;
+        }
+      }
+    }
+  }
+
+  &__accordion {
+    .accordion {
+      @include screen(xl) {
+        box-shadow: none;
+      }
+
+      @include screen(l) {
+        margin-top: 40px;
+      }
+    }
+
+    .uk-accordion-content {
+      padding: 0;
+    }
+
+    .product__main-atributes {
+      ul {
+        background-color: $gray-light;
+
+        li {
+          padding: 16px 25px 18px;
+
+          &:not(:last-of-type) {
+            border-bottom: 1px solid $gray-7;
+          }
+        }
+
+        span {
+          font: normal 14px/16px Roboto;
+
+          &:first-of-type {
+            color: $gray-30;
+          }
+
+          &:last-of-type {
+            color: $main-black-color;
+          }
+        }
+      }
+    }
+
+    .product__all-atributes {
+      ul {
+        background-color: $gray-light;
+
+        li {
+          padding: 16px 25px 18px;
+
+          &:not(:last-of-type) {
+            border-bottom: 1px solid $gray-7;
+          }
+        }
+
+        span {
+          font: normal 14px/16px Roboto;
+
+          &:first-of-type {
+            color: $gray-30;
+
+            @include screen(xl) {
+              margin-right: 10px;
+            }
+          }
+
+          &:last-of-type {
+            color: $main-black-color;
+          }
+        }
+      }
+    }
+
+    .product__payment {
+      .delivery__container {
+        padding: 60px 40px;
+        text-align: center;
+        background-color: $white;
+      }
+
+      .delivery__lower-text {
+        display: block;
+      }
+
+      .feature p {
+        font: normal 16px/26px Roboto;
+      }
+    }
+
+    .product__reviews {
+
+      .reviews__btn-adds {
+        margin-bottom: 40px;
+        max-width: 295px;
+
+        @include screen(xl) {
+          margin: 0 20px 40px auto;
+        }
+
+        @media (max-width: 374px) {
+          max-width: 250px;
+          margin-left: 10px;
+        }
+      }
+
+      .title {
+        margin-bottom: 40px;
+
+        @include screen(xl) {
+          display: none;
+        }
+      }
+
+      .reviews__content {
+        background-color: $white;
+
+        .pagination__btn--large {
+          @include screen(xl) {
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+        }
+      }
+
+      &-container {
+        position: relative;
+        overflow: hidden;
+
+        @include screen(xl) {
+          padding-bottom: 35px;
+        }
+
+        @include screen(l) {
+          max-height: 1200px;
+        }
+      }
+
+      .swiper-pagination {
+        @include screen(xl) {
+          bottom: 0;
+        }
+
+        @include screen(l) {
+          display: none;
+        }
+
+        &-bullet {
+          opacity: 1;
+          background-color: $gray-light-4;
+
+          &-active {
+            background-color: $gray-29;
+          }
+        }
+      }
+
+      .swiper-slide {
+        @include screen(xl) {
+          width: 90%;
+          margin: auto;
+        }
+
+        @include screen(l) {
+          height: 100% !important;
+        }
+
+        a {
+          position: relative;
+          display: block;
+
+          &:hover {
+            &::after {
+              transform: scale(1.3);
+            }
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 50px;
+            height: 58px;
+            background: url('../img/pic/ico/play-ico.svg') no-repeat;
+            background-size: contain;
+            transition: transform .3s;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            border: 1px solid $gray-3;
+            border-radius: 15px;
+            overflow: hidden;
+
+            @include screen(l) {
+              max-width: 295px;
+              max-height: 295px;
+            }
+          }
+        }
+
+        div {
+          span {
+            &:first-child {
+              padding-left: 10px;
+              font: 500 22px/26px FuturaPT;
+              color: $main-black-color;
+            }
+
+            &:last-child {
+              padding-right: 10px;
+              font: normal 16px/19px Roboto;
+              color: $main-color;
+            }
+          }
+        }
+
+        span {
+          padding-left: 10px;
+          font: normal 14px/22px Roboto;
+          color: $main-black-color-opacity-5;
+        }
+      }
+    }
+  }
+
+  &__was-sold {
+    span {
+      &:first-of-type {
+        text-transform: uppercase;
+        font: 500 12px/20px FuturaPT;
+        color: $main-black-color-opacity-5;
+      }
+
+      &:last-of-type {
+        font: 500 16px/21px FuturaPT;
+        color: $main-color;
+      }
+    }
+  }
+}

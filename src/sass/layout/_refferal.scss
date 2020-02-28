@@ -1,0 +1,238 @@
+.refferal {
+  &__wrapper {
+    @include screen(xl) {
+      padding: 0;
+    }
+
+    @include screen(l) {
+      padding-top: 20px;
+    }
+  }
+
+  .frame {
+    @include screen(xl) {
+      padding: 20px 20px 60px;
+    }
+
+    .breadcrumbs {
+      @include screen(l) {
+        padding: 15px 30px 0;
+      }
+    }
+
+    .feature {
+      li:not(:last-of-type) {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          background-color: $gray-3;
+
+          @include screen(xl) {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 100%;
+            height: 1px;
+          }
+
+          @include screen(l) {
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 1px;
+            height: 270px;
+          }
+        }
+      }
+
+      p {
+        &:first-of-type {
+          color: $main-black-color-opacity-9;
+
+          @include screen(xl) {
+            font: 600 20px/24px FuturaPT;
+          }
+
+          @include screen(l) {
+            font: 600 18px/24px FuturaPT;
+          }
+        }
+
+        &:last-of-type {
+
+          @include screen(xl) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  &__header {
+    @include screen(l) {
+      padding: 0 45px 0 60px;
+      margin-bottom: 40px;
+    }
+
+    .title {
+      @include screen(l) {
+        margin-top: 60px;
+      }
+    }
+
+    p {
+      font: normal 16px/26px Roboto;
+
+      @include screen(xl) {
+        margin-bottom: 20px;
+      }
+
+      @include screen(l) {
+        margin-bottom: 30px;
+      }
+    }
+
+    img {
+      @include screen(xl) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__copy {
+    &-wrap {
+      border-top: 1px solid $gray-7;
+
+      @include screen(xl) {
+        padding: 20px 0 40px;
+      }
+
+      @include screen(l) {
+        padding: 30px 90px 0 0;
+      }
+    }
+
+    &-title {
+      margin-bottom: 20px;
+      font: 600 16px/19px FuturaPT;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      padding: 12px 15px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      background: $gray-light-2;
+      font: normal 18px/26px Roboto;
+      color: $main-black-color-opacity-6;
+
+      @include screen(l) {
+        margin-right: 10px;
+      }
+    }
+
+    &-btn {
+      padding: 14px 15px 15px;
+      border-radius: 8px;
+      background: $main-color;
+      text-transform: uppercase;
+      font: 600 16px/19px FuturaPT;
+      cursor: pointer;
+
+      @include screen(l) {
+        max-width: 175px;
+      }
+    }
+  }
+
+  .delivery__inner-frame {
+    @include screen(xl) {
+      margin-bottom: 40px;
+    }
+
+    @include screen(l) {
+      margin: 0 55px 30px;
+    }
+  }
+
+  &__info {
+    @include screen(xl) {
+      margin-bottom: 40px;
+    }
+
+    @include screen(l) {
+      padding-left: 120px;
+      padding-right: 144px;
+      margin-bottom: 40px;
+    }
+
+    .title {
+      @include screen(l) {
+        margin-top: 100px;
+      }
+    }
+
+    p {
+      font: normal 18px/26px Roboto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__footer {
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid $gray-7;
+
+    @include screen(xl) {
+      padding: 40px 0 0;
+    }
+
+    @include screen(l) {
+      padding: 60px 0 80px;
+    }
+
+    .btn {
+      padding: 18px 15px;
+      font: 500 18px/21px FuturaPT;
+      text-transform: uppercase;
+
+      @include screen(xl) {
+        max-width: 335px;
+      }
+
+      @include screen(l) {
+        margin: 0 auto;
+        max-width: 280px;
+      }
+
+      &:last-of-type {
+        background: $second-color;
+        box-shadow: 0px 4px 12px $second-color-opacity-4;
+
+        &:hover {
+          background: $second-dark-color;
+          box-shadow: 0px 4px 15px $second-color-opacity-7;
+        }
+      }
+    }
+
+    .title {
+      br {
+        @include screen(xl) {
+          display: none;
+        }
+      }
+    }
+  }
+}

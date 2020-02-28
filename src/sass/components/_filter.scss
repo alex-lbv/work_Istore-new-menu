@@ -1,0 +1,214 @@
+.filter {
+  .accordion {
+    background: transparent;
+    box-shadow: none;
+    border-radius: none;
+
+    &>li {
+      background: $white;
+      box-shadow: 0px 2px 7px $black-opacity-05;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    li:not(:last-of-type) {
+      .uk-accordion-title {
+        border-bottom: none;
+      }
+
+      .uk-accordion-content {
+        border-bottom: none;
+      }
+    }
+
+    .uk-accordion-content {
+      padding: 25px;
+    }
+  }
+
+  &__colors {
+    label {
+      position: relative;
+      margin-left: 25px;
+      cursor: pointer;
+    }
+
+    input+label::after {
+      content: "";
+      position: absolute;
+      left: -25px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      transition: border .1s;
+    }
+
+    input:checked+label::after {
+      border-radius: 10px;
+      border: 4px solid $main-color;
+    }
+
+    .filter__color {
+      &--black {
+        input+label::after {
+          background: $gradient-black
+        }
+      }
+
+      &--orange {
+        input+label::after {
+          background: $gradient-orange;
+        }
+      }
+
+      &--violet {
+        input+label::after {
+          background: $gradient-vioelt-2;
+        }
+      }
+
+      &--white {
+        input+label::after {
+          background: $gradient-white;
+        }
+      }
+
+      &--turquoise {
+        input+label::after {
+          background: $gradient-turquoise;
+        }
+      }
+
+      &--pearl {
+        input+label::after {
+          background: $gradient-pearl;
+        }
+      }
+
+      &--gray {
+        input+label::after {
+          background: $gradient-gray;
+        }
+      }
+
+      &--blue {
+        input+label::after {
+          background: $graident-blue-2;
+        }
+      }
+
+      &--green {
+        input+label::after {
+          background: $gradient-green-2;
+        }
+      }
+
+      &--red {
+        input+label::after {
+          background: $gradient-red;
+        }
+      }
+    }
+  }
+
+  &__checkbox {
+
+    /* Кнопка показать еще */
+    &:not(.filter__checkbox-full) {
+      li:nth-child(n+6) {
+        display: none;
+      }
+    }
+
+    li {
+      padding-left: 25px;
+      padding-bottom: 10px;
+      background-color: transparent;
+    }
+
+    label {
+      position: relative;
+      cursor: pointer;
+      font: normal 14px/19px Roboto;
+      color: $main-black-color;
+    }
+
+    input+label::after {
+      content: "";
+      position: absolute;
+      left: -25px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      background-color: $white;
+      border: 2px solid $gray-9;
+    }
+
+    input:checked+label::before {
+      content: "";
+      position: absolute;
+      left: -21px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 12px;
+      height: 10px;
+      background: url("../img/pic/ico/check-ico.svg") no-repeat;
+      background-size: cover;
+      z-index: 1;
+    }
+  }
+
+  &__memory {
+    label {
+      display: block;
+      position: relative;
+      padding: 12px 15px;
+      cursor: pointer;
+      border-radius: 20px;
+      font: 500 16px/19px Roboto;
+      color: $second-black-color;
+      background: transparent;
+      transition: color .15s, background-color .3s;
+    }
+
+    input:checked+label {
+      color: $white;
+      background: $third-color;
+    }
+  }
+
+  &__radio {
+    label {
+      display: block;
+      position: relative;
+      padding: 12px 15px;
+      cursor: pointer;
+      border-radius: 20px;
+      font: 500 16px/19px Roboto;
+      color: $second-black-color;
+      background: transparent;
+      transition: color .15s, background-color .3s;
+    }
+
+    input:checked+label {
+      color: $white;
+      background: $third-color;
+    }
+  }
+
+  &__btn-see-all {
+    font: normal 13px/16px Roboto;
+    transition: color .15s;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+}

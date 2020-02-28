@@ -1,0 +1,21 @@
+.dotted-list {
+	li {
+		position: relative;
+		padding-left: 20px;
+
+		&:not(:last-of-type) {
+			margin-bottom: 15px;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 9px;
+			width: 7px;
+			height: 7px;
+			background-color: $main-color;
+			border-radius: 50%;
+		}
+	}
+}

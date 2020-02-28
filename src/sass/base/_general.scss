@@ -1,0 +1,449 @@
+*,
+::before,
+::after {
+  box-sizing: border-box !important;
+  outline: none;
+}
+
+body {
+  position: relative;
+  font: normal 14px/26px Roboto, sans-serif;
+  font-weight: normal;
+  background-color: $white;
+  color: $main-black-color-opacity-9;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.bg-full-width {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    display: block !important;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    background-color: $gray-light;
+  }
+}
+
+.bg-full-width--white {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    display: block !important;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    background-color: $white;
+  }
+}
+
+.bg-full-width--gradient {
+  position: relative !important;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    display: block !important;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+
+    @include screen(xl) {
+      background-color: $gray-light;
+    }
+
+    @include screen(l) {
+      background: $gradient-white-2;
+    }
+  }
+}
+
+.title {
+  display: block;
+
+  &--small {
+    color: $main-black-color;
+
+    @include screen(xl) {
+      font: 500 28px/33px FuturaPT;
+    }
+
+    @include screen(l) {
+      font: 500 32px/37px FuturaPT;
+    }
+  }
+
+  &--medium {
+    color: $main-black-color;
+
+    @include screen(xl) {
+      font: 500 28px/33px FuturaPT;
+    }
+
+    @include screen(l) {
+      font: 500 38px/48px FuturaPT;
+    }
+  }
+}
+
+.link-see-all {
+  position: relative;
+  padding-right: 30px;
+  font: 500 16px/22px FuturaPT;
+  color: $main-dark-color-2;
+  transition: transform .3s;
+  /* чинит текст который скачет при scale */
+  backface-visibility: hidden;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: transform .3s;
+  }
+}
+
+/* subnav */
+.breadcrumbs {
+  &.uk-subnav>*> :first-child {
+    color: $second-black-color-opacity-8 !important;
+    font: normal 14px/16px FuturaPT !important;
+    text-transform: none !important;
+  }
+
+  &.uk-subnav>.uk-active>a {
+    color: $second-black-color-opacity-4 !important;
+
+    &:hover {
+      color: $second-black-color-opacity-8 !important;
+    }
+  }
+
+  &.uk-subnav-divider> :nth-child(n+2):not(.uk-first-column)::before {
+    position: absolute;
+    left: 8px;
+    content: "";
+    height: 9px !important;
+    width: 5px !important;
+    margin-left: 0px;
+    margin-right: 20px;
+    border: none !important;
+    background: url("../img/pic/ico/arrow.svg") no-repeat;
+    background-size: contain;
+  }
+}
+
+/* nice-select */
+
+.nice-select {
+  min-width: 215px !important;
+  background: $white !important;
+  border: 1px solid $gray-2 !important;
+  box-shadow: 0px 2px 7px $black-opacity-05 !important;
+  border-radius: 10px !important;
+
+  &::after {
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0;
+    right: 12px;
+    margin: auto !important;
+    height: 8px !important;
+    width: 8px !important;
+    border-bottom: 2px solid $main-dark-color !important;
+    border-right: 2px solid $main-dark-color !important;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 66% 66%;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out !important;
+  }
+
+  .option {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    min-height: auto !important;
+    padding: 5px 15px !important;
+    font: inherit !important;
+    color: $main-black-color !important;
+
+    & li {
+      cursor: pointer;
+    }
+
+    &.selected {
+      font-weight: 500 !important;
+    }
+  }
+
+  &.open .list {
+    width: 100%;
+  }
+}
+
+.position-right {
+  &\@l {
+    @include screen(l) {
+      margin: auto 0 auto auto;
+    }
+  }
+
+  &\@s {
+    @include screen(xl) {
+      margin: auto 0 auto auto;
+    }
+  }
+}
+
+.uk-lightbox {
+  background: transparent !important;
+  backdrop-filter: blur(5px);
+}
+
+.uk-transition-slide-bottom {
+  display: none;
+}
+
+.uk-transition-slide-top {
+  width: 50px;
+  margin: auto 0 auto auto;
+}
+
+.backdrop {
+  display: none;
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: $black-opacity-2;
+}
+
+.search--opened {
+  .backdrop {
+    display: block;
+  }
+
+  .search {
+    z-index: 100;
+  }
+
+  .search input {
+    box-shadow: 0px 4px 24px $black-opacity-1;
+    background: url("../img/pic/ico/search-ico-pink.svg") no-repeat, $white;
+    background-size: 18px 18px;
+    background-position: 700px;
+    position: relative;
+    z-index: 100;
+
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+
+  .search__close {
+    opacity: 1;
+    pointer-events: inherit;
+    z-index: 300;
+  }
+
+  .search__result {
+    pointer-events: inherit;
+    opacity: 1;
+    z-index: 100;
+  }
+
+  &-mobile {
+    .search input {
+      display: block !important;
+      z-index: 100;
+      pointer-events: inherit;
+    }
+
+    .search__close {
+      opacity: 1;
+      pointer-events: inherit;
+      z-index: 100;
+
+      &-wrap {
+        pointer-events: inherit;
+      }
+    }
+
+    .backdrop {
+      display: block;
+    }
+  }
+}
+
+.menu--opened {
+  .header__catalog-container {
+    display: block;
+  }
+
+  .main-banner .header__catalog-menu {
+    display: none;
+  }
+
+  .backdrop {
+    display: block;
+    backdrop-filter: blur(5px);
+
+    &::before {
+      content: '';
+      position: fixed;
+      opacity: 1;
+      width: 100%;
+      height: 100vh;
+      filter: url('#blur');
+      filter: blur(5px);
+    }
+  }
+
+  .header__catalog {
+    z-index: 300;
+  }
+
+  .header__catalog-btn {
+    position: relative;
+
+    &::before {
+      display: block;
+    }
+  }
+}
+
+/* for nice select */
+select {
+  display: none;
+}
+
+.scroll-top {
+  position: fixed;
+  z-index: 1000;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid $main-dark-color;
+  background-color: transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+
+  @include screen(xl) {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  @include screen(l) {
+    bottom: 30px;
+    left: 30px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    left: 14px;
+    background: url('../img/pic/ico/arrow.svg') no-repeat;
+    transform: rotate(-90deg);
+    width: 50px;
+    height: 50px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $main-dark-color;
+
+    &::after {
+      background: url('../img/pic/ico/arrow-white.svg') no-repeat !important;
+    }
+  }
+
+  &:active {
+    background-color: $main-dark-color;
+
+    &::after {
+      background: url('../img/pic/ico/arrow-white.svg') no-repeat !important;
+    }
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.uk-grid-small {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.text-danger,
+.alert-error {
+  color: $main-color;
+}
+
+/* для корзины в header-mobile */
+.new2 {
+  position: absolute;
+  top: 0;
+  right: 6px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  color: $white;
+  font: 600 11px/13px Roboto;
+  background: $main-color;
+  border: 2px solid $white;
+}
+
+/* Смена шрифта для вопросительного знака */
+.question-mark {
+  font-family: 'Roboto';
+}
