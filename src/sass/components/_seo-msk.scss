@@ -141,6 +141,10 @@
     overflow: hidden;
     transition: border-color .3s;
 
+    @include screen(xl) {
+      height: auto;
+    }
+
     @include screen(l) {
       min-width: 300px;
       max-width: 300px;

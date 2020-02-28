@@ -348,6 +348,8 @@
   }
 
   &__price {
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
 
     @include screen(xl) {
