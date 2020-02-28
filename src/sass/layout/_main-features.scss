@@ -26,14 +26,6 @@
       overflow: hidden;
       color: $main-black-color;
 
-      @media (max-width: 450px) {
-        min-height: 400px;
-      }
-
-      @media (max-width: 640px) {
-        min-height: 600px;
-      }
-
       @include screen(l) {
         min-height: 431.641px;
         max-height: 431.641px;
