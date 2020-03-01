@@ -105,7 +105,7 @@ gulp.task("scripts", function () {
         presets: ["@babel/env"]
       })
     )
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(rename({
       suffix: ".min"
     }))
