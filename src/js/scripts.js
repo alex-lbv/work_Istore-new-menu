@@ -20,9 +20,9 @@ $(document).ready(function () {
 	});
 
 	/* adds class for body on click search */
-	$("body").on('focus', '#searchInput', function () {
-		$('body').addClass('search--opened');
-	});
+	//$("body").on('focus', '#searchInput', function () {
+	//	$('body').addClass('search--opened');
+	//});
 
 	/* clear val for search input */
 	$(document).ready(function () {

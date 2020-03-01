@@ -447,3 +447,8 @@ select {
 .question-mark {
   font-family: 'Roboto';
 }
+
+/* Смена шрифта для знака рубля (не отображается на iphone) */
+.ruble-sign {
+  font-family: 'FuturaPT';
+}
