@@ -12,6 +12,7 @@ body {
   background-color: $white;
   color: $main-black-color-opacity-9;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 a {
@@ -451,4 +452,21 @@ select {
 /* Смена шрифта для знака рубля (не отображается на iphone) */
 .ruble-sign {
   font-family: 'FuturaPT';
+}
+
+/* Фиксация модалки magnific popup */
+.mfp-wrap {
+  position: fixed;
+  overflow: auto;
+}
+
+.mfp-zoom-out-cur {
+  width: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+.mfp-wrap {
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateZ(0);
 }
