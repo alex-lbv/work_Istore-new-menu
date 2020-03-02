@@ -169,6 +169,8 @@
 		}
 
 		&-list {
+			position: relative;
+
 			&:not(:last-of-type) {
 				border-bottom: 1px solid $gray-10-opacity-5;
 			}
@@ -181,6 +183,22 @@
 					overflow-y: scroll;
 					height: 100%;
 				}
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				right: 15px;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				width: 10px;
+				height: 10px;
+				color: #ff548c;
+				border-top: 2px solid;
+				border-left: 2px solid;
+				border-radius: 1px 0 0 0;
+				transform: rotate(135deg) translate(50%, 50%);
 			}
 		}
 
@@ -257,12 +275,12 @@
 				&::after {
 					content: "";
 					position: absolute;
-					right: 15px;
+					right: 25px;
 					top: 0;
 					bottom: 0;
 					margin: auto;
-					width: 7px;
-					height: 7px;
+					width: 10px;
+					height: 10px;
 					color: $main-color;
 					border-top: 2px solid;
 					border-left: 2px solid;
