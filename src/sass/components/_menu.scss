@@ -99,7 +99,7 @@
 
 	&__select-city {
 		position: relative;
-		padding: 13px 15px;
+		padding: 13px 15px 35px;
 
 		&::after {
 			content: "";
@@ -121,7 +121,9 @@
 			color: $second-black-color-opacity-5;
 
 			&:last-of-type {
-				color: $main-color;
+				a {
+					color: $main-color;
+				}
 			}
 		}
 	}
