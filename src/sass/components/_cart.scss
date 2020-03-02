@@ -87,15 +87,15 @@
 			background-position: 15px center;
 		}
 
-		/* &--active {
+		&--active {
 			@include screen(xl) {
-				position: relative;
+				/* position: relative; */
 				background: url('../img/pic/ico/cart-icon2.svg') no-repeat;
 				background-size: 30px 30px;
 				background-position: 15px center;
 			}
 
-			&::after {
+			/* &::after {
 				content: "1";
 				position: absolute;
 				top: 0;
@@ -107,7 +107,7 @@
 				font: 600 11px/13px Roboto;
 				background: $main-color;
 				border: 2px solid $white;
-			}
-		} */
+			} */
+		}
 	}
 }
