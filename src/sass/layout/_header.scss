@@ -585,6 +585,20 @@
             margin-right: 15px;
           }
         }
+
+        &:last-of-type {
+          .header__sublist {
+            &>li>a::after {
+              left: -20px;
+            }
+          }
+
+          .header__innerlist {
+            transform: translateX(-226px);
+            top: 55px;
+          }
+
+        }
       }
     }
   }
