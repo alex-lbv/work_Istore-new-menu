@@ -497,7 +497,6 @@
       }
 
       @include screen(l) {
-        max-width: 960px;
         z-index: 5;
       }
     }
