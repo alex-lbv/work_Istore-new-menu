@@ -502,21 +502,19 @@
     }
   }
 
-  &__swiper {
-    .swiper-wrapper {
-      display: flex;
+  &__accessories {
+    display: flex;
 
-      @include screen(l) {
-        flex-wrap: wrap;
-        margin-left: -10px;
-      }
+    @include screen(xl) {
+      overflow-x: scroll;
     }
 
-    .swiper-slide {
-      @include screen(xl) {
-        max-width: 280px;
-      }
+    @include screen(l) {
+      flex-wrap: wrap;
+      margin-left: -10px
+    }
 
+    li {
       @include screen(l) {
         padding-left: 10px;
         padding-bottom: 10px;

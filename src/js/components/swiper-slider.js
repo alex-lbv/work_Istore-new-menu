@@ -90,34 +90,6 @@ if ($(window).width() < 1250) {
   }
 }
 
-if ($(window).width() < 1250) {
-  if (typeof swiperCheckout == 'undefined') {
-    var swiperCheckout = new Swiper('.checkout__swiper', {
-      slidesPerView: 'auto',
-      spaceBetween: 10,
-      breakpoints: {
-        640: {
-          slidesPerView: 'auto',
-        },
-        960: {
-          slidesPerView: 2,
-        },
-        1250: {
-          slidesPerView: 3,
-        },
-      },
-    });
-  }
-} else {
-  if (typeof swiperCheckout != 'undefined') {
-    swiperCheckout.destroy();
-    swiperCheckout = undefined;
-
-    $('.swiper-wrapper').removeAttr('style');
-    $('.swiper-slide').removeAttr('style');
-  }
-}
-
 if ($(window).width() > 1250) {
   if (typeof swiperHeaderBottom == 'undefined') {
     var galleryThumbs = new Swiper('.gallery-thumbs', {
