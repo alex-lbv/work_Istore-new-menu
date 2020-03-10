@@ -169,8 +169,11 @@ window.addEventListener("DOMContentLoaded", function () {
 			if (this.value.length == 2) this.value = ""
 		} else setCursorPosition(this.value.length, this)
 	};
-	var input = document.querySelector(".maskForNumber");
-	input.addEventListener("input", mask, false);
-	input.addEventListener("focus", mask, false);
-	input.addEventListener("blur", mask, false);
+
+	document.querySelectorAll('.maskForNumber').forEach(function (input, index) {
+		input.classList.add('maskForNumber--' + index);
+		input.addEventListener("input", mask, false);
+		input.addEventListener("focus", mask, false);
+		input.addEventListener("blur", mask, false);
+	})
 });
