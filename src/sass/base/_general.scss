@@ -220,6 +220,12 @@ button {
   }
 }
 
+.options .option_link.active,
+.options .option_link:focus,
+.options .option_link:hover {
+  background-color: $main-color !important;
+}
+
 .position-right {
   &\@l {
     @include screen(l) {
@@ -362,7 +368,7 @@ select {
 
 .scroll-top {
   position: fixed;
-  z-index: 1000;
+  z-index: 299;
   display: inline-block;
   width: 50px;
   height: 50px;

@@ -39,6 +39,10 @@
         max-width: 500px;
       }
     }
+
+    a {
+      color: $main-color;
+    }
   }
 
   &__date {
