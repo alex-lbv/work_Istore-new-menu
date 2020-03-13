@@ -200,7 +200,6 @@
   }
 
   &__contacts {
-    width: 26%;
     white-space: nowrap;
 
     span {
@@ -564,7 +563,7 @@
           }
 
           @include screen(l) {
-            padding: 0 30px;
+            padding: 0 31px;
             white-space: nowrap;
             font: 500 18px/23px FuturaPT;
             transition: color .15s;
@@ -587,15 +586,22 @@
         }
 
         &:last-of-type {
+          &>a {
+            padding: 0 0 0 31px;
+          }
+
           .header__sublist {
-            &>li>a::after {
-              left: -20px;
+            right: 0;
+
+            &>li>a {
+              &::after {
+                left: -20px;
+              }
             }
           }
 
           .header__innerlist {
             transform: translateX(-226px);
-            top: 55px;
           }
 
         }
@@ -741,6 +747,13 @@
         display: none;
       }
     }
+
+    &>li:last-of-type>a {
+      &::after {
+        bottom: 0;
+        height: 75px;
+      }
+    }
   }
 
   &__innerlist {
@@ -750,7 +763,7 @@
 
     @include screen(l) {
       position: fixed;
-      top: 61px;
+      top: 63px;
       transform: translateX(200px);
       min-width: 0;
       width: 235px;
