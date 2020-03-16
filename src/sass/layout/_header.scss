@@ -587,7 +587,9 @@
 
         &:last-of-type {
           &>a {
-            padding: 0 0 0 31px;
+            @include screen(l) {
+              padding: 0 0 0 31px;
+            }
           }
 
           .header__sublist {
