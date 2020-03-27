@@ -488,3 +488,12 @@ select {
   left: 0;
   padding: 35px 15px 0;
 }
+
+/* Убрал отрицательный отступ  */
+.reviews__content {
+  #review-extended {
+    @include screen(xl) {
+      margin: 0 15px;
+    }
+  }
+}
