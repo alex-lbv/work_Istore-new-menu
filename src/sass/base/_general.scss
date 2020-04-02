@@ -501,7 +501,7 @@ select {
 /* стили для текста про карантин */
 .quarantine {
   text-align: center;
-  color: #fe4792;
+  color: $main-color;
   padding-top: 20px;
   text-decoration: underline;
   margin: auto;
