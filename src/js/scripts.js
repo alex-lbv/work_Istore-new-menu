@@ -140,6 +140,18 @@ $(document).ready(function () {
 	$('#menuMobile').not('.uk-open').mouseleave(function () {
 		$(".header__menu-button").removeClass('open');
 	});
+
+	$('.product__faq-see-all').on('click', function () {
+		$('.product__faq-wrapper').toggleClass('product__faq-wrapper--full');
+
+		if (!$('.product__faq-see-all').data('status')) {
+			$('.product__faq-see-all').html('Скрыть');
+			$('.product__faq-see-all').data('status', true);
+		} else {
+			$('.product__faq-see-all').html('Показать все вопросы');
+			$('.product__faq-see-all').data('status', false);
+		}
+	});
 });
 
 /* Маска для ввода телефона */

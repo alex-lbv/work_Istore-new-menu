@@ -651,18 +651,15 @@
     }
 
     .frame {
-      background: $white;
-
-
       @include screen(xl) {
-        box-shadow: 0px 2px 7px $black-opacity-1;
-        border-radius: 20px;
-        overflow: hidden;
+        /*  box-shadow: 0px 2px 7px $black-opacity-1; */
+        background-color: transparent;
       }
 
       @include screen(l) {
         padding: 30px 25px 40px 0;
-        box-shadow: 0px 2px 7px $black-opacity-05;
+        background-color: transparent;
+        box-shadow: none;
       }
     }
 
@@ -676,8 +673,8 @@
       }
 
       @include screen(l) {
-        padding-left: 40px;
-        margin-bottom: 35px;
+        padding-left: 20px;
+        margin-bottom: 25px;
         pointer-events: none;
         font: 600 28px/42px FuturaPT;
       }
@@ -711,140 +708,6 @@
       }
     }
 
-    .uk-accordion-content {
-      @include screen(xl) {
-        margin-top: 0;
-      }
-
-      @include screen(l) {
-        height: 250px;
-
-      }
-
-      &.active {
-        @include screen(l) {
-          height: 100%;
-        }
-      }
-    }
-
-    .accordion {
-      box-shadow: none;
-      border-top: 1px solid $gray-7;
-      border-radius: 0;
-
-      @include screen(l) {
-        min-width: 470px;
-        max-width: 470px;
-        margin-right: 35px;
-        overflow: visible;
-      }
-
-      li {
-        &:last-of-type {
-          height: 0;
-          opacity: 0;
-          pointer-events: none;
-        }
-
-        &.uk-active {
-          .uk-accordion-title {
-            @include screen(l) {
-              background: $gray-light;
-            }
-          }
-        }
-      }
-
-      .uk-accordion-title {
-        position: relative;
-        border-bottom: 1px solid $gray-7;
-        text-transform: uppercase;
-        color: $main-black-color;
-
-        @include screen(xl) {
-          padding: 15px 60px 15px 25px;
-          font: 600 14px/22px FuturaPT;
-        }
-
-        @include screen(l) {
-          padding: 10px 20px 11px 25px;
-          font: 600 14px/28px FuturaPT;
-        }
-
-        &::before {
-          @include screen(xl) {
-            content: "";
-            position: absolute;
-            display: block;
-            top: 0;
-            bottom: 0;
-            right: 25px;
-            margin: auto;
-            width: 10px;
-            height: 16px;
-            background: url(../img/pic/ico/arrow-2.svg) no-repeat, transparent;
-            background-size: 10px 16px;
-            background-position: center;
-            border-radius: 0;
-            transition: transform .3s;
-            transform: rotate(90deg);
-          }
-
-          @include screen(l) {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 10px;
-            margin: auto;
-            width: 10px;
-            height: 16px;
-            background: url(../img/pic/ico/arrow-2.svg) no-repeat, transparent;
-            background-size: 10px 16px;
-            background-position: center;
-            border-radius: 0;
-            transition: transform .3s;
-            transform: none;
-          }
-        }
-      }
-
-      & li.uk-open>.uk-accordion-title::before {
-        transition: transform .3s;
-
-        @include screen(xl) {
-          transform: rotate(270deg);
-        }
-
-        @include screen(l) {
-          transform: none;
-        }
-      }
-
-      .uk-accordion-content {
-        @include screen(l) {
-          display: none;
-        }
-      }
-    }
-
-    .uk-switcher {
-      @include screen(l) {
-        padding-right: 70px;
-      }
-
-      p {
-        font: normal 18px/29px Roboto;
-        color: $main-black-color;
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-
     &-btn {
       padding: 9px 15px;
       font: 600 16px/22px FuturaPT;
@@ -855,35 +718,100 @@
       }
     }
 
-    &-see-all {
+    &-wrapper {
+      display: flex;
+
       @include screen(xl) {
-        display: none;
+        flex-direction: column;
       }
 
       @include screen(l) {
-        position: absolute;
-        bottom: 0;
-        left: 15px;
-        z-index: 1;
-        color: $main-color;
-        display: inline-block;
-        padding: 8px 15px 10px;
-        width: 100%;
-        max-width: 480px;
-        text-align: center;
-        border: 1px solid transparent;
-        border-radius: 8px;
-        font: 600 16px/22px FuturaPT;
-        background: $white;
-        cursor: pointer;
-        white-space: nowrap;
-        transition: border-color .3s;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
       }
 
-      &:hover {
-        @include screen(l) {
-          border-color: $main-color;
+      &:not(.product__faq-wrapper--full) {
+        .accordion {
+          li:nth-child(n+4) {
+            @include screen(l) {
+              display: none;
+            }
+
+            @include screen(xl) {
+              display: none;
+            }
+          }
         }
+      }
+
+      .accordion {
+        background: transparent;
+        box-shadow: none;
+        overflow: inherit;
+
+        &:first-of-type {
+          @include screen(xl) {
+            margin-bottom: 10px;
+          }
+
+          @include screen(l) {
+            padding-right: 10px;
+          }
+        }
+
+        &:last-of-type {
+          @include screen(l) {
+            padding-left: 10px;
+          }
+        }
+
+        li {
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05);
+          border-radius: 10px;
+          overflow: hidden;
+
+          &:not(:last-of-type) {
+            margin-bottom: 10px;
+          }
+        }
+
+        .uk-accordion-title {
+          @include screen(l) {
+            font: 500 14px/20px Roboto;
+          }
+        }
+
+        .uk-accordion-content {
+          padding: 15px 20px 15px 25px;
+          background-color: $white;
+
+          ul {
+            padding: 0;
+            background-color: transparent;
+
+            li {
+              margin: 0;
+              padding: 0;
+              box-shadow: none;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    &-see-all {
+      font: 500 17px/20px Roboto;
+      color: $main-color;
+
+      @include screen(xl) {
+        padding-top: 15px;
+        width: 100%;
+        text-align: center;
+      }
+
+      @include screen(l) {
+        margin-left: 15px;
       }
     }
   }
